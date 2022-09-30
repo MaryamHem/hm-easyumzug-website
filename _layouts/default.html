@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+
+<body class="d-flex flex-column min-vh-100">
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+      <div class="container">
+        <div><a class="navbar-brand" href="/">
+          <img src="/assets/mockup/logo-01.png" alt="HM-Easyumzug logo" height="72">
+        </a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Umzuege
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Privat</a></li>
+                <li><a class="dropdown-item" href="#">Business</a></li>
+                <li><a class="dropdown-item" href="#">Senioren</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Extra Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Einpacken &amp; Auspacken</a></li>
+                <li><a class="dropdown-item" href="#">Halteverbotszonen</a></li>
+                <li><a class="dropdown-item" href="#">Lagerung</a></li>
+                <li><a class="dropdown-item" href="#">Entruempelung</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/team">Unternehmen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/team">Kontakt</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="/team">Call to action</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    {{ content }}
+
+  </main>
+
+  <footer class="mt-auto">
+    <div class="container-fluid bg-dark">
+      <div class="container d-flex flex-wrap justify-content-between align-items-top py-3">
+
+        <ul class="nav d-block text-primary">
+          <li class="nav-item"><a href="/" class="nav-link text-muted p-0">Home</a></li>
+          <li class="nav-item"><a href="/impressum" class="nav-link text-muted p-0">Legal/Impressum</a></li>
+          <li class="nav-item"><a href="/datenschutzerklaerung" class="nav-link text-muted p-0">Privacy policy</a></li>
+          <li class="nav-item"><a href="/attribution" class="nav-link text-muted p-0">Attribution</a></li>
+        </ul>
+
+        <div class="text-muted">Copyright &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>HM-Easyumzug</div>
+
+        <div><img class="d-block" src="/assets/logos-simercator/simercator-white-orange-waves.svg" height="72" alt="simercator logo"></div>
+
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
