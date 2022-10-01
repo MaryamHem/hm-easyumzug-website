@@ -81,13 +81,13 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script>
   $('.btnNext').click(function() {
-  const nextTabLinkEl = $('.nav-pills .active').closest('li').next('li').find('button')[0];
+  const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
   const nextTab = new bootstrap.Tab(nextTabLinkEl);
   nextTab.show();
 });
 
 $('.btnPrevious').click(function() {
-  const prevTabLinkEl = $('.nav-pills .active').closest('li').prev('li').find('button')[0];
+  const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').last().find('button')[0];
   const prevTab = new bootstrap.Tab(prevTabLinkEl);
   prevTab.show();
 });
