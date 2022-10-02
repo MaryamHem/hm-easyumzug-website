@@ -51,8 +51,11 @@ $navbar-light-hover-color:          $secondary;
 $navbar-light-active-color:         $secondary;
 
 $nav-link-color: $grey;
+$nav-pills-link-active-color:       $hme-red;
+$nav-pills-link-active-bg:          transparent;
 
 $custom-colors: (
+  "hme-blue": $hme-blue,
   "hme-blue2": $hme-blue2,
   "alice-blue": $alice-blue,
   "platinum": $platinum,
@@ -77,7 +80,16 @@ $display-font-sizes: (
   4: 2rem,
   5: 1.5rem,
   6: 1rem
-  ) !default;
+  );
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  custom: 80rem
+);
 
 
 // 5. Include remainder of required parts
@@ -194,9 +206,13 @@ video {
   margin-bottom: -20vh;
 }
 
-.nav-link-custom {
-  display: inline;
-  padding: 0rem 0rem;
-  height: 3rem;
-  width: 3rem;
+.nav-link-custom.active {
+  background-color: $hme-blue2;
+  color: $white;
+}
+.nav-fill .nav-item .nav-link-custom {
+    width: 100%;
+}
+.nav-link.active {
+  font-size: 1.5rem;
 }
