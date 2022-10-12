@@ -26,7 +26,7 @@ permalink: /
 
   <h3 class="px-3 text-hme-blue mt-3 text-center">Persoenliches Gespraech <span class="fw-light">buchen<br>und</span> Festpreisangebot <span class="fw-light">erhalten</span></h3><span class="text-secondary"></span>
 
-  <form class="mt-3" action="https://submit-form.com/Q62bnjrt" target="_blank">
+  <form id="bookingForm" class="mt-3" action="https://submit-form.com/Q62bnjrt" target="_blank" novalidate>
 
     <!-- Form Nav -->
     <ul class="nav nav-pills d-flex align-items-center justify-content-center bg-light-grey" id="pills-tab" role="tablist">
@@ -55,19 +55,20 @@ permalink: /
 
     <!-- Form Content -->
     <div class="tab-content p-3" id="pills-tabContent">
+      
       <div class="tab-pane fade show active" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab" tabindex="0">
         <h5 class="text-center text-secondary">Datum</h4>
         <div class="row g-3 my-2">
           <div class="col-4 fw-semibold">
-            <label for="date">Umzugsdatum?</label>
+            <label for="date" class="form-label">Umzugsdatum?</label>
           </div>
           <div class="col-8">
-            <input id="date" class="form-control" type="date" name="Datum" >
+            <input id="date" type="date" class="form-control" name="Datum" required>
           </div>
         </div>
         <div class="row g-3 my-2">
           <div class="col-4 fw-semibold">
-            <label for="date">Flexibles Datum?</label>
+            <label for="flexibleDate">Flexibles Datum?</label>
           </div>
           <div class="col-8">
             <input class="form-check-input" type="radio" name="flexibleDate" id="flexibleDateYes" >
