@@ -17,11 +17,12 @@ $blue-ncs: #0190c7;
 $alice-blue: #f4faff;
 $crimson: #e5003f;
 $platinum: #dee7e7;
+$imperial-red: #EF233C;
 
 
 $hme-blue: $prussian-blue;
 $hme-blue2: $blue-ncs;
-$hme-red: $crimson;
+$hme-red: $imperial-red;
 
 $hme-maroon: #B81365;
 $light-grey: #f0f0f0;
@@ -31,15 +32,15 @@ $dark-grey: #383838;
 $primary: $hme-blue2;
 $secondary:   $hme-red;
 
-$font-family-sans-serif: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$display-font-family: 'Signika', Helvetica, Arial, sans-serif;
-$headings-font-family: 'Signika', Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 'Poppins', Helvetica, Arial, sans-serif;
+$display-font-family: 'Poppins', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Poppins', Helvetica, Arial, sans-serif;
 
-$font-size-root: 18px;
+$font-size-root: 16px;
 $line-height-base: 1.625;
 $display-font-weight: 400;
 
-$border-radius: .25rem; /* .375rem; */
+$border-radius: .5rem; /* .25rem .375rem; */
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "variables";
@@ -51,9 +52,10 @@ $navbar-light-color:                $hme-blue;
 $navbar-light-hover-color:          $secondary;
 $navbar-light-active-color:         $secondary;
 
-$nav-link-color: $grey;
-$nav-pills-link-active-color:       $hme-red;
+$nav-link-color: $white;
+$nav-pills-link-active-color:       $white;
 $nav-pills-link-active-bg:          transparent;
+$nav-pills-border-radius:           50%;
 
 $custom-colors: (
   "hme-blue": $hme-blue,
@@ -88,9 +90,15 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px,
-  custom: 80rem
+  xxl: 1320px
 );
+
+/*   custom: 80rem,
+  form: 800px */
+
+.container {
+  max-width: 960px;
+}
 
 
 // 5. Include remainder of required parts
@@ -128,9 +136,7 @@ $container-max-widths: (
 * {
   box-sizing: border-box;
 }
-.container {
-	max-width: 60rem;
-}
+
 body {
   padding-top: 88px; /* offset for fixed-top navbar */
 }
@@ -155,65 +161,4 @@ a:not(.no-icon)[href^="http://"]:after, a:not(.no-icon)[href^="https://"]:after,
   padding-left: 3px;
 }
 
-
-
-/* Video container */
-/* https://codepen.io/DylanMacnab/pen/NjVXEe */
-.video-container {
-  height: 50vh;
-  position: relative;
-  overflow: hidden;
-  @media(min-width: 600px) {
-    height: 75vh;
-  }
-}
-
-video {
-  object-fit: cover; // Set the magic
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.video-container:after {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(black, .2);
-  z-index: 1;
-}
-.callout {
-  position: relative;
-/*   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  text-align: center; */
-  z-index: 10;
-}
-
-.form {
-  width: 35rem;
-  position: relative;
-  top: -20vh;
-  z-index: 20;
-  margin-bottom: -20vh;
-}
-
-.nav-link-custom.active {
-  background-color: $hme-blue2;
-  color: $white;
-}
-.nav-fill .nav-item .nav-link-custom {
-    width: 100%;
-}
-.nav-link.active {
-  font-size: 1.5rem;
-}
+@import 'additional'
