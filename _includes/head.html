@@ -29,7 +29,7 @@
 
   <link href="/css/custom.css" rel="stylesheet">
 <!--   <link href="/css/additional.css" rel="stylesheet">
- -->
+-->
 
   <!-- Final 
   <link href="/assets/fonts/fonts.css" rel="stylesheet">
@@ -48,9 +48,9 @@
     $.validator.addMethod("tabRequired", function(value, element) {
       var $element = $(element)
 
-        function match(index) {
-          return current == index && $(element).parents("#pills-" + (index)).length;
-        }
+      function match(index) {
+        return current == index && $(element).parents("#pills-" + (index)).length;
+      }
       if (match('1') || match('2')) {
         return !this.optional(element);
       }
@@ -60,9 +60,27 @@
     var v=$( "#bookingForm" ).validate( {
       rules: {
         date: "required",
-        flexibleDate: "required"
-      }
-    });
+        addressOut: "required",
+        floor: "required"
+      },
+      errorElement: "em",
+      errorPlacement: function ( error, element ) {
+          // Add the `invalid-feedback` class to the error element
+          error.addClass( "invalid-feedback" );
+
+          if ( element.prop( "type" ) === "checkbox" ) {
+            error.insertAfter( element.next( "label" ) );
+          } else {
+            error.insertAfter( element );
+          }
+        },
+        highlight: function ( element, errorClass, validClass ) {
+          $( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
+        },
+        unhighlight: function (element, errorClass, validClass) {
+          $( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
+        }
+      });
 
     $('#tab-1 .btnNext').click(function() {
       const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
@@ -70,13 +88,15 @@
       if (v.form()) {
         nextTab.show();
         current = '1';
-        console.log(v.form());
-      } else {
-        console.log(v.form());
+      }
+    });
+    $('#tab-2 .btnNext').click(function() {
+      if (v.form()) {
+        current = '2';
       }
     });
 
-    $('#tab-1 .btnPrevious').click(function() {
+    $('#tab-2 .btnPrevious').click(function() {
       const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').last().find('button')[0];
       const prevTab = new bootstrap.Tab(prevTabLinkEl);
       prevTab.show();

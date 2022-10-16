@@ -1,0 +1,201 @@
+
+<form id="bookingForm" class="mt-5" action="_https://submit-form.com/Q62bnjrt" target="_blank" novalidate>
+
+  <!-- Form Nav -->
+  <ul class="nav nav-pills d-flex align-items-center justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active nav-link-hme" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#tab-1" type="button" role="tab" aria-controls="pills-a" aria-selected="true">
+        <!-- <i class="fa-regular fa-clock fa-lg"></i> -->
+        <img src="/assets/icons/calendar.svg">
+      </button>          
+    </li>
+    <span class="nav-separator"></span>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link nav-link-hme" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#tab-2" type="button" role="tab" aria-controls="pills-b" aria-selected="false">
+        <!-- <i class="fa-solid fa-right-from-bracket fa-lg"></i> -->
+        <img src="/assets/icons/arrow-out.svg">
+      </button>
+    </li>
+    <span class="nav-separator"></span>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link nav-link-hme" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#tab-3" type="button" role="tab" aria-controls="pills-c" aria-selected="false">
+        <!-- <i class="fa-solid fa-right-to-bracket fa-lg"></i> --><img src="/assets/icons/arrow-in.svg">
+      </button>
+    </li>
+    <span class="nav-separator"></span>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link nav-link-hme" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#tab-4" type="button" role="tab" aria-controls="pills-d" aria-selected="false">
+       <!-- <i class="fa-solid fa-person-circle-plus fa-lg"></i> -->
+       <img src="/assets/icons/plus.svg">
+     </button>
+   </li>
+   <span class="nav-separator"></span>
+   <li class="nav-item" role="presentation">
+    <button class="nav-link nav-link-hme" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#tab-5" type="button" role="tab" aria-controls="pills-e" aria-selected="false">
+     <!-- <i class="fa-solid fa-user fa-lg"></i> -->
+     <img src="/assets/icons/user.svg">
+   </button>
+ </li>
+</ul>
+
+<!-- Form Content -->
+<div class="tab-content" id="pills-tabContent">
+
+  <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
+    <div class="row gx-3 gx-md-5 mt-5">
+      <div class="col-5 col-md-5 text-end">
+        <label for="date" class="col-form-label">Umzugsdatum</label>
+      </div>
+      <div class="col-7 col-md-4">
+        <input id="date" type="date" class="form-control" name="1_1-Umzugsdatum" required>
+      </div>
+    </div>
+      <!-- <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-5 text-end">
+          <label for="flexibleDate">Flexibles Datum?</label>
+        </div>
+        <div class="col-7 col-md-7">
+          <input class="form-check-input" type="radio" name="FlexiblesDatum" id="flexibleDateYes" >
+          <label class="form-check-label me-3" for="flexibleDateYes">
+            Ja
+          </label><br>
+          <input class="form-check-input" type="radio" name="flexibleDate" id="flexibleDateNo" >
+          <label class="form-check-label" for="flexibleDateNo">
+            Nein
+          </label>            
+        </div>
+      </div> -->
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 text-end">
+          <label for="flexibleDate2">Flexibles Datum?</label>
+        </div>
+        <div class="col-7">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexibleDate2" name="1_2-FlexiblesDatum2">
+            <label class="form-check-label" for="flexibleDate2">Ja</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gx-5 mt-5">
+        <div class="col-6 offset-3 col-md-4 offset-md-4">
+          <a class="d-block btn btn-outline-secondary btnNext" role="button">Weiter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
+
+      <div class="row gx-3 gx-md-5 mt-5">
+        <div class="col-6 col-md-4 offset-md-2">
+          <label for="addressOut" class="form-label">Adresse Auszugsort</label>
+        </div>
+        <div class="col-12 col-md-8 offset-md-2">
+          <input type="text" class="form-control" id="addressOut" name="2_1-AdresseAuszug" required>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="etage" class="col-form-label">Etage Auszugsort</label>
+        </div>
+        <div class="col-7 col-md-5">
+          <select class="form-select" aria-label="Floor" id="floor" name="2_2-EtageAuszug" required>
+            <option value="..." selected>Auswaehlen</option>
+            <option value="EG">EG</option>
+            <option value="1.OG">1.OG</option>
+            <option value="2.OG">2.OG</option>
+            <option value="4">3.OG oder hoeher</option>
+            <option value="5">Einfamilienhaus</option>
+            <option value="6">Souterrain</option>
+            <option value="7">Keller</option>
+            <option value="8">Nichts zutreffend</option>
+          </select>
+        </div>
+      </div>
+      <!-- <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="elevator" class="form-label">Aufzug vorhanden?</label>
+        </div>
+        <div class="col-7">
+          <input class="form-check-input" type="radio" name="Aufzug" id="AufzugJa" >
+          <label class="form-check-label me-3" for="AufzugJa">
+            Ja
+          </label>
+          <input class="form-check-input" type="radio" name="Aufzug" id="AufzugNein" >
+          <label class="form-check-label" for="AufzugNein">
+            Nein
+          </label>            
+        </div>
+      </div> -->
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="elevator2">Aufzug vorhanden?</label>
+        </div>
+        <div class="col-7">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="elevator2" name="2_3-AufzugVorhanden2">
+            <label class="form-check-label" for="elevator2">Ja</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="elevator" class="form-label">Halteverbotszone erforderlich?</label>
+        </div>
+        <div class="col-7">
+          <input class="form-check-input" type="radio" name="Halteverbot" id="AufzugJa" >
+          <label class="form-check-label me-3" for="HalteverbotJa">
+            Ja
+          </label>
+          <input class="form-check-input" type="radio" name="Halteverbot" id="AufzugNein" >
+          <label class="form-check-label" for="HalteverbotNein">
+            Nein
+          </label>            
+        </div>
+      </div> -->
+
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-4 offset-md-2">
+          <label for="elevator2">Halteverbotszone erforderlich?</label>
+        </div>
+        <div class="col-6">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="elevator2" name="2_4-Halteverbot2">
+            <label class="form-check-label" for="Halteverbot2">Ja</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gx-3 mt-5">
+        <div class="col-6 col-md-4 offset-md-2">
+          <a class="d-block btn btn-outline-grey btnPrevious" role="button">Zurück</a>
+        </div>
+        <div class="col-6 col-md-4">
+          <!-- <a class="d-block btn btn-outline-secondary btnNext" role="button">Daten übertragen</a> -->
+          <button class="d-block w-100 btn btn-outline-secondary btnNext" type="submit">Daten übertragen</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+    </div>
+
+    <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
+    </div>
+
+    <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="pills-5-tab" tabindex="0">
+    </div>
+
+  </div>
+</div>
+
+<input
+type="hidden"
+name="_redirect"
+value="https://calendly.com/christopher-lorenz/30min"
+/>
+<input type="hidden" name="_append" value="false" />
+
+</form>

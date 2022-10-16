@@ -24,6 +24,8 @@ $hme-blue: $prussian-blue;
 $hme-blue2: $blue-ncs;
 $hme-red: $imperial-red;
 
+$danger: $imperial-red;
+
 $hme-maroon: #B81365;
 $light-grey: #f0f0f0;
 $grey: #959595;
@@ -53,9 +55,16 @@ $navbar-light-hover-color:          $secondary;
 $navbar-light-active-color:         $secondary;
 
 $nav-link-color: $white;
+$nav-link-hover-color: $secondary;
 $nav-pills-link-active-color:       $white;
 $nav-pills-link-active-bg:          transparent;
 $nav-pills-border-radius:           50%;
+
+$form-label-margin-bottom: 0rem;
+$form-label-font-weight: 400;
+$form-label-font-size: 1rem;
+
+
 
 $custom-colors: (
   "hme-blue": $hme-blue,

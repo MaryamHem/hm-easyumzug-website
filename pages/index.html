@@ -24,165 +24,18 @@ permalink: /
   </div>
 </section>
 
-<!-- Buchungstool -->
+<!-- Booking form -->
 
 <section class=" text-white blue-grad bg-hme-blue">
-  <div class="container p-5">
+  <div class="container py-5">
+    <h2 class="text-center fw-normal mt-3">Buche ein Gespräch mit<br> deinem persönlichen Umzugsberater</h2>
 
-    <h2 class="text-center fw-normal mt-3">Buche ein Gespraech mit<br> deinem persoenlichen Umzugsberater</h2>
-
-    <form id="bookingForm" class="mt-5" action="_https://submit-form.com/Q62bnjrt" target="_blank" novalidate>
-
-      <!-- Form Nav -->
-      <ul class="nav nav-pills d-flex align-items-center justify-content-center" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active nav-link-hme" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#tab-1" type="button" role="tab" aria-controls="pills-a" aria-selected="true">
-            <i class="fa-regular fa-clock fa-lg"></i>
-          </button>          
-        </li>
-        <span class="nav-separator mx-3"></span>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link nav-link-hme" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#tab-2" type="button" role="tab" aria-controls="pills-b" aria-selected="false"><i class="fa-solid fa-right-from-bracket fa-lg"></i></button>
-        </li>
-        <span class="nav-separator mx-3"></span>
-        <li class="nav-item nav-link-hme" role="presentation">
-          <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#tab-3" type="button" role="tab" aria-controls="pills-c" aria-selected="false"><i class="fa-solid fa-right-to-bracket fa-lg"></i></button>
-        </li>
-        <span class="nav-separator mx-3"></span>
-        <li class="nav-item nav-link-hme" role="presentation">
-          <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#tab-4" type="button" role="tab" aria-controls="pills-d" aria-selected="false"><i class="fa-solid fa-person-circle-plus fa-lg"></i></button>
-        </li>
-        <span class="nav-separator mx-3"></span>
-        <li class="nav-item nav-link-hme" role="presentation">
-          <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#tab-5" type="button" role="tab" aria-controls="pills-e" aria-selected="false"><i class="fa-solid fa-user fa-lg"></i></button>
-        </li>
-      </ul>
-
-      <!-- Form Content -->
-      <div class="tab-content p-3" id="pills-tabContent">
-
-        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
-          <div class="row gx-5 mt-5">
-            <div class="col-5 fw-normal text-end">
-              <label for="date" class="form-label">Umzugsdatum</label>
-            </div>
-            <div class="col-4">
-              <input id="date" type="date" class="form-control" name="Datum" required>
-            </div>
-          </div>
-          <div class="row gx-5 mt-3">
-            <div class="col-5 fw-normal text-end">
-              <label for="flexibleDate">Flexibles Datum?</label>
-            </div>
-            <div class="col-7">
-              <input class="form-check-input" type="radio" name="flexibleDate" id="flexibleDateYes" >
-              <label class="form-check-label me-3" for="flexibleDateYes">
-                Ja
-              </label>
-              <input class="form-check-input" type="radio" name="flexibleDate" id="flexibleDateNo" >
-              <label class="form-check-label" for="flexibleDateNo">
-                Nein
-              </label>            
-            </div>
-          </div>
-          <div class="row gx-5 mt-5">
-            <div class="col-4 offset-4">
-              <a class="d-block btn btn-outline-secondary btnNext" role="button">Weiter</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
-          <h5 class="text-center text-secondary">Auszug</h5>
-
-          <div class="row g-3 my-2">
-            <div class="col-4 fw-semibold">
-              <label for="addressOut" class="form-label">Auszugsadresse</label>
-            </div>
-            <div class="col-12">
-              <input type="text" class="form-control" id="addressOut" name="addressOut">
-            </div>
-          </div>
-          <div class="row g-3 my-2">
-            <div class="col-4 fw-semibold">
-              <label for="etage" class="form-label">Etage</label>
-            </div>
-            <div class="col-8">
-              <select class="form-select" aria-label="Etage">
-                <option selected>Auswaehlen</option>
-                <option value="1">EG</option>
-                <option value="2">1.OG</option>
-                <option value="3">2.OG</option>
-                <option value="4">3.OG oder hoeher</option>
-                <option value="5">Einfamilienhaus</option>
-                <option value="6">Souterrain</option>
-                <option value="7">Keller</option>
-                <option value="8">Nichts zutreffend</option>
-              </select>
-            </div>
-            <div class="col-4 fw-semibold">
-              <label for="aufzug">Aufzug vorhanden?</label>
-            </div>
-            <div class="col-8">
-              <input class="form-check-input" type="radio" name="Aufzug" id="AufzugJa" >
-              <label class="form-check-label me-3" for="AufzugJa">
-                Ja
-              </label>
-              <input class="form-check-input" type="radio" name="Aufzug" id="AufzugNein" >
-              <label class="form-check-label" for="AufzugNein">
-                Nein
-              </label>            
-            </div>
-            <div class="col-6 fw-semibold">
-              <label for="aufzug">Halteverbotszone erforderlich?</label>
-            </div>
-            <div class="col-6">
-              <input class="form-check-input" type="radio" name="Halteverbot" id="HalteverbotJa" >
-              <label class="form-check-label me-3" for="HalteverbotJa">
-                Ja
-              </label>
-              <input class="form-check-input" type="radio" name="Halteverbot" id="HalteverbotNein" >
-              <label class="form-check-label" for="HalteverbotNein">
-                Nein
-              </label>            
-            </div>
-          </div>
-
-
-
-          <div class="row g-3 my-3 align-items-center">
-            <ul class="nav nav-pills nav-fill">
-              <li class="nav-item">
-                <a class="nav-link-custom btn btn-outline-grey btnPrevious" role="button">Zurueck</a>
-              </li>
-              <li class="nav-item">              
-                <button class="nav-link-custom active btn btnNext" type="submit">Abschicken</button>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-
-        <div class="tab-pane fade" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab" tabindex="0">
-
-        </div>
-        <div class="tab-pane fade" id="pills-d" role="tabpanel" aria-labelledby="pills-d-tab" tabindex="0">
-
-        </div>
-      </div>
-
-      <input
-      type="hidden"
-      name="_redirect"
-      value="https://calendly.com/christopher-lorenz/30min"
-      />
-      <input type="hidden" name="_append" value="false" />
-
-    </form>
+    {% include booking-form.html %}
 
   </div>
 </section>
+
+<!-- Customer reviews -->
 
 <div class="container py-5 my-5">
   <h2 class="text-hme-blue my-5">Einfach Umziehen einfachen mit dem <span class="text-secondary">HM-Easyumzug</span>-Prozess</h2>
