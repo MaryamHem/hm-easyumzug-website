@@ -1,8 +1,8 @@
 
-<form id="bookingForm" class="mt-5" action="_https://submit-form.com/Q62bnjrt" target="_blank" novalidate>
+<form id="bookingForm" class="mt-5" action="https://submit-form.com/Q62bnjrt" target="_blank" novalidate>
 
   <!-- Form Nav -->
-  <ul class="nav nav-pills d-flex align-items-center justify-content-center" id="pills-tab" role="tablist">
+  <ul class="nav nav-pills d-flex align-items-center justify-content-center pb-3" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
       <button class="nav-link active nav-link-hme" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#tab-1" type="button" role="tab" aria-controls="pills-a" aria-selected="true">
         <!-- <i class="fa-regular fa-clock fa-lg"></i> -->
@@ -46,7 +46,7 @@
       <div class="col-5 col-md-5 text-end">
         <label for="date" class="col-form-label">Umzugsdatum</label>
       </div>
-      <div class="col-7 col-md-4">
+      <div class="col-7 col-md-3">
         <input id="date" type="date" class="form-control" name="1_1-Umzugsdatum" required>
       </div>
     </div>
@@ -96,19 +96,19 @@
       </div>
       <div class="row gx-3 gx-md-5 mt-3">
         <div class="col-5 col-md-3 offset-md-2">
-          <label for="etage" class="col-form-label">Etage Auszugsort</label>
+          <label for="floorOut" class="col-form-label">Etage Auszugsort</label>
         </div>
         <div class="col-7 col-md-5">
-          <select class="form-select" aria-label="Floor" id="floor" name="2_2-EtageAuszug" required>
+          <select class="form-select" aria-label="Floor" id="floorOut" name="2_2-EtageAuszug" required>
             <option value="..." selected>Auswaehlen</option>
             <option value="EG">EG</option>
             <option value="1.OG">1.OG</option>
             <option value="2.OG">2.OG</option>
-            <option value="4">3.OG oder hoeher</option>
-            <option value="5">Einfamilienhaus</option>
-            <option value="6">Souterrain</option>
-            <option value="7">Keller</option>
-            <option value="8">Nichts zutreffend</option>
+            <option value="3.OG">3.OG oder hoeher</option>
+            <option value="Einfamilienhaus">Einfamilienhaus</option>
+            <option value="Souterrain">Souterrain</option>
+            <option value="Keller">Keller</option>
+            <option value="Nichts zutreffend">Nichts zutreffend</option>
           </select>
         </div>
       </div>
@@ -156,7 +156,7 @@
       </div> -->
 
       <div class="row gx-3 gx-md-5 mt-3">
-        <div class="col-5 col-md-4 offset-md-2">
+        <div class="col-5 col-md-3 offset-md-2">
           <label for="elevator2">Halteverbotszone erforderlich?</label>
         </div>
         <div class="col-6">
@@ -172,20 +172,262 @@
           <a class="d-block btn btn-outline-grey btnPrevious" role="button">Zurück</a>
         </div>
         <div class="col-6 col-md-4">
-          <!-- <a class="d-block btn btn-outline-secondary btnNext" role="button">Daten übertragen</a> -->
-          <button class="d-block w-100 btn btn-outline-secondary btnNext" type="submit">Daten übertragen</button>
+          <a class="d-block btn btn-outline-secondary btnNext" role="button">Weiter</a>
         </div>
       </div>
 
     </div>
 
+    <!-- tab 3 -->
+
     <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+
+      <div class="row gx-3 gx-md-5 mt-5">
+        <div class="col-6 col-md-4 offset-md-2">
+          <label for="addressIn" class="form-label">Adresse Einzugsort</label>
+        </div>
+        <div class="col-12 col-md-8 offset-md-2">
+          <input type="text" class="form-control" id="addressIn" name="3_1-AdresseEinzug" required>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="floorIn" class="col-form-label">Etage Auszugsort</label>
+        </div>
+        <div class="col-7 col-md-5">
+          <select class="form-select" aria-label="Floor" id="floorIn" name="3_2-EtageEinzug" required>
+            <option value="..." selected>Auswaehlen</option>
+            <option value="EG">EG</option>
+            <option value="1.OG">1.OG</option>
+            <option value="2.OG">2.OG</option>
+            <option value="3.OG">3.OG oder hoeher</option>
+            <option value="Einfamilienhaus">Einfamilienhaus</option>
+            <option value="Souterrain">Souterrain</option>
+            <option value="Keller">Keller</option>
+            <option value="Nichts zutreffend">Nichts zutreffend</option>
+          </select>
+        </div>
+      </div>
+      <!-- <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="elevator" class="form-label">Aufzug vorhanden?</label>
+        </div>
+        <div class="col-7">
+          <input class="form-check-input" type="radio" name="Aufzug" id="AufzugJa" >
+          <label class="form-check-label me-3" for="AufzugJa">
+            Ja
+          </label>
+          <input class="form-check-input" type="radio" name="Aufzug" id="AufzugNein" >
+          <label class="form-check-label" for="AufzugNein">
+            Nein
+          </label>            
+        </div>
+      </div> -->
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="elevatorIn">Aufzug vorhanden?</label>
+        </div>
+        <div class="col-7">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="elevatorIn" name="3_3-AufzugVorhandenEinzug">
+            <label class="form-check-label" for="elevatorIn">Ja</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="elevator" class="form-label">Halteverbotszone erforderlich?</label>
+        </div>
+        <div class="col-7">
+          <input class="form-check-input" type="radio" name="Halteverbot" id="AufzugJa" >
+          <label class="form-check-label me-3" for="HalteverbotJa">
+            Ja
+          </label>
+          <input class="form-check-input" type="radio" name="Halteverbot" id="AufzugNein" >
+          <label class="form-check-label" for="HalteverbotNein">
+            Nein
+          </label>            
+        </div>
+      </div> -->
+
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-2">
+          <label for="signsIn">Halteverbotszone erforderlich?</label>
+        </div>
+        <div class="col-6">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="signsIn" name="3_4-HalteverbotEinzug">
+            <label class="form-check-label" for="signsIn">Ja</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gx-3 mt-5">
+        <div class="col-6 col-md-4 offset-md-2">
+          <a class="d-block btn btn-outline-grey btnPrevious" role="button">Zurück</a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a class="d-block btn btn-outline-secondary btnNext" role="button">Weiter</a>
+        </div>
+      </div>
     </div>
+
+    <!-- tab 4 -->
+
 
     <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
+
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-5 col-md-3 offset-md-4">
+          <label for="signsIn">Extra-Services</label>
+        </div>
+      </div>      
+
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-8 col-md-3 offset-md-4">
+          <label for="packing">Einpackservice</label>
+        </div>
+        <div class="col-4">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="packing" name="4_1-Einpackservice">
+            <label class="form-check-label" for="packing">Ja</label>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-8 col-md-3 offset-md-4">
+          <label for="boxes">Umzugs- und Kleiderkartons</label>
+        </div>
+        <div class="col-4">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="boxes" name="4_2-Umzugskartons">
+            <label class="form-check-label" for="boxes">Ja</label>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-8 col-md-3 offset-md-4">
+          <label for="furniture">Ab- und Aufbau von Moebeln</label>
+        </div>
+        <div class="col-4">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="furniture" name="4_3-MoebelMontage">
+            <label class="form-check-label" for="furniture">Ja</label>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-8 col-md-3 offset-md-4">
+          <label for="storage">Einlagerung</label>
+        </div>
+        <div class="col-4">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="storage" name="4_4-Einlagerung">
+            <label class="form-check-label" for="storage">Ja</label>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-8 col-md-3 offset-md-4">
+          <label for="trash">Entruempelung und Entsorgung</label>
+        </div>
+        <div class="col-4">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="trash" name="4_5-EntruempelungUndEntsorgung">
+            <label class="form-check-label" for="trash">Ja</label>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-5 mt-5">
+        <div class="col-12 col-md-10 offset-md-2">
+          <label for="servicesAdditional" class="form-label">weitere Services (z.B. Klaviertransport oder zusaetzliche Adresse)</label>
+        </div>
+        <div class="col-12 col-md-8 offset-md-2">
+          <input type="text" class="form-control" id="servicesAdditional" name="4_5-WeitereServices"></input>
+        </div>
+      </div>
+
+      <div class="row gx-3 mt-5">
+        <div class="col-6 col-md-4 offset-md-2">
+          <a class="d-block btn btn-outline-grey btnPrevious" role="button">Zurück</a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a class="d-block btn btn-outline-secondary btnNext" role="button">Weiter</a>
+        </div>
+      </div>
     </div>
 
+    <!-- tab 5 -->
+
     <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="pills-5-tab" tabindex="0">
+
+      <div class="row gx-3 gx-md-3 mt-5">
+        <div class="col-2 col-md-2 offset-md-2">
+          <label for="salutation" class="form-label">Anrede</label>
+          <select class="form-select" aria-label="Floor" id="salutation" name="5_1-Anrede">
+            <option value="..." selected>Auswaehlen</option>
+            <option value="Frau">Frau</option>
+            <option value="Herr">Herr</option>
+            <option value="Nichts zutreffend">Nichts zutreffend</option>
+          </select>
+        </div>
+        <div class="col-3 col-md-3">
+          <label for="firstName" class="form-label">Vorname</label>
+          <input type="text" class="form-control" id="firstName" name="5_2-Vorname" required></input>
+        </div>
+        <div class="col-3 col-md-3">
+          <label for="lastName" class="form-label">Nachname</label>
+          <input type="text" class="form-control" id="lastName" name="5_3-Nachname" required></input>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-3 mt-3">
+        <div class="col-4 col-md-4 offset-md-2">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" class="form-control" id="email" name="5_4-Email" required></input>
+        </div>
+        <div class="col-4 col-md-4">
+          <label for="tel" class="form-label">Telefon</label>
+          <input type="text" class="form-control" id="tel" name="5_5-Telefon"></input>
+        </div>
+      </div>
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-12 offset-md-2">
+          Fuer Experten:
+        </div>
+        <div class="col-6 col-md-4 offset-md-2">
+          <label for="Umzugsgutliste">Umzugsgutliste vorhanden?</label>
+        </div>
+        <div class="col-6 col-md-6">
+          <div class="form-check form-switch">        
+            <input class="form-check-input" type="checkbox" role="switch" id="Umzugsgutliste" name="5_6-Umzugsgutliste">
+            <label for="Umzugsgutliste" class="form-check-label">Ja</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gx-3 gx-md-5 mt-3">
+        <div class="col-2 col-md-1 offset-md-2">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="agree" name="5_7-ZustimmungAGB" required>
+          </div>
+        </div>
+        <div class="col-10 col-md-8">
+            <label for="agree">Ich stimme den AGB und der Datenverarbeitung zu</label>
+        </div>
+      </div>
+
+      <div class="row gx-3 mt-5">
+        <div class="col-6 col-md-4 offset-md-2">
+          <a class="d-block btn btn-outline-grey btnPrevious" role="button">Zurück</a>
+        </div>
+        <div class="col-6 col-md-4">
+          <button class="d-block w-100 btn btn-outline-secondary btnNext" type="submit">Daten abschicken</button>
+        </div>
+      </div>
+
+
+      
     </div>
 
   </div>

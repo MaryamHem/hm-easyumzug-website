@@ -3,7 +3,7 @@
 /* Video container */
 /* https://codepen.io/DylanMacnab/pen/NjVXEe */
 .video-container {
-  height: 50vh;
+  height: 75vh;
   position: relative;
   overflow: hidden;
   @media(min-width: 600px) {
@@ -42,13 +42,13 @@ video {
   z-index: 10;
 }
 
-.form {
+/*.form {
   width: 35rem;
   position: relative;
   top: -20vh;
   z-index: 20;
   margin-bottom: -20vh;
-}
+}*/
 
 
 .nav-link-custom.active {

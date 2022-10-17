@@ -61,7 +61,16 @@
       rules: {
         date: "required",
         addressOut: "required",
-        floor: "required"
+        floorOut: "required",
+        addressIn: "required",
+        floorIn: "required",
+        firstName: "required",
+        lastName: "required",
+        email: {
+            required: true,
+            email: true
+          },
+        agree: "required"
       },
       errorElement: "em",
       errorPlacement: function ( error, element ) {
@@ -91,13 +100,54 @@
       }
     });
     $('#tab-2 .btnNext').click(function() {
+      const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
+      const nextTab = new bootstrap.Tab(nextTabLinkEl);
       if (v.form()) {
+        nextTab.show();
         current = '2';
+      }
+    });
+    $('#tab-3 .btnNext').click(function() {
+      const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
+      const nextTab = new bootstrap.Tab(nextTabLinkEl);
+      if (v.form()) {
+        nextTab.show();
+        current = '3';
+      }
+    });
+    $('#tab-4 .btnNext').click(function() {
+      const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
+      const nextTab = new bootstrap.Tab(nextTabLinkEl);
+      if (v.form()) {
+        nextTab.show();
+        current = '4';
+      }
+    });
+    $('#tab-5 .btnNext').click(function() {
+      if (v.form()) {
+        current = '5';
       }
     });
 
     $('#tab-2 .btnPrevious').click(function() {
-      const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').last().find('button')[0];
+      const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
+      const prevTab = new bootstrap.Tab(prevTabLinkEl);
+      prevTab.show();
+      //console.log(prevTabLinkEl);
+    });
+    $('#tab-3 .btnPrevious').click(function() {
+      const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
+      const prevTab = new bootstrap.Tab(prevTabLinkEl);
+      prevTab.show();
+      //console.log(prevTabLinkEl);
+    });
+    $('#tab-4 .btnPrevious').click(function() {
+      const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
+      const prevTab = new bootstrap.Tab(prevTabLinkEl);
+      prevTab.show();
+    });
+    $('#tab-5 .btnPrevious').click(function() {
+      const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
       const prevTab = new bootstrap.Tab(prevTabLinkEl);
       prevTab.show();
     });
