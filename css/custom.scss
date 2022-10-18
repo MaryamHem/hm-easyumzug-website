@@ -44,6 +44,8 @@ $display-font-weight: 400;
 
 $border-radius: .5rem; /* .25rem .375rem; */
 
+$font-weight-medium: 500;
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "variables";
 
@@ -100,14 +102,32 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px
-);
+  );
 
 /*   custom: 80rem,
-  form: 800px */
+form: 800px */
 
 .container {
-  max-width: 960px;
+  max-width: 960px !important;
 }
+
+$utilities: (
+ "font-weight": (
+  property: font-weight,
+  class: fw,
+  values: (
+    light: $font-weight-light,
+    lighter: $font-weight-lighter,
+    normal: $font-weight-normal,
+    medium: $font-weight-medium,
+    bold: $font-weight-bold,
+    semibold: $font-weight-semibold,
+    bolder: $font-weight-bolder
+    )
+  )
+ );
+
+
 
 
 // 5. Include remainder of required parts
@@ -170,4 +190,9 @@ a:not(.no-icon)[href^="http://"]:after, a:not(.no-icon)[href^="https://"]:after,
   padding-left: 3px;
 }
 
-@import 'additional'
+@import 'additional';
+
+.btn.btn-outline-secondary:hover {
+  color: $hme-red;
+  background-color: $white;
+}
