@@ -101,6 +101,12 @@ video {
 .btn-outline-secondary {
   color: $white;
   border-width:  2px;
+  background-image: url('/assets/button-bg-hme-blue-grad.svg');
+}
+
+.btn.btn-outline-secondary:hover {
+  color: $hme-red;
+  background-color: $white;
 }
 
 .blue-grad {
@@ -113,4 +119,26 @@ video {
 
 .bg-light-hme-blue {
   background-color:  #DADDE3;
+}
+
+.road {
+  background-image: url(/assets/road.svg);
+  background-repeat: no-repeat;
+  background-position: center top 5rem;
+  min-height: 50rem;
+}
+
+.path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
