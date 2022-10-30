@@ -3,11 +3,11 @@
 /* Video container */
 /* https://codepen.io/DylanMacnab/pen/NjVXEe */
 .video-container {
-  height: 75vh;
+  height: calc(100vh - 88px);
   position: relative;
   overflow: hidden;
   @media(min-width: 600px) {
-    height: 75vh;
+    height: 100vh;
   }
 }
 
@@ -55,7 +55,7 @@ video {
   color: $white;
 }
 .nav-fill .nav-item .nav-link-custom {
-    width: 100%;
+  width: 100%;
 }
 .nav-link.active {
   font-size: 1rem;
@@ -110,11 +110,11 @@ video {
 }
 
 .blue-grad {
-    background-image: radial-gradient(farthest-corner at 100% 0%, #11366A 20%, #113C70 150%);
+  background-image: radial-gradient(farthest-corner at 100% 0%, #11366A 20%, #113C70 150%);
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-    border-width:  2px;
+  border-width:  2px;
 }
 
 .bg-light-hme-blue {
@@ -123,7 +123,7 @@ video {
 
 .container.container-road {
   @media(max-width: 992px) {
-    max-width: 540px!important;
+    max-width: 400px!important;
   }
 }
 .road {
@@ -158,18 +158,13 @@ video {
   }
 }
 
-
-.path {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: dash 5s linear alternate infinite;
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+.cta {
+  height: 40rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://www.valuerisk.com/wp-content/uploads/2019/11/value_background_02-1.jpg");
 }
