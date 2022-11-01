@@ -168,3 +168,57 @@ video {
   background-attachment: fixed;
   background-image: url("https://www.valuerisk.com/wp-content/uploads/2019/11/value_background_02-1.jpg");
 }
+
+
+.text-image-row {
+  position: relative;
+}
+.image-wrapper .image{
+  width: 57.5%;
+  position: relative;
+
+
+  @media (min-width: 1600px) {
+    max-width: calc(50vw + 113px);
+  }
+  @media (max-width: 1600px) {
+    height: 450px;
+    overflow: hidden;
+  }
+  @media(max-width: 992px) {
+    height: 50vw;
+    width: 80vw;
+  }
+}
+.image img {
+  display: block;
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  @media (max-width: 1600px) {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+}
+
+.text-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding-top: 59px;
+  @media(max-width: 992px) {
+    position: relative;
+  }
+}
+
+.blue{
+  color: #80C7E3;
+}
+.display-2 {
+  @media(max-width: 1600px) {
+    font-size: 3.5rem;
+  }
+}

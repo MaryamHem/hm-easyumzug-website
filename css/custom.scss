@@ -110,6 +110,9 @@ form: 800px */
 .container {
   max-width: 960px !important;
 }
+.container-fluid {
+  max-width: 1600px !important;
+}
 
 $utilities: (
  "font-weight": (
@@ -126,6 +129,20 @@ $utilities: (
     )
   )
  );
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$display-font-family: null;
+$display-font-style:  null;
+$display-font-weight: 600;
+$display-line-height: 0.8;
 
 
 
