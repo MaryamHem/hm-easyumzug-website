@@ -170,55 +170,123 @@ video {
 }
 
 
-.text-image-row {
+/*.text-image-row {
   position: relative;
 }
 .image-wrapper .image{
-  width: 57.5%;
   position: relative;
-
-
-  @media (min-width: 1600px) {
-    max-width: calc(50vw + 113px);
-  }
-  @media (max-width: 1600px) {
+  overflow: hidden;
+  height: 50vw;
+  width: 80vw;
+  @media(min-width: 992px) {
+    width: 57.5%;
     height: 450px;
-    overflow: hidden;
-  }
-  @media(max-width: 992px) {
-    height: 50vw;
-    width: 80vw;
+  }  
+  @media (min-width: 1600px) {
+    max-width: calc(50vw + 100px);
   }
 }
-.image img {
+
+.image-wrapper .image.image-right{
+  position: relative;
+  overflow: hidden;
+  height: 50vw;
+  width: 80vw;
+  float: right;
+  @media(min-width: 992px) {
+    height: 450px;
+  }  
+  @media (min-width: 1600px) {
+    max-width: calc(50vw + 252px);
+  }
+}
+  
+
+.image-wrapper .image img {
   display: block;
-  width: 100%;
   vertical-align: middle;
   border-style: none;
-  @media (max-width: 1600px) {
-    width: auto;
-    height: 100%;
-    position: absolute;
-    right: 0;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  @media (min-width: 1600px) {
+    width: 100%;
+    height:  auto;
+  }
 }
+
+.image-wrapper .image.image-right img {
+  display: block;
+  vertical-align: middle;
+  border-style: none;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  @media (min-width: 1600px) {
+    width: 100%;
+    height:  auto;
+  }
 }
+
+
 
 .text-wrapper {
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
-  padding-top: 59px;
-  @media(max-width: 992px) {
+  padding-top: 60px;
+  @media(max-width: 991.98px) {
     position: relative;
+  }
+}*/
+
+
+.image {
+  width: 57.67%;
+  height: 450px;
+  @media(max-width: 991.98px) {
+    height: 50vw;
+    width: 80vw;
+  }
+  @media (min-width: 1600px) {
+    max-width: calc(50vw + 250px);
+    height: auto;
+  }
+}
+.image img {
+  width: auto;
+  height: 100%;
+  @media (min-width: 1600px) {
+    width: 100%;
+    height: auto;
+    position: relative!important;
   }
 }
 
+.text-wrapper {
+  @media(max-width: 991.98px) {
+    position: relative!important;
+  }
+}
+
+
 .blue{
   color: #80C7E3;
+  /*background-color: #CBE1E9;*/
+}
+.dark-blue{
+  color: #788DAB;
+  /*background-color: #BDC7D6;*/
+}
+.grey{
+  color: #80ABBB;
+  /*background-color: #D8E7ED;*/
 }
 .display-2 {
-  @media(max-width: 1600px) {
+  font-size: 2rem;
+  @media(min-width: 992px) {
     font-size: 3.5rem;
   }
 }
