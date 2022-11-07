@@ -55,6 +55,12 @@ $navbar-nav-link-padding-x:         1rem;
 $navbar-light-color:                $hme-blue;
 $navbar-light-hover-color:          $secondary;
 $navbar-light-active-color:         $secondary;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: $hme-blue;
+$navbar-toggler-font-size:          $font-size-base;
+$navbar-toggler-padding-y:          .25rem;
+$navbar-toggler-padding-x:          6px;
+
 
 $nav-link-color: $white;
 $nav-link-hover-color: $secondary;
@@ -65,8 +71,6 @@ $nav-pills-border-radius:           50%;
 $form-label-margin-bottom: 0rem;
 $form-label-font-weight: 400;
 $form-label-font-size: 1rem;
-
-
 
 $custom-colors: (
   "hme-blue": $hme-blue,
@@ -206,6 +210,54 @@ a:not(.no-icon)[href^="http://"]:after, a:not(.no-icon)[href^="https://"]:after,
   text-decoration: none;
   padding-left: 3px;
 }
+
+.btn-hme-outline-red {
+  --bs-btn-color: #{$hme-blue};
+  --bs-btn-bg: #{$white};
+  --bs-btn-border-color: #{$hme-red};
+  --bs-btn-border-radius: #{$border-radius};
+  --bs-btn-border-width: 1px;
+  --bs-btn-hover-color: #{$hme-red};
+  --bs-btn-hover-bg: var(--bs-btn-bg);
+  --bs-btn-hover-border-color: var(--bs-btn-border-color);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn-hme {
+  --bs-btn-color: #{$white};
+  --bs-btn-bg: #{$hme-blue};
+  background-image: url('/assets/button-bg-hme-blue-grad.svg');
+  --bs-btn-border-color: #{$hme-red};
+  --bs-btn-border-radius: #{$border-radius};
+  --bs-btn-border-width: 2px;
+  --bs-btn-hover-color: #{$hme-red};
+  --bs-btn-hover-bg: #{$white};
+  --bs-btn-hover-border-color: var(--bs-btn-border-color);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
+}
+
+/* border border-2 rounded-circle */
+
+.btn-outline-secondary {
+  color: $white;
+  border-width:  2px;
+  background-image: url('/assets/button-bg-hme-blue-grad.svg');
+}
+
+.btn.btn-outline-secondary:hover {
+  color: $hme-red;
+  background-color: $white;
+}
+
+.navbar-collapse.collapsing ul.navbar-nav,
+.navbar-collapse.collapse.show ul.navbar-nav {
+  align-items: flex-end;
+}
+
 
 @import 'additional';
 
