@@ -71,6 +71,18 @@ $nav-pills-border-radius:           50%;
 $form-label-margin-bottom: 0rem;
 $form-label-font-weight: 400;
 $form-label-font-size: 1rem;
+$form-switch-width: 3rem;
+$form-check-input-width: 1.625rem; /* = lineheight for input */
+
+$form-switch-padding-start: 3.5rem;
+$input-border-radius: 0.25rem;
+$form-select-border-radius: 0.25rem;
+
+$form-check-inline-margin-end: 0rem;
+$form-check-margin-bottom: 0rem;
+$form-feedback-tooltip-border-radius: 0.25rem;
+$form-feedback-tooltip-padding-y: 0rem;
+$form-feedback-tooltip-padding-x: 0.25rem;
 
 $custom-colors: (
   "hme-blue": $hme-blue,
@@ -256,6 +268,31 @@ a:not(.no-icon)[href^="http://"]:after, a:not(.no-icon)[href^="https://"]:after,
 .navbar-collapse.collapsing ul.navbar-nav,
 .navbar-collapse.collapse.show ul.navbar-nav {
   align-items: flex-end;
+}
+
+label {
+  /* padding-top: 0.375rem;
+  padding-bottom: 0.375rem; */
+  /* padding: $input-padding-y $input-padding-x; */
+}
+.form-check.form-switch{
+  /* margin-top: 0.375rem; */
+  padding-top: $input-padding-y;
+  padding-bottom: $input-padding-y;
+}
+.form-check-label-hme {
+  font-weight: 300;
+  font-size: 0.8125rem;
+}
+.invalid-tooltip {
+  color: $white;
+  /* margin-top: -0.25rem; */
+  font-size: 0.8125rem;
+}
+.lh-1-responsive {
+  @media(max-width: 767.98px) {
+    line-height: 1;
+  }
 }
 
 

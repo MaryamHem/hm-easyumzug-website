@@ -60,13 +60,19 @@
         return !this.optional(element);
       }
       return "dependency-mismatch";
-    }, $.validator.messages.required)
+    }, $.validator.messages.required);
+
+    $.validator.addMethod("notEqual", function(value, element, param) {
+        return this.optional(element) || value != param;
+    }, $.validator.messages.required);
 
     var v=$( "#bookingForm" ).validate( {
       rules: {
         date: "required",
         addressOut: "required",
-        floorOut: "required",
+        floorOut: {
+            required: true
+          },
         addressIn: "required",
         floorIn: "required",
         firstName: "required",
@@ -77,11 +83,12 @@
           },
         agree: "required"
       },
-      errorElement: "em",
+      errorElement: "div",
       errorPlacement: function ( error, element ) {
           // Add the `invalid-feedback` class to the error element
-          error.addClass( "invalid-feedback" );
-
+          //error.addClass( "invalid-feedback" );
+          error.addClass( "invalid-tooltip" );
+          
           if ( element.prop( "type" ) === "checkbox" ) {
             error.insertAfter( element.next( "label" ) );
           } else {

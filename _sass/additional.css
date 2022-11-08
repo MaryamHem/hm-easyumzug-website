@@ -60,6 +60,11 @@ video {
 .nav-link.active {
   font-size: 1rem;
 }
+.navbar .navbar-brand img {
+  @media(max-width: 767.98px) {
+    height: 60px;
+  }
+}
 
 /* Booking tool nav pills  */
 
@@ -76,9 +81,9 @@ video {
 .nav-pills .nav-link.nav-link-hme img {
   width: 2rem;
   height: 2rem;
-  @media(max-width: 768px) {
-    width: 1.5rem;
-    height: 1.5rem;
+  @media(max-width: 767.98px) {
+    width: 1.75rem;
+    height: 1.75rem;
   }
 }
 .nav-pills .nav-link.nav-link-hme.active {
@@ -87,27 +92,15 @@ video {
   background-image: url('/assets/icon-bg-hme-blue-grad.svg');
 }
 .nav-separator {
-  width: 3rem; 
+  width: 2.5rem; 
   border-top: 1px solid $white;
   margin: 0 1rem;
-  @media(max-width: 768px) {
-    width: 1.5rem;
-    margin: 0 .5rem;
+  @media(max-width: 767.98px) {
+    width: 0.75rem;
+    margin: 0 0.25rem;
   }
 }
 
-/* border border-2 rounded-circle */
-
-.btn-outline-secondary {
-  color: $white;
-  border-width:  2px;
-  background-image: url('/assets/button-bg-hme-blue-grad.svg');
-}
-
-.btn.btn-outline-secondary:hover {
-  color: $hme-red;
-  background-color: $white;
-}
 
 .blue-grad {
   background-image: radial-gradient(farthest-corner at 100% 0%, #11366A 20%, #113C70 150%);
