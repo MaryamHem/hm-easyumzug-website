@@ -1,5 +1,13 @@
 
 <form id="bookingForm" class="mt-5" action="https://submit-form.com/Q62bnjrt" target="_blank" novalidate>
+  <input
+  type="hidden"
+  name="_redirect"
+  value="https://calendly.com/hm-easyumzug/30min"
+  />
+  <input type="hidden" name="_append" value="false" />
+  <input type="hidden" name="_email.subject" value="Neue Kundenanfrage" />
+
 
   <!-- Form Nav -->
   <ul class="nav nav-pills d-flex align-items-center justify-content-center pb-3" id="pills-tab" role="tablist">
@@ -44,7 +52,7 @@
   <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
     <div class="row gx-3 gx-md-5 mt-5">
       <div class="col-12 col-md-12 text-center">
-        <label for="date" class="col-form-label">Umzugsdatum</label>
+        <label for="date" class="col-form-label required">Umzugsdatum</label>
       </div>
       <div class="col-8 offset-2 col-md-4 offset-md-4 position-relative">
         <input id="date" type="date" class="form-control" name="1_1-Umzugsdatum" required>
@@ -70,11 +78,13 @@
     </div>
   </div>
 
+  <!-- tab 2 -->
+
   <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
 
-    <div class="row gx-3 gx-md-5 mt-5">
+    <div class="row gx-3 gx-md-5 mt-3 mt-md-5">
       <div class="col-6 col-md-4 offset-md-2">
-        <label for="addressOut" class="form-label">Adresse Auszugsort</label>
+        <label for="addressOut" class="form-label required">Adresse Auszugsort</label>
       </div>
       <div class="col-12 col-md-8 offset-md-2 position-relative">
         <input type="text" class="form-control" id="addressOut" name="2_1-AdresseAuszug" required>
@@ -82,7 +92,7 @@
     </div>
     <div class="row gx-3 gx-md-5 mt-3">
       <div class="col-6 col-md-3 offset-md-2">
-        <label for="floorOut" class="col-form-label">Etage Auszugsort</label>
+        <label for="floorOut" class="col-form-label required">Etage Auszugsort</label>
       </div>
       <div class="col-6 col-md-5 position-relative">
         <select class="form-select" aria-label="Floor" id="floorOut" name="2_2-EtageAuszug" required>
@@ -140,9 +150,9 @@
 
   <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
 
-    <div class="row gx-3 gx-md-5 mt-5">
+    <div class="row gx-3 gx-md-5 mt-3 mt-md-5">
       <div class="col-6 col-md-4 offset-md-2">
-        <label for="addressIn" class="form-label">Adresse Einzugsort</label>
+        <label for="addressIn" class="form-label required">Adresse Einzugsort</label>
       </div>
       <div class="col-12 col-md-8 offset-md-2 position-relative">
         <input type="text" class="form-control" id="addressIn" name="3_1-AdresseEinzug" required>
@@ -150,7 +160,7 @@
     </div>
     <div class="row gx-3 gx-md-5 mt-3">
       <div class="col-6 col-md-3 offset-md-2">
-        <label for="floorIn" class="col-form-label">Etage Einzugsort</label>
+        <label for="floorIn" class="col-form-label required">Etage Einzugsort</label>
       </div>
       <div class="col-6 col-md-5 position-relative">
         <select class="form-select" aria-label="FloorIn" id="floorIn" name="3_2-EtageEinzug" required>
@@ -206,90 +216,85 @@
 
   <!-- tab 4 -->
 
-
   <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
 
-    <div class="row gx-3 gx-md-5 mt-5">
+    <div class="row gx-3 gx-md-5 mt-3 mt-md-5">
       <div class="col-12 col-md-4 offset-md-4 text-center">
-        <p class="fw-semibold fs-5 mb-0">Extra-Services</p>
+        <p class="fw-semibold fs-5 mb-0">Services</p>
       </div>
     </div> 
 
     <div class="row gx-3 gx-md-5 mt-3">
       <div class="col-5 col-md-2 offset-md-3">
-        <label class="form-check-label form-check-label-hme pe-1" for="parkingIn">Nein</label>
-        <div class="form-check form-switch form-check-inline">        
-          <input class="form-check-input" type="checkbox" role="switch" id="parkingIn" name="3_4-Halteverbot">
-          <label class="form-check-label form-check-label-hme" for="parking">Ja</label>
+        <label class="form-check-label form-check-label-hme pe-1" for="packing">Nein</label>
+        <div class="form-check form-switch form-check-inline">
+          <input class="form-check-input" type="checkbox" role="switch" id="packing" name="4_1-Einpackservice">
+          <label class="form-check-label form-check-label-hme" for="packing">Ja</label>
         </div>
       </div>
       <div class="col-7 col-md-7">
-        <label for="parkingIn" class="col-form-label lh-1-responsive">Halteverbotszone erforderlich?</label>
+        <label for="packing" class="col-form-label lh-1-responsive">Einpackservice</label>
       </div>
     </div>
 
-
     <div class="row gx-3 gx-md-5 mt-3">
-      <div class="col-8 col-md-3 offset-md-4">
-        <label for="packing">Einpackservice</label>
-      </div>
-      <div class="col-4">
-        <div class="form-check form-switch">        
-          <input class="form-check-input" type="checkbox" role="switch" id="packing" name="4_1-Einpackservice">
-          <label class="form-check-label" for="packing">Ja</label>
-        </div>
-      </div>
-    </div>
-    <div class="row gx-3 gx-md-5 mt-3">
-      <div class="col-8 col-md-3 offset-md-4">
-        <label for="boxes">Umzugs- und Kleiderkartons</label>
-      </div>
-      <div class="col-4">
-        <div class="form-check form-switch">        
+      <div class="col-5 col-md-2 offset-md-3">
+        <label class="form-check-label form-check-label-hme pe-1" for="boxes">Nein</label>
+        <div class="form-check form-switch form-check-inline">
           <input class="form-check-input" type="checkbox" role="switch" id="boxes" name="4_2-Umzugskartons">
-          <label class="form-check-label" for="boxes">Ja</label>
+          <label class="form-check-label form-check-label-hme" for="boxes">Ja</label>
         </div>
       </div>
-    </div>
-    <div class="row gx-3 gx-md-5 mt-3">
-      <div class="col-8 col-md-3 offset-md-4">
-        <label for="furniture">Ab- und Aufbau von Moebeln</label>
+      <div class="col-7 col-md-7">
+        <label for="boxes" class="col-form-label lh-1-responsive">Umzugs- und Kleiderkartons</label>
       </div>
-      <div class="col-4">
-        <div class="form-check form-switch">        
+    </div>
+
+    <div class="row gx-3 gx-md-5 mt-3">
+      <div class="col-5 col-md-2 offset-md-3">
+        <label class="form-check-label form-check-label-hme pe-1" for="furniture">Nein</label>
+        <div class="form-check form-switch form-check-inline">
           <input class="form-check-input" type="checkbox" role="switch" id="furniture" name="4_3-MoebelMontage">
-          <label class="form-check-label" for="furniture">Ja</label>
+          <label class="form-check-label form-check-label-hme" for="furniture">Ja</label>
         </div>
       </div>
-    </div>
-    <div class="row gx-3 gx-md-5 mt-3">
-      <div class="col-8 col-md-3 offset-md-4">
-        <label for="storage">Einlagerung</label>
+      <div class="col-7 col-md-7">
+        <label for="furniture" class="col-form-label lh-1-responsive">Ab- und Aufbau von Möbeln</label>
       </div>
-      <div class="col-4">
-        <div class="form-check form-switch">        
+    </div>
+
+    <div class="row gx-3 gx-md-5 mt-3">
+      <div class="col-5 col-md-2 offset-md-3">
+        <label class="form-check-label form-check-label-hme pe-1" for="storage">Nein</label>
+        <div class="form-check form-switch form-check-inline">
           <input class="form-check-input" type="checkbox" role="switch" id="storage" name="4_4-Einlagerung">
-          <label class="form-check-label" for="storage">Ja</label>
+          <label class="form-check-label form-check-label-hme" for="storage">Ja</label>
         </div>
       </div>
+      <div class="col-7 col-md-7">
+        <label for="storage" class="col-form-label lh-1-responsive">Einlagerung</label>
+      </div>
     </div>
+
     <div class="row gx-3 gx-md-5 mt-3">
-      <div class="col-8 col-md-3 offset-md-4">
-        <label for="trash">Entruempelung und Entsorgung</label>
-      </div>
-      <div class="col-4">
-        <div class="form-check form-switch">        
-          <input class="form-check-input" type="checkbox" role="switch" id="trash" name="4_5-EntruempelungUndEntsorgung">
-          <label class="form-check-label" for="trash">Ja</label>
+      <div class="col-5 col-md-2 offset-md-3">
+        <label class="form-check-label form-check-label-hme pe-1" for="trash">Nein</label>
+        <div class="form-check form-switch form-check-inline">
+          <input class="form-check-input" type="checkbox" role="switch" id="trash" name="4_5-Entsorgung">
+          <label class="form-check-label form-check-label-hme" for="trash">Ja</label>
         </div>
       </div>
-    </div>
-    <div class="row gx-3 gx-md-5 mt-5">
-      <div class="col-12 col-md-10 offset-md-2">
-        <label for="servicesAdditional" class="form-label">weitere Services (z.B. Klaviertransport oder zusaetzliche Adresse)</label>
+      <div class="col-7 col-md-7">
+        <label for="trash" class="col-form-label lh-1-responsive">Entrümpelung und Entsorgung</label>
       </div>
-      <div class="col-12 col-md-8 offset-md-2">
-        <input type="text" class="form-control" id="servicesAdditional" name="4_5-WeitereServices"></input>
+    </div>
+
+    <div class="row gx-3 gx-md-5 mt-3">
+      <div class="col-12 col-md-6 offset-md-3">
+        <label for="servicesAdditional" class="form-label lh-1">weitere Services (z.B. Klaviertransport oder zusätzliche Adresse)</label>
+      </div>
+      <div class="col-12 col-md-6 offset-md-3">
+        <input type="text" class="form-control" id="servicesAdditional" name="4_6-WeitereServices"></input>
       </div>
     </div>
 
@@ -307,58 +312,59 @@
 
   <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="pills-5-tab" tabindex="0">
 
-    <div class="row gx-3 gx-md-3 mt-5">
-      <div class="col-4 col-md-2 offset-md-2">
+    <div class="row gx-3 gx-md-3 mt-3 mt-md-5">
+      <div class="col-6 col-md-2 offset-md-2">
         <label for="salutation" class="form-label">Anrede</label>
         <select class="form-select" aria-label="Floor" id="salutation" name="5_1-Anrede">
-          <option value="..." selected>Auswaehlen</option>
+          <option value="" selected>Auswählen</option>
           <option value="Frau">Frau</option>
           <option value="Herr">Herr</option>
           <option value="Nichts zutreffend">Nichts zutreffend</option>
         </select>
       </div>
-      <div class="col-12 col-md-3">
-        <label for="firstName" class="form-label">Vorname</label>
+      <div class="col-12 col-md-3 position-relative">
+        <label for="firstName" class="form-label required">Vorname</label>
         <input type="text" class="form-control" id="firstName" name="5_2-Vorname" required></input>
       </div>
-      <div class="col-12 col-md-3">
-        <label for="lastName" class="form-label">Nachname</label>
+      <div class="col-12 col-md-3 position-relative">
+        <label for="lastName" class="form-label required">Nachname</label>
         <input type="text" class="form-control" id="lastName" name="5_3-Nachname" required></input>
       </div>
     </div>
-    <div class="row gx-3 gx-md-3 mt-3">
-      <div class="col-12 col-md-4 offset-md-2">
-        <label for="email" class="form-label">Email</label>
-        <input type="text" class="form-control" id="email" name="5_4-Email" required></input>
+    <div class="row gx-3 gx-md-3 mt-4 mt-md-3">
+      <div class="col-12 col-md-4 offset-md-2 position-relative">
+        <label for="email" class="form-label required">Email</label>
+        <input type="text" class="form-control" id="email" name="email" required></input>
       </div>
       <div class="col-12 col-md-4">
         <label for="tel" class="form-label">Telefon</label>
         <input type="text" class="form-control" id="tel" name="5_5-Telefon"></input>
       </div>
     </div>
+
     <div class="row gx-3 gx-md-5 mt-3">
-      <div class="col-12 offset-md-2">
-        Fuer Experten:
-      </div>
-      <div class="col-6 col-md-4 offset-md-2">
-        <label for="Umzugsgutliste">Umzugsgutliste vorhanden?</label>
-      </div>
-      <div class="col-6 col-md-6">
-        <div class="form-check form-switch">        
+      <div class="col-5 col-md-2 offset-md-2">
+        <label class="form-check-label form-check-label-hme pe-1" for="Umzugsgutliste">Nein</label>
+        <div class="form-check form-switch form-check-inline position-relative">
           <input class="form-check-input" type="checkbox" role="switch" id="Umzugsgutliste" name="5_6-Umzugsgutliste">
-          <label for="Umzugsgutliste" class="form-check-label">Ja</label>
+          <label class="form-check-label form-check-label-hme" for="Umzugsgutliste">Ja</label>
         </div>
+      </div>
+      <div class="col-7 col-md-7">
+        <label for="Umzugsgutliste" class="col-form-label lh-1-responsive"><em>Für Experten: Umzugsgutliste vorhanden</em></label>
       </div>
     </div>
 
     <div class="row gx-3 gx-md-5 mt-3">
-      <div class="col-2 col-md-1 offset-md-2">
-        <div class="form-check form-switch">
+      <div class="col-5 col-md-2 offset-md-2">
+        <label class="form-check-label form-check-label-hme pe-1" for="agree">Nein</label>
+        <div class="form-check form-switch form-check-inline position-relative">
           <input class="form-check-input" type="checkbox" role="switch" id="agree" name="5_7-ZustimmungAGB" required>
+          <label class="form-check-label form-check-label-hme" for="agree">Ja</label>
         </div>
       </div>
-      <div class="col-10 col-md-8">
-        <label for="agree">Ich stimme den AGB und der Datenverarbeitung zu</label>
+      <div class="col-7 col-md-7">
+        <label for="agree" class="col-form-label lh-1-responsive required">Ich stimme den AGB und der Datenverarbeitung zu</label>
       </div>
     </div>
 
@@ -367,22 +373,9 @@
         <a class="d-block btn btn-outline-grey btnPrevious" role="button">Zurück</a>
       </div>
       <div class="col-6 col-md-4">
-        <button class="d-block w-100 btn btn-outline-secondary btnNext" type="submit">Daten abschicken</button>
+        <button class="d-block w-100 btn btn-outline-secondary btnNext" type="submit">Weiter zum Gespräch</button>
       </div>
     </div>
-
-
-
   </div>
-
-</div>
-</div>
-
-<input
-type="hidden"
-name="_redirect"
-value="https://calendly.com/hm-easyumzug/30min"
-/>
-<input type="hidden" name="_append" value="false" />
 
 </form>

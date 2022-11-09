@@ -288,10 +288,17 @@ label {
   color: $white;
   /* margin-top: -0.25rem; */
   font-size: 0.8125rem;
+  right: 8px;
+}
+.form-switch .invalid-tooltip {
+  white-space: nowrap;
+  max-width: none!important;
+  right:-30px!important;
 }
 .lh-1-responsive {
   @media(max-width: 767.98px) {
-    line-height: 1;
+    line-height: 1rem;
+    margin-top: 0.3125rem; /* col-form-label is 1.625 */
   }
 }
 
