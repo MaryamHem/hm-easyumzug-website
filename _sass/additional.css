@@ -60,12 +60,12 @@ video {
 .nav-link.active {
   font-size: 1rem;
 }
-.navbar .navbar-brand img {
+/*.navbar .navbar-brand img {
   @media(max-width: 767.98px) {
     height: 60px;
   }
 }
-
+*/
 /* Booking tool nav pills  */
 
 .nav-pills .nav-link.nav-link-hme {
@@ -287,7 +287,7 @@ video {
   }
 }
 
-[data-aos="fade-left-first"] {
+/*[data-aos="fade-left-first"] {
   transform: translate3d(-100%,0,0);
   transition-property: transform;
   transition: all 0.5s ease-out;
@@ -320,7 +320,7 @@ video {
   &.aos-animate {
     transform: translate3d(0%,0,0);
   }
-}
+}*/
 
 
 .required:after {
