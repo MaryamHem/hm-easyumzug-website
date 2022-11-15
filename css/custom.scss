@@ -207,6 +207,9 @@ body {
   }
 }
 html, body { overflow-x: clip; }
+section {
+  overflow-x: hidden;
+}
 /* offset scrolling position for anchor links */ 
 html {
   scroll-padding-top: 88px; /* height of fixed header */
