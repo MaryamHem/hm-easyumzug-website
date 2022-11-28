@@ -163,79 +163,6 @@ video {
 }
 
 
-/*.text-image-row {
-  position: relative;
-}
-.image-wrapper .image{
-  position: relative;
-  overflow: hidden;
-  height: 50vw;
-  width: 80vw;
-  @media(min-width: 992px) {
-    width: 57.5%;
-    height: 450px;
-  }  
-  @media (min-width: 1600px) {
-    max-width: calc(50vw + 100px);
-  }
-}
-
-.image-wrapper .image.image-right{
-  position: relative;
-  overflow: hidden;
-  height: 50vw;
-  width: 80vw;
-  float: right;
-  @media(min-width: 992px) {
-    height: 450px;
-  }  
-  @media (min-width: 1600px) {
-    max-width: calc(50vw + 252px);
-  }
-}
-  
-
-.image-wrapper .image img {
-  display: block;
-  vertical-align: middle;
-  border-style: none;
-  width: auto;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  @media (min-width: 1600px) {
-    width: 100%;
-    height:  auto;
-  }
-}
-
-.image-wrapper .image.image-right img {
-  display: block;
-  vertical-align: middle;
-  border-style: none;
-  width: auto;
-  height: 100%;
-  position: absolute;
-  @media (min-width: 1600px) {
-    width: 100%;
-    height:  auto;
-  }
-}
-
-
-
-.text-wrapper {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  padding-top: 60px;
-  @media(max-width: 991.98px) {
-    position: relative;
-  }
-}*/
-
-
 .image {
   width: 57.67%;
   height: 450px;
@@ -298,4 +225,28 @@ video {
   @include media-breakpoint-down(md) {
     margin: 0 0.5rem;
   }
+}
+
+footer .nav-footer h5 a,
+footer .nav-footer h6 a,
+footer .nav-footer li a {
+  text-decoration: none;
+  color: $black;
+}
+/*footer .links li{
+  display: inline-block;
+}
+*/
+
+.card-image-wrapper {
+  min-height: 4rem;
+}
+a:hover .hme-card {
+  transform:  translateY(-.5rem);
+}
+a .hme-card {
+  transition: all 200ms linear;
+}
+.z-index-bg {
+  z-index: -1;
 }
