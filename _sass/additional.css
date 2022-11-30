@@ -151,7 +151,7 @@ video {
   }
 }
 
-.cta {
+/*.cta {
   height: 30rem;
   background-color: rgba(0, 0, 0, 0.4);
   background-position: center center;
@@ -160,7 +160,7 @@ video {
   background-size: cover;
   background-attachment: fixed;
   background-image: url("/assets/pics/value_background_02-1.jpg");
-}
+}*/
 
 
 .image {
@@ -227,12 +227,12 @@ video {
   }
 }
 
-footer .nav-footer h5 a,
+/*footer .nav-footer h5 a,
 footer .nav-footer h6 a,
 footer .nav-footer li a {
   text-decoration: none;
   color: $black;
-}
+}*/
 /*footer .links li{
   display: inline-block;
 }
@@ -249,4 +249,20 @@ a .hme-card {
 }
 .z-index-bg {
   z-index: -1;
+}
+
+
+
+/*a:hover.link-hme-blue {
+ background-color: #57768E!important;
+}
+a:hover.link-hme-primary {
+ background-color: #57768E!important;
+}
+*/
+.footer-cta .bg-primary.hover {
+  background-color: #62849F!important;
+}
+.footer-cta .bg-hme-blue.hover {
+  background-color: #0F315F!important;
 }

@@ -87,13 +87,14 @@ $form-feedback-tooltip-border-radius: 0.25rem;
 $form-feedback-tooltip-padding-y: 0rem;
 $form-feedback-tooltip-padding-x: 0.25rem;
 
-
+$link-hover-color:  $secondary;
 
 $custom-colors: (
   "hme-blue": $hme-blue,
   "hme-blue2": $hme-blue2,
   "alice-blue": $alice-blue,
   "platinum": $platinum,
+  "black": $black,
   "grey": $grey,
   "medium-grey": $medium-grey,
   "dark-grey": $dark-grey,
@@ -362,6 +363,17 @@ line-height: 100%;
 }
 }
 
+.link-hme-blue:hover,
+.link-hme-blue:focus,
+.link-black:hover,
+.link-black:focus {
+  color: $secondary!important;
+}
+
+.link-hme-blue,
+.link-black {
+  text-decoration: none;
+}
 
 
 @import 'additional';
