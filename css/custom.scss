@@ -55,6 +55,7 @@ $font-weight-medium: 500;
 // 4. Include any default map overrides here
 
 $navbar-nav-link-padding-x:         1rem;
+$navbar-brand-font-size:            $font-size-lg;
 $navbar-light-color:                $hme-blue;
 $navbar-light-hover-color:          $secondary;
 $navbar-light-active-color:         $secondary;
@@ -63,10 +64,24 @@ $navbar-light-toggler-border-color: $hme-blue;
 $navbar-toggler-font-size:          $font-size-base;
 $navbar-toggler-padding-y:          .375rem;
 $navbar-toggler-padding-x:          .75rem;
+$navbar-toggler-border-radius:      .5rem;
+
+$dropdown-border-radius:    .5rem;
+$dropdown-color: $hme-blue;           
+$dropdown-bg: $white;
+$dropdown-border-color:     $secondary;
+$dropdown-link-color:       $hme-blue;
+$dropdown-link-hover-color: $secondary;
+$dropdown-link-hover-bg:    $white;
+$dropdown-item-padding-y:   .25rem;
 
 
+$nav-link-font-weight: $font-weight-semibold;
+$nav-link-font-size: 1.125rem;
 $nav-link-color: $white;
 $nav-link-hover-color: $secondary;
+$navbar-nav-link-padding-x:  1.25rem; 
+
 $nav-pills-link-active-color:       $white;
 $nav-pills-link-active-bg:          transparent;
 $nav-pills-border-radius:           50%;
@@ -135,7 +150,7 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 6,
-);
+  );
 
 /*   custom: 80rem,
 form: 800px */
@@ -156,8 +171,8 @@ $utilities: (
     lighter: $font-weight-lighter,
     normal: $font-weight-normal,
     medium: $font-weight-medium,
-    bold: $font-weight-bold,
     semibold: $font-weight-semibold,
+    bold: $font-weight-bold,
     bolder: $font-weight-bolder
     )
   )
@@ -277,6 +292,20 @@ a:not(.no-icon)[href^="http://"]:after, a:not(.no-icon)[href^="https://"]:after,
   --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
 }
 
+.btn-hme-cta {
+  --bs-btn-color: #{$white};
+  --bs-btn-bg: #{$primary};
+  --bs-btn-border-color: #{$primary};
+  --bs-btn-border-radius: .5rem;
+  --bs-btn-border-width: 1px;
+  --bs-btn-hover-color: var(--bs-btn-color);
+  --bs-btn-hover-bg: #62849F;
+  --bs-btn-hover-border-color: #{$secondary};
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
+}
+
 /* border border-2 rounded-circle */
 
 .btn-outline-secondary {
@@ -347,7 +376,7 @@ label {
     width: 60px;
 /*   border: 1px solid $hme-red;
 */  border-radius: 8px;
-    padding: 6px 6px;
+padding: 6px 6px;
 }
 .nav-icon {
   display: inline-block;
@@ -362,6 +391,14 @@ width: 3rem;
 line-height: 100%;
 }
 }
+.navbar-nav {
+  @include media-breakpoint-down(md) {
+    text-align: right;
+  }
+}
+
+
+/* Color links */
 
 .link-hme-blue:hover,
 .link-hme-blue:focus,
@@ -369,12 +406,10 @@ line-height: 100%;
 .link-black:focus {
   color: $secondary!important;
 }
-
 .link-hme-blue,
 .link-black {
   text-decoration: none;
 }
-
 
 @import 'additional';
 

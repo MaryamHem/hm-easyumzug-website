@@ -222,8 +222,8 @@ video {
 .payment img {
   max-height:  3rem;
   margin: 0 1rem;
-  @include media-breakpoint-down(md) {
-    margin: 0 0.5rem;
+  @include media-breakpoint-down(lg) {
+    margin: 0 0.75rem;
   }
 }
 
@@ -241,7 +241,8 @@ footer .nav-footer li a {
 .card-image-wrapper {
   min-height: 4rem;
 }
-a:hover .hme-card {
+a:hover .hme-card,
+a:focus .hme-card {
   transform:  translateY(-.5rem);
 }
 a .hme-card {
