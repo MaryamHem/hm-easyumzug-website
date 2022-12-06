@@ -1,0 +1,82 @@
+
+categories:
+
+- name: moving
+  location: header, footer
+  items:
+
+  - title: Umzüge
+    url: /
+    subitems:
+    - title: Privatumzüge
+      url: /
+    - title: Firmenumzüge
+      url: /firmen-umzug
+    - title: Seniorenumzüge
+      url: /senioren-umzug
+
+- name: services
+  location: header, footer
+  items:
+
+  - title: Services
+    url: /services
+
+    subitems:
+    - title: Möbelmontagen
+      url: /services
+    - title: Küchenmontagen
+      url: /services
+    - title: Halteverbotszonen
+      url: /services
+    - title: Packmaterial
+      url: /services
+    - title: Packservice
+      url: /services
+    - title: Handwerkerservice
+      url: /services    
+    - title: Lagerung
+      url: /services
+    - title: Entrümpelung
+      url: /services
+    - title: Außenaufzug
+      url: /services
+    - title: Klaviertransport
+      url: /services
+    - title: Reinigung
+      url: /services
+    - title: Versicherung
+      url: /services
+
+- name: other
+  location: header, footer
+  items:
+
+  - title: Unternehmen
+    url: /unternehmen
+  - title: FAQ
+    url: /faq
+
+- name: other
+  location: footer
+  items:
+
+  - title: Kontakt
+    url: /kontakt
+  - title: Karriere
+    url: /karriere    
+
+- name: legal
+  location: footer
+  items:
+
+  - title: Impressum
+    url: /impressum
+  - title: Datenschutzerklärung
+    url: /datenschutz
+  - title: AGB
+    url: /agb
+  - title: Haftung
+    url: /haftung 
+
+

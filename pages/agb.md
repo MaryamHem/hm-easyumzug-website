@@ -1,5 +1,5 @@
 ---
-layout: default-md
+layout: legal
 title: AGB
 permalink: agb/
 ---
