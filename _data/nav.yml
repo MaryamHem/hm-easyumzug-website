@@ -11,42 +11,42 @@ categories:
     - title: Privatumzüge
       url: /
     - title: Firmenumzüge
-      url: /firmen-umzug
+      url: /firmen-umzug/
     - title: Seniorenumzüge
-      url: /senioren-umzug
+      url: /senioren-umzug/
 
 - name: services
   location: header, footer
   items:
 
   - title: Services
-    url: /services
+    url: /services/
 
     subitems:
     - title: Möbelmontagen
-      url: /services
+      url: /services/
     - title: Küchenmontagen
-      url: /services
+      url: /services/
     - title: Halteverbotszonen
-      url: /services
+      url: /services/
     - title: Packmaterial
-      url: /services
+      url: /services/
     - title: Packservice
-      url: /services
+      url: /services/
     - title: Handwerkerservice
-      url: /services    
+      url: /services/
     - title: Lagerung
-      url: /services
+      url: /services/
     - title: Entrümpelung
-      url: /services
+      url: /services/
     - title: Außenaufzug
-      url: /services
+      url: /services/
     - title: Klaviertransport
-      url: /services
+      url: /services/
     - title: Reinigung
-      url: /services
+      url: /services/
     - title: Versicherung
-      url: /services
+      url: /services/
 
 - name: other
   location: header, footer
@@ -55,28 +55,28 @@ categories:
   - title: Unternehmen
     url: /unternehmen
   - title: FAQ
-    url: /faq
+    url: /faq/
 
 - name: other
   location: footer
   items:
 
   - title: Kontakt
-    url: /kontakt
+    url: /kontakt/
   - title: Karriere
-    url: /karriere    
+    url: /karriere/  
 
 - name: legal
   location: footer
   items:
 
   - title: Impressum
-    url: /impressum
+    url: /impressum/
   - title: Datenschutzerklärung
-    url: /datenschutz
+    url: /datenschutz/
   - title: AGB
-    url: /agb
+    url: /agb/
   - title: Haftung
-    url: /haftung 
+    url: /haftung/
 
 
