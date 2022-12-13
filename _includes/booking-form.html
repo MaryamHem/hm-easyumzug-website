@@ -4,39 +4,39 @@
   type="hidden"
   name="_redirect"
   value="https://calendly.com/hm-easyumzug/30min"
-  />
-  <input type="hidden" name="_append" value="false" />
-  <input type="hidden" name="_email.subject" value="Neue Kundenanfrage" />
+  >
+  <input type="hidden" name="_append" value="false" >
+  <input type="hidden" name="_email.subject" value="Neue Kundenanfrage" >
 
 
   <!-- Form Nav -->
   <ul class="nav nav-pills d-flex align-items-center justify-content-center pb-3" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active nav-link-hme" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#tab-1" type="button" role="tab" aria-controls="pills-a" aria-selected="true">
+      <button class="nav-link active nav-link-hme" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">
         <img src="/assets/icons/calendar.svg">
       </button>          
     </li>
-    <span class="nav-separator"></span>
+<!--     <span class="nav-separator"></span> -->    
     <li class="nav-item" role="presentation">
-      <button class="nav-link nav-link-hme disabled" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#tab-2" type="button" role="tab" aria-controls="pills-b" aria-selected="false">
+      <button class="nav-link nav-link-hme disabled" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">
         <img src="/assets/icons/arrow-out.svg">
       </button>
     </li>
-    <span class="nav-separator"></span>
+<!--     <span class="nav-separator"></span> -->
     <li class="nav-item" role="presentation">
-      <button class="nav-link nav-link-hme disabled" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#tab-3" type="button" role="tab" aria-controls="pills-c" aria-selected="false">
+      <button class="nav-link nav-link-hme disabled" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">
         <img src="/assets/icons/arrow-in.svg">
       </button>
     </li>
-    <span class="nav-separator"></span>
+<!--     <span class="nav-separator"></span> -->
     <li class="nav-item" role="presentation">
-      <button class="nav-link nav-link-hme disabled" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#tab-4" type="button" role="tab" aria-controls="pills-d" aria-selected="false">
+      <button class="nav-link nav-link-hme disabled" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#tab-4" type="button" role="tab" aria-controls="tab-4" aria-selected="false">
         <img src="/assets/icons/plus.svg">
       </button>
     </li>
-    <span class="nav-separator"></span>
+<!--     <span class="nav-separator"></span> -->
     <li class="nav-item" role="presentation">
-      <button class="nav-link nav-link-hme disabled" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#tab-5" type="button" role="tab" aria-controls="pills-e" aria-selected="false">
+      <button class="nav-link nav-link-hme disabled" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#tab-5" type="button" role="tab" aria-controls="tab-5" aria-selected="false">
         <img src="/assets/icons/user.svg">
       </button>
     </li>
@@ -54,7 +54,7 @@
           <label for="date" class="col-form-label required">Umzugsdatum</label>
         </div>
         <div class="col-8 offset-2 col-md-4 offset-md-4 position-relative">
-          <input id="date" type="date" class="form-control" name="1_1-Umzugsdatum" required>
+          <input id="date" type="date" class="form-control" name="1_1-Umzugsdatum" placeholder="YYYY-MM-DD" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required>
         </div>
       </div>
       <div class="row gx-3 gx-md-5 mt-3">
@@ -65,7 +65,7 @@
           <label class="form-check-label form-check-label-hme pe-1" for="flexibleDate">Nein</label>
           <div class="form-check form-switch form-check-inline">
             <input class="form-check-input" type="checkbox" role="switch" id="flexibleDate" name="1_2-FlexiblesDatum">
-            <label class="form-check-label form-check-label-hme" for="flexibleDate2">Ja</label>
+            <label class="form-check-label form-check-label-hme" for="flexibleDate">Ja</label>
           </div>
         </div>
       </div>

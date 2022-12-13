@@ -85,7 +85,18 @@
     <script src="/js/jquery.validate.min-1.19.5.js"></script>
     <script src="/js/aos-2.3.1.js"></script>
 
-    <script async custom-element='amp-iframe' src='/js/amp-iframe-0.1.js'></script>
+    <script async src='/js/amp-iframe-0.1.js'></script>
+
+    <script>
+      window.onload = addAutoplay();
+      function addAutoplay() {
+        var videoLocation  = document.getElementById("hero-video");
+        if(window.innerWidth < 768){
+          console.log(videoLocation);
+          videoLocation.removeAttribute("autoplay");
+        };
+      }
+    </script>
 
     <script>
       AOS.init({duration: 1200});
@@ -114,22 +125,26 @@
       });
     </script>    
 
-    <script type="text/javascript">
+    <script>
       $( document ).ready( function () {
 
         var current = '1';
 
-        $.validator.addMethod("tabRequired", function(value, element) {
+/*        $.validator.addMethod("tabRequired", function(value, element) {
           var $element = $(element)
 
           function match(index) {
-            return current == index && $(element).parents("#pills-" + (index)).length;
+            console.log("test");
+            console.log($(element).parents("#tab-" + (index)).length);
+            return current == index && $(element).parents("#tab-" + (index)).length;
           }
-          if (match('1') || match('2')) {
+
+          if (match('1') || match('2') || match('3') || match('4') || match('5')) {
             return !this.optional(element);
           }
+
           return "dependency-mismatch";
-        }, $.validator.messages.required);
+        }, $.validator.messages.required);*/
 
         $.validator.addMethod("notEqual", function(value, element, param) {
           return this.optional(element) || value != param;

@@ -5,8 +5,11 @@ permalink: /
 ---
 
 <section class="video-container">
-  <video src="/assets/video/hero-video.mp4" autoplay loop playsinline muted></video>
-  <div class="callout d-flex justify-content-end pb-6 align-items-center h-100 flex-column">
+  <video id="hero-video" loop autoplay playsinline muted preload="none">
+    <source src="/assets/video/hero-video-v4.mp4" type="video/mp4"> 
+  </video> <!-- autoplay -->
+  <img src="/assets/pics/hero-image.jpg" class="d-md-none">
+  <div class="callout d-flex justify-content-end pb-6 align-items-center h-100 flex-column" data-aos="fade-up">
     <h1 class="display-1 text-white fw-bold text-center lh-1">Einfach <br class="d-md-none">umziehen</h1>
     <h2 class="display-5 text-white text-center lh-1">Individuelle Umzugsberatung, Planung &amp; Umsetzung<br> mit HM-Easyumzug</h2>
   </div>
@@ -21,6 +24,7 @@ permalink: /
 
 <section class="bg-light-grey py-5" id="badges">
   <div class="container-lg p-5">
+    <h2 class="d-none">Bekannt aus</h2>
     <div class="row gy-4">
       <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
         <img class="img-fluid" src="/assets/badges/google-reviews.svg">
@@ -250,8 +254,8 @@ permalink: /
         <div class="col-1 col-md-3">
         </div>
         <div class="col-6 offset-0 col-md-6 offset-md-1 fw-medium h5">
-          Maryam Hemati<br>
-          <emph>CEO</emph>
+          <p class="m-0">Maryam Hemati<br></p>
+          <p class="m-0"><emph>CEO</emph></p>
         </div>
       </div>
     </div>
