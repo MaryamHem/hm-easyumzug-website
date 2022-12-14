@@ -25,6 +25,7 @@ $hme-blue: $prussian-blue;
 $hme-blue2: $blue-ncs;
 $hme-red: $imperial-red;
 $hme-dark-red: #D72036;
+$hme-light-blue: #D3DFE8;
 
 $danger: $imperial-red;
 
@@ -110,13 +111,15 @@ $custom-colors: (
   "hme-blue": $hme-blue,
   "hme-blue2": $hme-blue2,
   "hme-dark-red": $hme-dark-red,
+  "hme-light-blue": $hme-light-blue,
   "alice-blue": $alice-blue,
   "platinum": $platinum,
   "black": $black,
   "grey": $grey,
   "medium-grey": $medium-grey,
   "dark-grey": $dark-grey,
-  "light-grey": $light-grey
+  "light-grey": $light-grey,
+  "white": $white
   );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -366,7 +369,7 @@ label {
 @media(max-width: 767.98px) {
   .navbar-brand img {
     max-height: 60px;
-    max-width: 25vw;
+/*     max-width: 25vw; */
   }
   .navbar-brand {
     padding: 0;
@@ -403,14 +406,14 @@ line-height: 100%;
 
 /* Color links */
 
-.link-hme-blue:hover,
-.link-hme-blue:focus,
-.link-black:hover,
-.link-black:focus {
+.link-hme-blue:hover, .link-hme-blue:focus,
+.link-black:hover, .link-black:focus,
+.link-white:hover, .link-white:focus {
   color: $secondary!important;
 }
 .link-hme-blue,
-.link-black {
+.link-black,
+.link-white {
   text-decoration: none;
 }
 

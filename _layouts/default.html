@@ -11,8 +11,8 @@
           <a class="navbar-brand" href="/">
             <img src="/assets/logo-hm-easyumzug.svg" alt="HM-Easyumzug logo" height="72">
           </a>
-          <a class="btn btn-hme-outline-red d-md-none nav-mobile d-flex align-items-center justify-content-evenly nav-mobile" href="/kontakt">
-            <span class="nav-icon-label order-2">Kontakt</span> <span class="nav-icon order-1"><i class="fa-solid fa-truck-fast"></i></span>
+          <a class="btn btn-hme-cta d-md-none nav-mobile d-flex align-items-center justify-content-evenly" href="/kontakt">
+            <span class="nav-icon-label order-2">Kontakt</span> <span class="nav-icon order-1"><img class="" src="/assets/icons/icon-chat-light-blue-bg.svg" height="24"></span>
           </a>
           <button class="navbar-toggler nav-mobile align-items-center justify-content-evenly" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -85,21 +85,10 @@
     <script src="/js/jquery.validate.min-1.19.5.js"></script>
     <script src="/js/aos-2.3.1.js"></script>
 
-    <script async src='/js/amp-iframe-0.1.js'></script>
+    <script async src='/js/amp-iframe-0.1.js'></script>    
 
     <script>
-      window.onload = addAutoplay();
-      function addAutoplay() {
-        var videoLocation  = document.getElementById("hero-video");
-        if(window.innerWidth < 768){
-          console.log(videoLocation);
-          videoLocation.removeAttribute("autoplay");
-        };
-      }
-    </script>
-
-    <script>
-      AOS.init({duration: 1200});
+      AOS.init({duration: 1000, delay: 500});
     </script>
 
     <script>
