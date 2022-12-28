@@ -341,8 +341,12 @@ a:focus .hme-card {
 a .hme-card {
   transition: all 200ms linear;
 }
-.z-index-bg {
-  z-index: -1;
+.z-index-back {
+  z-index: 5;
+}
+.z-index-top {
+  z-index: 10;
+  /*transform: translate3d(0, 0, 100px);*/
 }
 
 
