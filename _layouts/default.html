@@ -1,271 +1,248 @@
 <!doctype html>
-<html lang="de" class="h-100">
+  <html lang="de" class="h-100">
 
-{% include head.html %}
+  {% include head.html %}
 
-<body class="d-flex flex-column">
+  <body class="d-flex flex-column h-100">
 
-  <header>
-    <nav class="navbar navbar-expand-md navbar-hme fixed-top bg-white">
-      <div class="container-lg">
-        <a class="navbar-brand" href="/">
-          <img src="/assets/logo-hm-easyumzug.svg" alt="HM-Easyumzug logo" height="72">
-        </a>
-        <a class="btn btn-hme-cta d-md-none nav-mobile d-flex align-items-center justify-content-evenly" href="/kontakt">
-          <span class="nav-icon-label order-2">Kontakt</span> <span class="nav-icon order-1"><img class="" src="/assets/icons/icon-chat-light-blue-bg.svg" height="24"></span>
-        </a>
-        <button class="navbar-toggler nav-mobile align-items-center justify-content-evenly" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-hme fixed-top bg-white">
+        <div class="container-lg">
+          <a class="navbar-brand" href="/">
+            <img src="/assets/logo-hm-easyumzug.svg" alt="HM-Easyumzug logo" height="72">
+          </a>
+          <a class="btn btn-hme-cta d-md-none nav-mobile d-flex align-items-center justify-content-evenly" href="/kontakt">
+            <span class="nav-icon-label order-2">Kontakt</span> <span class="nav-icon order-1"><img class="" src="/assets/icons/icon-chat-light-blue-bg.svg" height="24"></span>
+          </a>
+          <button class="navbar-toggler nav-mobile align-items-center justify-content-evenly" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 
-          <span class="nav-icon-label order-2">Menü</span>
-          <span class="nav-icon order-1"><i class="fa-solid fa-bars"></i></span>
+            <span class="nav-icon-label order-2">Menü</span>
+            <span class="nav-icon order-1"><i class="fa-solid fa-bars"></i></span>
 
-        </button>          
+          </button>          
 
-        <div class="navbar-collapse collapse fw-semibold justify-content-end" id="navbarCollapse">
-          <ul class="navbar-nav d-flex align-items-md-center">
+          <div class="navbar-collapse collapse fw-semibold justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav d-flex align-items-md-center">
 
-            {% assign categories = site.data.nav.categories %}
-            {% for category in categories %}
-            {% if category.location contains "header" %}
+              {% assign categories = site.data.nav.categories %}
+              {% for category in categories %}
+              {% if category.location contains "header" %}
 
-            {% for item in category.items %}
+              {% for item in category.items %}
 
-            {% if item.subitems %}
+              {% if item.subitems %}
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {{ item.title }}
-              </a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ item.title }}
+                </a>
 
-              <ul class="dropdown-menu">
-                {% for subitem in item.subitems %}
-                <li><a class="dropdown-item" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </li>
+                <ul class="dropdown-menu">
+                  {% for subitem in item.subitems %}
+                  <li><a class="dropdown-item" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
 
-            {% else %}
+              {% else %}
 
-            <li class="nav-item">
-              <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+              </li>
 
-            {% endif %}
-            {% endfor %}
-            {% endif %}
-            {% endfor %}
+              {% endif %}
+              {% endfor %}
+              {% endif %}
+              {% endfor %}
 
-            <li class="nav-item d-none d-md-inline">
-              <a class="btn btn-hme-cta ms-md-5 fw-semibold shadow p-3" href="/kontakt">
-                <img class="me-2" src="/assets/icons/icon-chat-light-blue-bg.svg" height="24"> Say Hello!
-              </a>
-            </li>
-          </ul>
+              <li class="nav-item d-none d-md-inline">
+                <a class="btn btn-hme-cta ms-md-5 fw-semibold shadow p-3" href="/kontakt">
+                  <img class="me-2" src="/assets/icons/icon-chat-light-blue-bg.svg" height="24"> Say Hello!
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
+      </nav>
+    </header>
 
-      </div>
-    </nav>
-  </header>
+    <main class="flex-shrink-0">
 
-  <main class="flex-shrink-0">
+      {{ content }}
 
-    {{ content }}
+    </main>
 
-  </main>
+    <footer class="mt-auto" id="footer">
 
-  <footer class="d-block mt-auto" id="footer">
+      {% include footer.html %}
 
-    {% include footer.html %}
-
-  </footer>
+    </footer>
 
 
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/jquery.min-3.6.1.js"></script>
-  <script src="/js/jquery.validate.min-1.19.5.js"></script>
-  <!-- <script src="/js/aos-2.3.1.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.min-3.6.1.js"></script>
+    <script src="/js/jquery.validate.min-1.19.5.js"></script>
+    <script src="/js/aos-2.3.1.js"></script>
 
-  <script async src='/js/amp-iframe-0.1.js'></script> -->    
+    <script async src='/js/amp-iframe-0.1.js'></script>    
 
-  <script>
-    AOS.init({duration: 1000, delay: 500});
-  </script>
+    <script>
+      AOS.init({duration: 1000, delay: 500});
+    </script>
 
-  <script>
-    $(".footer-cta a.link.bg-primary").mouseenter(function () {
-      $(".footer-cta .bg-primary").addClass("hover");
-    }).mouseleave(function () {
-      $(".footer-cta .bg-primary").removeClass("hover");
-    });
-    $(".footer-cta a.link.bg-hme-blue").mouseenter(function () {
-      $(".footer-cta .bg-hme-blue").addClass("hover");
-    }).mouseleave(function () {
-      $(".footer-cta .bg-hme-blue").removeClass("hover");
-    });
-    $(".footer-cta a.link.bg-hme-dark-red").mouseover(function () {
-      $(".footer-cta .bg-hme-dark-red").addClass("hover");
-    }).mouseout(function () {
-      $(".footer-cta .bg-hme-dark-red").removeClass("hover");
-    });
-    $(".footer-cta a.link.bg-secondary").mouseover(function () {
-      $(".footer-cta .bg-secondary").addClass("hover");
-    }).mouseout(function () {
-      $(".footer-cta .bg-secondary").removeClass("hover");
-    });
-  </script>
+    <script>
+      $(".footer-cta a.link.bg-primary").mouseenter(function () {
+        $(".footer-cta .bg-primary").addClass("hover");
+      }).mouseleave(function () {
+        $(".footer-cta .bg-primary").removeClass("hover");
+      });
+      $(".footer-cta a.link.bg-hme-blue").mouseenter(function () {
+        $(".footer-cta .bg-hme-blue").addClass("hover");
+      }).mouseleave(function () {
+        $(".footer-cta .bg-hme-blue").removeClass("hover");
+      });
+      $(".footer-cta a.link.bg-hme-dark-red").mouseenter(function () {
+        $(".footer-cta .bg-hme-dark-red").addClass("hover");
+      }).mouseleave(function () {
+        $(".footer-cta .bg-hme-dark-red").removeClass("hover");
+      });
+      $(".footer-cta a.link.bg-secondary").mouseenter(function () {
+        $(".footer-cta .bg-secondary").addClass("hover");
+      }).mouseleave(function () {
+        $(".footer-cta .bg-secondary").removeClass("hover");
+      });
+    </script>    
 
-  <script>
-    $( document ).ready( function () {
+    <script>
+      $( document ).ready( function () {
 
-      var current = '1';
+        var current = '1';
 
-      var v=$( "#bookingForm" ).validate( {
-        rules: {
-          date: "required",
-          addressOut: "required",
-          floorOut: "required",
-          addressIn: "required",
-          floorIn: "required",
-          firstName: "required",
-          lastName: "required",
-          email: {
-            required: true,
-            email: true
+/*        $.validator.addMethod("tabRequired", function(value, element) {
+          var $element = $(element)
+
+          function match(index) {
+            console.log("test");
+            console.log($(element).parents("#tab-" + (index)).length);
+            return current == index && $(element).parents("#tab-" + (index)).length;
+          }
+
+          if (match('1') || match('2') || match('3') || match('4') || match('5')) {
+            return !this.optional(element);
+          }
+
+          return "dependency-mismatch";
+        }, $.validator.messages.required);*/
+
+        $.validator.addMethod("notEqual", function(value, element, param) {
+          return this.optional(element) || value != param;
+        }, $.validator.messages.required);
+
+        var v=$( "#bookingForm" ).validate( {
+          rules: {
+            date: "required",
+            addressOut: "required",
+            floorOut: {
+              required: true
+            },
+            addressIn: "required",
+            floorIn: "required",
+            firstName: "required",
+            lastName: "required",
+            email: {
+              required: true,
+              email: true
+            },
+            agree: "required"
           },
-          agree: "required"
-        },
-        errorElement: "div",
-        errorPlacement: function ( error, element ) {
-          error.addClass( "invalid-tooltip" );
-          if ( element.prop( "type" ) === "checkbox" ) {
-            error.insertAfter( element.next( "label" ) );
-          } else {
-            error.insertAfter( element );
-          }
-        },
-        highlight: function ( element, errorClass, validClass ) {
-          $( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
-        },
-        unhighlight: function (element, errorClass, validClass) {
-          $( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
+          errorElement: "div",
+          errorPlacement: function ( error, element ) {
+        // Add the `invalid-feedback` class to the error element
+        //error.addClass( "invalid-feedback" );
+        error.addClass( "invalid-tooltip" );
+        
+        if ( element.prop( "type" ) === "checkbox" ) {
+          error.insertAfter( element.next( "label" ) );
+        } else {
+          error.insertAfter( element );
         }
-      });
-
-      $('#tab-1 .btnNext').click(function() {
-        const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
-        const nextTab = new bootstrap.Tab(nextTabLinkEl);
-        if (v.form()) {
-          nextTab.show();
-          current = '1';
-          $('#pills-2-tab').removeClass("disabled");
-          console.log(nextTab);
-        }
-      });
-      $('#tab-2 .btnNext').click(function() {
-        const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
-        const nextTab = new bootstrap.Tab(nextTabLinkEl);
-        if (v.form()) {
-          nextTab.show();
-          current = '2';
-          $('#pills-3-tab').removeClass("disabled");
-        }
-      });
-      $('#tab-3 .btnNext').click(function() {
-        const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
-        const nextTab = new bootstrap.Tab(nextTabLinkEl);
-        if (v.form()) {
-          nextTab.show();
-          current = '3';
-          $('#pills-4-tab').removeClass("disabled");
-        }
-      });
-      $('#tab-4 .btnNext').click(function() {
-        const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
-        const nextTab = new bootstrap.Tab(nextTabLinkEl);
-        if (v.form()) {
-          nextTab.show();
-          current = '4';
-          $('#pills-5-tab').removeClass("disabled");
-        }
-      });
-      $('#tab-5 .btnNext').click(function() {
-        if (v.form()) {
-          current = '5';
-        }
-      });
-
-      $('#tab-2 .btnPrevious').click(function() {
-        const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
-        const prevTab = new bootstrap.Tab(prevTabLinkEl);
-        prevTab.show(); //console.log(prevTabLinkEl);
-      });
-      $('#tab-3 .btnPrevious').click(function() {
-        const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
-        const prevTab = new bootstrap.Tab(prevTabLinkEl);
-        prevTab.show();    //console.log(prevTabLinkEl);
-      });
-      $('#tab-4 .btnPrevious').click(function() {
-        const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
-        const prevTab = new bootstrap.Tab(prevTabLinkEl);
-        prevTab.show();
-      });
-      $('#tab-5 .btnPrevious').click(function() {
-        const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
-        const prevTab = new bootstrap.Tab(prevTabLinkEl);
-        prevTab.show();
-      });
+      },
+      highlight: function ( element, errorClass, validClass ) {
+        $( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
+      }
     });
 
-  </script>
-
-  <script>
-    $( document ).ready( function () {
-      var current = '1';
-
-      var v=$( "#bookingFormTest" ).validate( {
-        rules: {
-          dateTest: "required",
-          parkingInTest: "required"
-        },
-        errorElement: "div",
-        errorPlacement: function ( error, element ) {
-          error.addClass( "invalid-tooltip" );
-          if ( element.prop( "type" ) === "checkbox" ) {
-            error.insertAfter( element.next( "label" ) );
-          } else {
-            error.insertAfter( element );
+        $('#tab-1 .btnNext').click(function() {
+          const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
+          const nextTab = new bootstrap.Tab(nextTabLinkEl);
+          if (v.form()) {
+            nextTab.show();
+            current = '1';
+            $('#pills-2-tab').removeClass("disabled");
           }
-        },
-        highlight: function ( element, errorClass, validClass ) {
-          $( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
-        },
-        unhighlight: function (element, errorClass, validClass) {
-          $( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
-        }
+        });
+        $('#tab-2 .btnNext').click(function() {
+          const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
+          const nextTab = new bootstrap.Tab(nextTabLinkEl);
+          if (v.form()) {
+            nextTab.show();
+            current = '2';
+            $('#pills-3-tab').removeClass("disabled");
+          }
+        });
+        $('#tab-3 .btnNext').click(function() {
+          const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
+          const nextTab = new bootstrap.Tab(nextTabLinkEl);
+          if (v.form()) {
+            nextTab.show();
+            current = '3';
+            $('#pills-4-tab').removeClass("disabled");
+          }
+        });
+        $('#tab-4 .btnNext').click(function() {
+          const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
+          const nextTab = new bootstrap.Tab(nextTabLinkEl);
+          if (v.form()) {
+            nextTab.show();
+            current = '4';
+            $('#pills-5-tab').removeClass("disabled");
+          }
+        });
+        $('#tab-5 .btnNext').click(function() {
+          if (v.form()) {
+            current = '5';
+          }
+        });
+
+        $('#tab-2 .btnPrevious').click(function() {
+          const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
+          const prevTab = new bootstrap.Tab(prevTabLinkEl);
+          prevTab.show();
+    //console.log(prevTabLinkEl);
+  });
+        $('#tab-3 .btnPrevious').click(function() {
+          const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
+          const prevTab = new bootstrap.Tab(prevTabLinkEl);
+          prevTab.show();
+    //console.log(prevTabLinkEl);
+  });
+        $('#tab-4 .btnPrevious').click(function() {
+          const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
+          const prevTab = new bootstrap.Tab(prevTabLinkEl);
+          prevTab.show();
+        });
+        $('#tab-5 .btnPrevious').click(function() {
+          const prevTabLinkEl = $('.nav-pills .active').closest('li').prevAll('li').first().find('button')[0];
+          const prevTab = new bootstrap.Tab(prevTabLinkEl);
+          prevTab.show();
+        });
       });
 
-      $('#pills-home .btnNextTest').click(function() {
-        const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
-        const nextTab = new bootstrap.Tab(nextTabLinkEl);
-        if (v.form()) {
-          nextTab.show();
-          current = '1';
-          $('#pills-profile-tab').removeClass("disabled");
-          console.log(nextTab);
-        }
-      });
-      $('#pills-profile .btnNextTest').click(function() {
-        const nextTabLinkEl = $('.nav-pills .active').closest('li').nextAll('li').first().find('button')[0];
-        const nextTab = new bootstrap.Tab(nextTabLinkEl);
-        if (v.form()) {
-          nextTab.show();
-          current = '1';
-        }
-      });
+    </script>
 
-    });
-
-  </script>
-
-</body>
-</html>
+  </body>
+  </html>
