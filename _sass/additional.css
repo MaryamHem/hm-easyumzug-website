@@ -93,11 +93,11 @@ video {
   top: 0;
   left: 0;
 }
-.video-container:after {
+/*.video-container:after {
   @media(max-width: 768px) {
-    background: rgba(17, 54, 106, .2); /* .1  */
+    background: rgba(17, 54, 106, .2);
   }
-}
+}*/
   
 
 
