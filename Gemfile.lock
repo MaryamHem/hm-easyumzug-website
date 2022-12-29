@@ -1,10 +1,17 @@
+GIT
+  remote: https://github.com/chlorenz/jekyll-autoprefixer
+  revision: 2d6d8bdc8823b63f139c5c1a5aff84ce9d841cde
+  specs:
+    jekyll-autoprefixer (1.0.2)
+      autoprefixer-rails (~> 10.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
-    autoprefixer-rails (6.3.7)
-      execjs
+    autoprefixer-rails (10.4.7.0)
+      execjs (~> 2)
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
     em-websocket (0.5.3)
@@ -36,8 +43,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-autoprefixer (1.0.1)
-      autoprefixer-rails (~> 6.3.6)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
@@ -84,7 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-autoprefixer (= 1.0.1)
+  jekyll-autoprefixer!
   jekyll-gist
   jekyll-paginate
   jekyll-seo-tag
