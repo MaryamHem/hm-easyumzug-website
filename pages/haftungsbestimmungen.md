@@ -1,7 +1,7 @@
 ---
 layout: legal
 title: Haftungsbestimmungen
-permalink: haftungsbestimmungen/
+permalink: haftung/
 ---
 
 # Die Haftung des Möbelspediteurs
