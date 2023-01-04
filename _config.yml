@@ -1,7 +1,7 @@
 # Setup
 title: HM-Easyumzug
 tagline: Einfach umziehen
-url: 
+url:
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -11,7 +11,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-autoprefixer
+  #- jekyll-autoprefixer
 
 # Optimize Jekyll
 exclude:

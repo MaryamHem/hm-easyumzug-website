@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+   padding-top: 88px;  /* offset for fixed-top navbar */
+   @media(max-width: 767.98px) {
+    padding-top: 76px;
+  }
+}
+/* html, body { overflow-x: clip; } */
+section {
+  overflow-x: hidden;
+}
+/* offset scrolling position for anchor links */ 
+html {
+  scroll-padding-top: 88px; /* height of fixed header */
+}
+
+/* Contact cards */
+.card-image-wrapper {
+  min-height: 4rem;
+}
+a:hover .hme-card,
+a:focus .hme-card {
+  transform:  translateY(-.5rem);
+}
+a .hme-card {
+  transition: all 200ms linear;
+}
+
+/* Footer */
+.z-index-bg {
+  z-index: -1;
+}
+.payment img {
+  max-height:  3rem;
+  margin: 0 1rem;
+  @include media-breakpoint-down(lg) {
+    margin: 0 0.75rem;
+  }
+  @include media-breakpoint-down(sm) {
+    margin: 0 0.5rem;
+    max-height: 2rem;
+  }
+}
+.footer-cta .bg-primary.hover {
+  background-color: #62849F!important;
+}
+.footer-cta .bg-hme-blue.hover {
+  background-color: #0F315F!important;
+}
+.footer-cta .bg-secondary.hover {
+  background-color: #CB1E33!important;
+}
+.footer-cta .bg-hme-dark-red.hover {
+  background-color: #B71B2E!important;
+}

@@ -1,0 +1,25 @@
+
+/* add an icon after external links, using FontAwesome */
+/* use class .no-icon to strip icon */
+a:not(.no-icon)[href^="http://"]:after, a:not(.no-icon)[href^="https://"]:after, a:not(.no-icon)[href^="ftp://"]:after {
+  content: "\f35d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+
+/* Color links */
+
+.link-hme-blue:hover, .link-hme-blue:focus,
+.link-black:hover, .link-black:focus,
+.link-white:hover, .link-white:focus {
+  color: $secondary!important;
+}
+.link-hme-blue,
+.link-black,
+.link-white {
+  text-decoration: none;
+}
