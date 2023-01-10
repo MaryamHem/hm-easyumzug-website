@@ -20,6 +20,7 @@ permalink: /
 </section>
 
 <script>
+  /* swap video source depending on window.innerWidth */
   window.onload = addVideoSource();
   function addVideoSource(element, src) {
     var videoLocation = document.getElementById("hero-video");
@@ -38,7 +39,7 @@ permalink: /
 <!-- Siegel -->
 
 <section class="bg-light-grey py-5" id="badges">
-  <div class="container-lg p-5">
+  <div class="container-lg p-2 p-md-5">
     <h2 class="d-none">Bekannt aus</h2>
     <div class="row gy-4">
       <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
@@ -78,12 +79,12 @@ permalink: /
 <!-- Customer reviews -->
 
 <section class="py-5" id="reviews">
-  <div class="container-lg py-5">
+  <div class="container-lg py-5 ">
     <h2 class="text-center fw-medium mt-0">Kundenstimmen</h2>
 
     {% include separator.html %}
 
-    <p class="text-center mb-0 col-md-10 offset-md-1 fs-5">Was Kunden an HM-Easyumzug besonders schätzen: <strong>Qualität, Professionalität</strong>, und <strong>Zuverlässigkeit.</strong></p>
+    <p class="text-center mb-0 col-md-10 offset-md-1 fs-5 lh-base">Was Kunden an HM-Easyumzug besonders schätzen: <br class="d-none d-md-block"><strong>Qualität, Professionalität</strong>, und <strong>Zuverlässigkeit.</strong></p>
     <p class="text-center col-md-10 offset-md-1 fs-5">Versichern Sie sich selbst:</p>
 
     <div class="py-3 w-100">
@@ -116,15 +117,14 @@ permalink: /
 
   <div class="container container-road py-5 px-0">
 
-
     <div class="road py-5">
 
       <div class="row g-0 flex-column flex-lg-row road-top-section" style="" >
         <div class="col-8 offset-2 col-lg-4 offset-lg-1 text-center text-lg-end lh-sm" data-aos="fade-right" data-aos-delay="400">
-          <div class="border rounded border-hme-blue bg-white py-2 px-3">
+          <!-- <div class="border rounded border-hme-blue bg-white py-2 px-3"> -->
             <h4 class="mb-1">Beratungsgespräch</h4>
             <p class="mb-0">Ihr*e Umzugsmanager*in berät Sie umfassend und plant im engen Austausch Ihren individuellen Umzug - transparent und ganz nach Ihren Wünschen.</p>
-          </div>
+          <!-- </div> -->
         </div>
         <div class="col-2 offset-5 col-lg-1 offset-lg-0" data-aos="fade-right">
           <img class="mx-auto d-block" src="/assets/icons/icon-chat.svg">
@@ -139,22 +139,22 @@ permalink: /
           <p>Wir berechnen Umzugsvolumen und Arbeitseinsatz gemäß AMÖ-Richtlinien. Sie erhalten im Anschluss ein unverbindliches Festpreisangebot - nachvollziehbar, übersichtlich und detailliert.</p>
         </div>
       </div>
-      <div class="row g-0 road-bottom-section" data-aos="fade-right">
-        <div class="col-8 col-lg-4 text-start text-lg-end order-2 order-lg-1 ps-2 ps-lg-0 lh-sm">
+      <div class="row g-0 road-bottom-section">
+        <div class="col-8 col-lg-4 text-start text-lg-end order-2 order-lg-1 ps-2 ps-lg-0 lh-sm" data-aos="fade-right" data-aos-delay="400">
           <h4 class="mb-1">Vor-Ort-Besichtigung</h4>
           <p>Ihr Umzugsleiter kommt zu Ihnen nach Hause und klärt die letzten Details vor Ort. Lernen Sie ihn persönlich kennen und profitieren Sie von seinem Know-How.</p>
         </div>
-        <div class="col-2 col-lg-1 offset-lg-0 order-1 order-lg-2">
+        <div class="col-2 col-lg-1 offset-lg-0 order-1 order-lg-2" data-aos="fade-right">
           <img class="mx-auto d-block" src="/assets/icons/icon-check.svg">
         </div>
       </div>
-      <div class="row g-0 " data-aos="fade-up">
-        <div class="col-2 offset-5 col-lg-1 offset-lg-6">
+      <div class="row g-0 " >
+        <div class="col-2 offset-5 col-lg-1 offset-lg-6" data-aos="flip-up">
           <img class="mx-auto d-block" src="/assets/icons/icon-move.svg">
         </div>
         <div class="col-5 col-lg-5">
         </div>
-        <div class="col-8 offset-2 col-lg-5 offset-lg-4 text-center lh-sm" >
+        <div class="col-8 offset-2 col-lg-5 offset-lg-4 text-center lh-sm" data-aos="flip-up" data-aos-delay="400">
           <h4 class="mb-1 mt-3">Easy Umzug</h4>
           <p>Unsere Erfahrung und vorausschauende Planung zahlt sich für Sie aus. Unser eingespieltes Team führt Ihren Umzug pünktlich, fachgerecht und verantwortungsvoll durch.</p>
         </div>
@@ -187,20 +187,20 @@ permalink: /
   </div>
 
   <div class="position-relative light-blue">
-    <div class="image-wrapper" data-aos="fade-right" data-aos-offset="600">
+    <div class="image-wrapper">
       <div class="image position-relative overflow-hidden">
-        <img class="d-block position-absolute top-0 end-0" src="/assets/pics/usp-personal-manager-lowres.jpg">
+        <img class="d-block position-absolute top-0 end-0" src="/assets/pics/usp-personal-manager-lowres.jpg" data-aos="fade-right">
       </div>
     </div>
     <div class="text-wrapper position-absolute top-0 start-0 end-0 pt-4 pt-lg-5 mb-3" >
       <div class="container-fluid container-text">
-        <div class="row" data-aos="fade-left" data-aos-offset="600">
-          <div class="col-11 offset-1 col-lg-6 offset-lg-6">
-            <h3 class="display-2 mt-0 mt-lg-5 mb-2 mb-lg-4">Persönliche <br>Umzugsmanagerin</h3>
+        <div class="row">
+          <div class="col-11 offset-1 col-lg-6 offset-lg-6" data-aos="fade-left">
+            <h3 class="display-2 mt-0 mt-lg-5 mb-2 mb-lg-4" >Persönliche <br>Umzugsmanagerin</h3>
           </div>
         </div>
-        <div class="row" data-aos="fade-left" data-aos-delay="400" data-aos-offset="400">
-          <div class="col-11 offset-1 col-lg-4 offset-lg-7">
+        <div class="row" >
+          <div class="col-11 offset-1 col-lg-4 offset-lg-7" data-aos="fade-left"> 
             <p class="mb-2">Ihr*e persönliche*r Umzugsmanager*in berät Sie umfassend und gründlich, mit Liebe zum Detail und genau auf Ihre Bedürfnisse zugeschnitten.</p>
             <p>HM-Easyumzug begleitet Sie Schritt für Schritt, <strong>vor, während und nach Ihrem Umzug.</strong>  Denn effiziente Kommunikation und vorausschauende Planung sind der Schlüssel zu einem erfolgreichen Umzug.</p>
           </div>
@@ -210,23 +210,23 @@ permalink: /
   </div>
 
   <div class="position-relative dark-blue">
-    <div class="image-wrapper" data-aos="fade-left">
+    <div class="image-wrapper">
       <div class="image position-relative overflow-hidden float-end">
-        <img class="d-block position-absolute top-0 start-0" src="/assets/pics/usp-insurance-lowres.jpg">
+        <img class="d-block position-absolute top-0 start-0" src="/assets/pics/usp-insurance-lowres.jpg" data-aos="fade-left">
       </div>
       <div class="clearfix">
       </div>
     </div>
-    <div class="text-wrapper position-absolute top-0 start-0 end-0 text-lg-end pt-4 pt-lg-5 mb-3" data-aos="fade-right">
+    <div class="text-wrapper position-absolute top-0 start-0 end-0 text-lg-end pt-4 pt-lg-5 mb-3" >
       <div class="container-fluid container-text ">
         <div class="row ">
-          <div class="col-11 offset-1 col-lg-6 offset-lg-0">
+          <div class="col-11 offset-1 col-lg-6 offset-lg-0" data-aos="fade-right">
             <h3 class="display-2 mt-0 mt-lg-5 mb-2 mb-lg-4">Transparenz &amp; <br>Qualität</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-11 offset-1 col-lg-4 offset-lg-1">
-            <p class="mb-2">HM-Easyumzug bietet die beste Versicherung auf dem Markt – die Allianz. Zusätzlich zu den gesetzlichen Haftungsbestimmungen bieten wir Ihnen die Möglichkeit eine Neu- oder Zeitwertversicherung abzuschließen. Damit ist <strong>Ihr gesamter Hausrat</strong> bei uns <strong>in sicheren Händen</strong>.</p>
+          <div class="col-11 offset-1 col-lg-4 offset-lg-1" data-aos="fade-right">
+            <p class="mb-2">HM-Easyumzug bietet die beste Versicherung auf dem Markt – die Allianz. <!-- Zusätzlich zu den gesetzlichen Haftungsbestimmungen bieten wir Ihnen die Möglichkeit eine Neu- oder Zeitwertversicherung abzuschließen. --> Damit ist <strong>Ihr gesamter Hausrat</strong> bei uns <strong>in sicheren Händen</strong>.</p>
             <p>Um höchste Qualität in allen Phasen des Umzugs zu garantieren, arbeiten wir gemäß den <strong>Richtlinien des Bundesverbands Möbelspedition und Logistik (AMÖ) e.V.</strong></p>
           </div>
         </div>
@@ -235,20 +235,20 @@ permalink: /
   </div>
 
   <div class="position-relative grey">
-    <div class="image-wrapper" data-aos="fade-right">
+    <div class="image-wrapper" >
       <div class="image position-relative overflow-hidden">
-        <img class="d-block position-absolute top-0 end-0" src="/assets/pics/usp-team-lowres.jpg">
+        <img class="d-block position-absolute top-0 end-0" src="/assets/pics/usp-team-lowres.jpg" data-aos="fade-right">
       </div>
     </div>
-    <div class="text-wrapper position-absolute top-0 start-0 end-0 pt-4 pt-lg-5 mb-3" data-aos="fade-left">
+    <div class="text-wrapper position-absolute top-0 start-0 end-0 pt-4 pt-lg-5 mb-3" >
       <div class="container-fluid container-text">
         <div class="row">
-          <div class="col-11 offset-1 col-lg-6 offset-lg-6">
+          <div class="col-11 offset-1 col-lg-6 offset-lg-6" data-aos="fade-left">
             <h3 class="display-2 mt-0 mt-lg-5 mb-2 mb-lg-4">Top bewertetes<br> Team</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-11 offset-1 col-md-10 col-lg-4 offset-lg-7">
+          <div class="col-11 offset-1 col-md-10 col-lg-4 offset-lg-7" data-aos="fade-left">
             <p >Von der Planung bis hin zur Umsetzung geben wir alles für Sie. Unser Team vereint langjährige Umzugserfahrung und handwerkliches Fachwissen, und begeistert unsere Kunden durch <strong>Professionalität</strong> und <strong>Freundlichkeit</strong>. Das macht uns zu dem am Besten bewerteten Umzugsunternehmen in Frankfurt am Main - <a href="/#reviews">überzeugen Sie sich selbst</a>.</p>
           </div>
         </div>

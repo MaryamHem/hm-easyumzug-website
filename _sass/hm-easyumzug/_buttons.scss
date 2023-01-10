@@ -55,4 +55,6 @@
   background-color: $white;
 }
 
-
+form .btn {
+  --bs-btn-border-radius: 2rem;
+}
