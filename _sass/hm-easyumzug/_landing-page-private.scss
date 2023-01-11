@@ -1,7 +1,3 @@
-
-
-
-
 .container.container-road {
   @media(max-width: 992px) {
     max-width: 400px!important;
@@ -17,13 +13,17 @@
     background-repeat: no-repeat;
     background-position: center top 160px;
     min-height: 50rem;
+    p {
+      font-size: 15px;
+    }
   }
+
 }
 
 .road-top-section {
   height: 240px;
   @media(max-width: 992px) {
-    height:  260px;
+    height:  300px;
   }
 }
 .road-middle-section {
