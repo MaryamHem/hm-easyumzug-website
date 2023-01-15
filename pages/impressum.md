@@ -31,7 +31,7 @@ Allianz Versicherungs-AG
 10900 Berlin
 
 **Geltungsraum der Versicherung:**
-Europäische Union  
+Europäischer Wirtschaftsraum und Schweiz  
 
 ## EU-Streitschlichtung
 
