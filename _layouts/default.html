@@ -85,6 +85,10 @@
     <script src="/js/jquery.validate.min-1.19.5.js"></script>
     <script src="/js/aos-2.3.1.js"></script>
 
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZQTiTnsRA0ZOBaIqj8_PUuZvpooO9EfQ&libraries=places&callback=initAutocomplete">
+  </script>
+
     <!-- <script async src='/js/amp-iframe-0.1.js'></script> -->
 
     <script>
@@ -97,33 +101,69 @@
       });
     </script>
 
-    <script>
-      $(".footer-cta a.link.bg-primary").mouseenter(function () {
-        $(".footer-cta .bg-primary").addClass("hover");
-      }).mouseleave(function () {
-        $(".footer-cta .bg-primary").removeClass("hover");
-      });
-      $(".footer-cta a.link.bg-hme-blue").mouseenter(function () {
-        $(".footer-cta .bg-hme-blue").addClass("hover");
-      }).mouseleave(function () {
-        $(".footer-cta .bg-hme-blue").removeClass("hover");
-      });
-      $(".footer-cta a.link.bg-hme-dark-red").mouseenter(function () {
-        $(".footer-cta .bg-hme-dark-red").addClass("hover");
-      }).mouseleave(function () {
-        $(".footer-cta .bg-hme-dark-red").removeClass("hover");
-      });
-      $(".footer-cta a.link.bg-secondary").mouseenter(function () {
-        $(".footer-cta .bg-secondary").addClass("hover");
-      }).mouseleave(function () {
-        $(".footer-cta .bg-secondary").removeClass("hover");
-      });
-    </script>    
+  <!-- <script async src='/js/amp-iframe-0.1.js'></script> -->
 
-    <script>
-      $( document ).ready( function () {
+  <script>
+    function initAutocomplete() {
+      address1Field = document.querySelector("#addressOut");
 
-        var current = '1';
+      autocomplete = new google.maps.places.Autocomplete(address1Field, {
+        componentRestrictions: { country: ["de"] },
+        fields: ["address_components", "geometry"],
+        types: ["address"],
+      });
+      address1Field.focus();
+      autocomplete.addListener("place_changed", fillInAddress);
+    }
+
+    function fillInAddress() {
+      var place = autocomplete.getPlace();
+      if (!place.geometry) {
+        document.getElementById("addressOut").placeholder = "placeholder";
+      } else {
+       document.getElementById("addressOut").innerHTML = place.name;
+     }
+   }
+
+   window.initAutocomplete = initAutocomplete;
+ </script>
+
+ <script>
+  AOS.init({
+    duration: 1200,
+    delay: 50,
+    offset: (window.innerHeight * .6),
+    /*anchorPlacement: 'top-top'*/
+  });
+</script>
+
+<script>
+  $(".footer-cta a.link.bg-primary").mouseenter(function () {
+    $(".footer-cta .bg-primary").addClass("hover");
+  }).mouseleave(function () {
+    $(".footer-cta .bg-primary").removeClass("hover");
+  });
+  $(".footer-cta a.link.bg-hme-blue").mouseenter(function () {
+    $(".footer-cta .bg-hme-blue").addClass("hover");
+  }).mouseleave(function () {
+    $(".footer-cta .bg-hme-blue").removeClass("hover");
+  });
+  $(".footer-cta a.link.bg-hme-dark-red").mouseenter(function () {
+    $(".footer-cta .bg-hme-dark-red").addClass("hover");
+  }).mouseleave(function () {
+    $(".footer-cta .bg-hme-dark-red").removeClass("hover");
+  });
+  $(".footer-cta a.link.bg-secondary").mouseenter(function () {
+    $(".footer-cta .bg-secondary").addClass("hover");
+  }).mouseleave(function () {
+    $(".footer-cta .bg-secondary").removeClass("hover");
+  });
+</script>    
+
+<script>
+  $( document ).ready( function () {
+
+    var current = '1';
 
 /*        $.validator.addMethod("tabRequired", function(value, element) {
           var $element = $(element)
