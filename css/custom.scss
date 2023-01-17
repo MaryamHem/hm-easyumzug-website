@@ -199,6 +199,7 @@ $display-font-weight: 600;
 $display-line-height: 0.8;
 
 
+$modal-backdrop-opacity: .9;
 
 
 // 5. Include remainder of required parts
@@ -226,6 +227,8 @@ $display-line-height: 0.8;
 @import "nav";
 @import "vendor/rfs";
 @import "transitions";
+@import "modal";
+//@import "close";
 
 @import "helpers";
 

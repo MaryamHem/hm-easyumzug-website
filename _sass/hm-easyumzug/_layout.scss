@@ -55,3 +55,23 @@ a .hme-card {
 .footer-cta .bg-hme-dark-red.hover {
   background-color: #B71B2E!important;
 }
+
+.gallery-text {
+  top: 100px;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+.double-image {
+  height: calc(50% - 1rem);
+}
+.portrait-image {
+  height: calc(100% - 1rem);
+}
+.btn-close {
+  top: 0;
+  right: 0;
+}
+.gallery .modal-body img {
+/*   max-height: 0.8vh;
+ */}
