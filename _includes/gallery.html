@@ -1,56 +1,94 @@
-<div class="container-lg">
+<div class="container d-md-none">
   <div class="row g-0">
+    <h1 class="text-white text-center">Gallerie</h1>
+    {% include separator.html %}
+
+    {% assign pictures = site.data.gallery.pictures %}
+    {% for picture in pictures %}
+
+    <div class="col-12">
+      <img class="img-fluid mb-3" src="/assets/pics/gallery/{{ picture.src }}">
+    </div>
+
+    {% endfor %}
+
+  </div>
+</div>
+
+<div class="container-lg d-none d-md-block">
+  <div class="row g-0">
+
+    {% assign pictures = site.data.gallery.pictures %}
+    {% for picture in pictures %}
+
+    {% if picture.index == 1 or picture.index == 6 %}
     <div class="col-4">
-      <a type="button" class="d-block pe-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-1-1">
-        <img class="d-block w-100 h-100" src="/assets/pics/gallery/hm-easyumzug-02-thumbnail.jpg">
+      <a type="button" class="d-block pe-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
       </a>
-      <a type="button" class="d-block pe-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-2-1">
-        <img class="d-block w-100 h-100" src="/assets/pics/gallery/hm-easyumzug-03-thumbnail.jpg">
+    {% elsif picture.index == 2 or picture.index == 7 %}
+      <a type="button" class="d-block pe-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
       </a>
     </div>
+    {% elsif picture.index == 3 or picture.index == 8 %}
     <div class="col-3">
-      <a type="button" class="d-block px-2 mb-3 portrait-image" data-bs-toggle="modal" data-bs-target="#modal-1-2">
+      <a type="button" class="d-block px-2 mb-3 portrait-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
         <img class="d-block w-100 h-100" src="/assets/pics/gallery/hm-easyumzug-01-thumbnail.jpg">
       </a>
     </div>
+    {% elsif picture.index == 4 or picture.index == 9 %}
     <div class="col-4">
-      <img class="d-block w-100 ps-2 mb-3 double-image" src="/assets/pics/gallery/hm-easyumzug-03-thumbnail.jpg">
-      <img class="d-block w-100 ps-2 mb-3 double-image" src="/assets/pics/gallery/hm-easyumzug-02-thumbnail.jpg">
+      <a type="button" class="d-block ps-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
+      </a>
+    {% elsif picture.index == 5 or picture.index == 10 %}
+      <a type="button" class="d-block ps-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
+      </a>
     </div>
     <div class="col-1 position-relative">
+      {% if forloop.index == 5 %}
       <h1 class="gallery-text position-absolute text-white">GALLERIE</h1>
+      }
+      {% endif %}
+    </div>
+
+    {% endif %}
+    {% endfor %}
+    
+  </div>
+</div>
+
+<!-- Modals -->
+
+{% assign pictures = site.data.gallery.pictures %}
+{% for picture in pictures %}
+{% assign first_index = 1 %}
+{% assign last_index = 10 %}
+
+<div class="modal fade" id="modal-{{ picture.index }}" tabindex="-1" aria-labelledby="gallery image {{ picture.index }}" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-transparent"> <!-- add bg-transparent here -->
+      <div class="modal-body position-relative">
+        <div class="gallery-image-wrapper position-absolute">
+          <button type="button" class="btn-close bg-transparent border-0 position-absolute text-secondary fw-medium" data-bs-dismiss="modal" aria-label="Close">CLOSE</button>
+          <img class="d-block w-100 h-100 mx-auto" src="/assets/pics/gallery/{{ picture.src }}">
+          {% if forloop.first %}
+          <button type="button" class="btn-gallery btn-previous bg-transparent border-0 position-absolute text-secondary" data-bs-target="#modal-{{ last_index }}" data-bs-toggle="modal"></button>
+          {% else %}
+          <button type="button" class="btn-gallery btn-previous bg-transparent border-0 position-absolute text-secondary" data-bs-target="#modal-{{ picture.index | minus: 1 }}" data-bs-toggle="modal"></button>
+          {% endif %}
+          {% if forloop.last %}
+          <button type="button" class="btn-gallery btn-next bg-transparent border-0 position-absolute text-secondary" data-bs-target="#modal-{{ first_index }}" data-bs-toggle="modal"></button>
+          {% else %}
+          <button type="button" class="btn-gallery btn-next bg-transparent border-0 position-absolute text-secondary" data-bs-target="#modal-{{ picture.index | plus: 1 }}" data-bs-toggle="modal"></button>
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="modal-1-1" tabindex="-1" aria-labelledby="gallery image 1-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content bg-black">
-      <div class="modal-body">
-        <button type="button" class="btn-close bg-transparent border-0 position-absolute text-secondary" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark fa-4x"></i></button>
-        <img class="d-block w-100 p-3" src="/assets/pics/gallery/hm-easyumzug-02.jpg">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modal-2-1" tabindex="-1" aria-labelledby="gallery image 2-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content bg-black">
-      <div class="modal-body">
-        <button type="button" class="btn-close bg-transparent border-0 position-absolute text-secondary" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark fa-4x"></i></button>
-        <img class="d-block w-100 p-3" src="/assets/pics/gallery/hm-easyumzug-03.jpg">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modal-1-2" tabindex="-1" aria-labelledby="gallery image 1-2" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content bg-black">
-      <div class="modal-body">
-        <button type="button" class="btn-close bg-transparent border-0 position-absolute text-secondary" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark fa-4x"></i></button>
-        <img class="d-block h-75 p-3 mx-auto" src="/assets/pics/gallery/hm-easyumzug-01.jpg">
-      </div>
-    </div>
-  </div>
-</div>
+{% endfor %}
+

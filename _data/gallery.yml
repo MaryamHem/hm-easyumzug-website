@@ -1,0 +1,21 @@
+pictures:
+- index: 1
+  src: hm-easyumzug-02.jpg
+  thumbnail_src: hm-easyumzug-02-thumbnail.jpg
+  orientation: landscape
+- index: 2
+  src: hm-easyumzug-03.jpg
+  thumbnail_src: hm-easyumzug-03-thumbnail.jpg
+  orientation: landscape
+- index: 3
+  src: hm-easyumzug-01.jpg
+  thumbnail_src: hm-easyumzug-01-thumbnail.jpg
+  orientation: portrait
+- index: 4
+  src: hm-easyumzug-03.jpg
+  thumbnail_src: hm-easyumzug-03-thumbnail.jpg
+  orientation: landscape
+- index: 5
+  src: hm-easyumzug-02.jpg
+  thumbnail_src: hm-easyumzug-02-thumbnail.jpg
+  orientation: landscape

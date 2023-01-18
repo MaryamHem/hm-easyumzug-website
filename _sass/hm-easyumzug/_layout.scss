@@ -69,9 +69,60 @@ a .hme-card {
   height: calc(100% - 1rem);
 }
 .btn-close {
-  top: 0;
+  top: -64px;
   right: 0;
+  background-image: url(/assets/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 64px;
+  width: 64px;
+  padding-top: 64px;
+}
+.btn-close:after {
+/*   content: 'CLOSE';
+    position: absolute;
+    bottom: -16px;
+    left: 0px;
+    margin-left: auto;
+margin-right: auto; */
 }
 .gallery .modal-body img {
 /*   max-height: 0.8vh;
  */}
+
+ .bio-text {
+/*   text-align: justify;
+  text-justify: inter-character; */
+ }
+ .gallery-image-wrapper {
+    left: 128px;
+    right: 128px;
+    top: 96px;
+    bottom: 80px;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+ }
+ .gallery-image-wrapper img {
+
+  object-fit: contain;
+ }
+.btn-previous {
+  background-image: url(/assets/icons/arrow-previous.svg);
+  left: -80px;
+  background-position: left center;
+}
+.btn-next {
+  background-image: url(/assets/icons/arrow-next.svg);
+  right: -80px;
+  background-position: right center;
+}
+.btn-gallery {
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  cursor: pointer;
+}
