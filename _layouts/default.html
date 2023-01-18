@@ -105,23 +105,41 @@
 
   <script>
     function initAutocomplete() {
-      address1Field = document.querySelector("#addressOut");
+      addressOutField = document.querySelector("#addressOut");
+      addressInField = document.querySelector("#addressIn");
 
-      autocomplete = new google.maps.places.Autocomplete(address1Field, {
+      autocompleteAddressOut = new google.maps.places.Autocomplete(addressOutField, {
         componentRestrictions: { country: ["de"] },
         fields: ["address_components", "geometry"],
         types: ["address"],
       });
-      address1Field.focus();
-      autocomplete.addListener("place_changed", fillInAddress);
+      addressOutField.focus();
+      autocompleteAddressOut.addListener("place_changed", fillInAddressOut);
+
+      autocompleteAddressIn = new google.maps.places.Autocomplete(addressInField, {
+        componentRestrictions: { country: ["de"] },
+        fields: ["address_components", "geometry"],
+        types: ["address"],
+      });
+      addressInField.focus();
+      autocompleteAddressIn.addListener("place_changed", fillInAddressIn);
     }
 
-    function fillInAddress() {
-      var place = autocomplete.getPlace();
+    function fillInAddressOut() {
+      var place = autocompleteAddressOut.getPlace();
       if (!place.geometry) {
         document.getElementById("addressOut").placeholder = "placeholder";
       } else {
        document.getElementById("addressOut").innerHTML = place.name;
+     }
+   }
+
+   function fillInAddressIn() {
+      var place = autocompleteAddressIn.getPlace();
+      if (!place.geometry) {
+        document.getElementById("addressIn").placeholder = "placeholder";
+      } else {
+       document.getElementById("addressIn").innerHTML = place.name;
      }
    }
 
