@@ -1,21 +1,36 @@
+
+# portrait thumbnails: ~ 310x390 
+# landscape thumbnails: ~ 290x630
+# 3 & 10 must be portrait
+
 pictures:
 - index: 1
-  src: hm-easyumzug-02.jpg
-  thumbnail_src: hm-easyumzug-02-thumbnail.jpg
-  orientation: landscape
+  src: gallery-01.jpg
+  thumbnail_src: gallery-01-thumbnail.jpg
 - index: 2
-  src: hm-easyumzug-03.jpg
-  thumbnail_src: hm-easyumzug-03-thumbnail.jpg
-  orientation: landscape
+  src: gallery-02.jpg
+  thumbnail_src: gallery-02-thumbnail.jpg
 - index: 3
-  src: hm-easyumzug-01.jpg
-  thumbnail_src: hm-easyumzug-01-thumbnail.jpg
-  orientation: portrait
+  src: gallery-08.jpg
+  thumbnail_src: gallery-08-thumbnail.jpg
 - index: 4
-  src: hm-easyumzug-03.jpg
-  thumbnail_src: hm-easyumzug-03-thumbnail.jpg
-  orientation: landscape
+  src: gallery-10.jpg
+  thumbnail_src: gallery-10-thumbnail.jpg
 - index: 5
-  src: hm-easyumzug-02.jpg
-  thumbnail_src: hm-easyumzug-02-thumbnail.jpg
-  orientation: landscape
+  src: gallery-04.jpg
+  thumbnail_src: gallery-04-thumbnail.jpg
+- index: 6
+  src: gallery-09.jpg
+  thumbnail_src: gallery-09-thumbnail.jpg
+- index: 7
+  src: gallery-05.jpg
+  thumbnail_src: gallery-05-thumbnail.jpg
+- index: 8
+  src: gallery-07.jpg
+  thumbnail_src: gallery-07-thumbnail.jpg
+- index: 9
+  src: gallery-06.jpg
+  thumbnail_src: gallery-06-thumbnail.jpg
+- index: 10
+  src: gallery-03.jpg
+  thumbnail_src: gallery-03-thumbnail.jpg

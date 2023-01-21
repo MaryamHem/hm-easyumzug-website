@@ -15,34 +15,34 @@
   </div>
 </div>
 
-<div class="container-lg d-none d-md-block">
-  <div class="row g-0">
+<div class="container-lg d-none d-md-block thumbnail">
 
+  <div class="row g-0">
     {% assign pictures = site.data.gallery.pictures %}
     {% for picture in pictures %}
 
-    {% if picture.index == 1 or picture.index == 6 %}
+    {% if picture.index == 1 %}
     <div class="col-4">
-      <a type="button" class="d-block pe-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+      <a type="button" class="d-block pe-2 mb-3 double-image position-relative" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
         <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
       </a>
-    {% elsif picture.index == 2 or picture.index == 7 %}
+    {% elsif picture.index == 2 %}
       <a type="button" class="d-block pe-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
         <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
       </a>
     </div>
-    {% elsif picture.index == 3 or picture.index == 8 %}
+    {% elsif picture.index == 3 %}
     <div class="col-3">
       <a type="button" class="d-block px-2 mb-3 portrait-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
-        <img class="d-block w-100 h-100" src="/assets/pics/gallery/hm-easyumzug-01-thumbnail.jpg">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
       </a>
     </div>
-    {% elsif picture.index == 4 or picture.index == 9 %}
+    {% elsif picture.index == 4 %}
     <div class="col-4">
       <a type="button" class="d-block ps-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
         <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
       </a>
-    {% elsif picture.index == 5 or picture.index == 10 %}
+    {% elsif picture.index == 5 %}
       <a type="button" class="d-block ps-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
         <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
       </a>
@@ -53,7 +53,34 @@
       }
       {% endif %}
     </div>
-
+    {% elsif picture.index == 6 %}
+    <div class="col-4">
+      <a type="button" class="d-block pe-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
+      </a>
+    {% elsif picture.index == 7 %}
+      <a type="button" class="d-block pe-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
+      </a>
+    </div>
+    {% elsif picture.index == 8 %}
+    <div class="col-4">
+      <a type="button" class="d-block px-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
+      </a>
+    {% elsif picture.index == 9 %}
+      <a type="button" class="d-block px-2 mb-3 double-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
+      </a>
+    </div>
+    {% elsif picture.index == 10 %}
+    <div class="col-3">
+      <a type="button" class="d-block ps-2 mb-3 portrait-image" data-bs-toggle="modal" data-bs-target="#modal-{{ picture.index }}">
+        <img class="d-block w-100 h-100" src="/assets/pics/gallery/{{ picture.thumbnail_src }}">
+      </a>
+    </div>
+    <div class="col-1 position-relative">
+    </div>
     {% endif %}
     {% endfor %}
     

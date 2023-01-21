@@ -126,3 +126,13 @@ margin-right: auto; */
   width: 80px;
   cursor: pointer;
 }
+.gallery .thumbnail a {
+  background-color: $black;
+  opacity: 1;
+}
+.gallery .thumbnail a:hover,
+.gallery .thumbnail a:focus {
+  background-color: $black;
+  opacity: 0.5;
+  transition: 0.3s;
+}
