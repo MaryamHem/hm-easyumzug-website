@@ -6,7 +6,11 @@
     {% assign pictures = site.data.gallery.pictures %}
     {% for picture in pictures %}
 
+    {% if forloop.first %}
+    <div class="col-12 mt-4">
+    {% else %}
     <div class="col-12">
+    {% endif %}
       <img class="img-fluid mb-3" src="/assets/pics/gallery/{{ picture.src }}">
     </div>
 
