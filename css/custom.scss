@@ -20,12 +20,14 @@ $platinum: #dee7e7;
 $imperial-red: #EF233C; /* rgba(239,35,60,1) */
 $cerulean-frost: #6D93B1;
 
-
 $hme-blue: $prussian-blue;
 $hme-blue2: $blue-ncs;
 $hme-red: $imperial-red;
 $hme-dark-red: #D72036;
 $hme-light-blue: #D3DFE8;
+
+$beige: #CDC1A0;
+$dark-beige: #A08F67;
 
 $danger: $imperial-red;
 
@@ -119,17 +121,12 @@ $custom-colors: (
   "medium-grey": $medium-grey,
   "dark-grey": $dark-grey,
   "light-grey": $light-grey,
-  "white": $white
+  "white": $white,
+  "beige": $beige,
+  "dark-beige": $dark-beige
   );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
-
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
 
 
 $container-max-widths: (
@@ -175,6 +172,13 @@ $utilities: (
     )
   )
  );
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
 
 $display-font-sizes: (
   0: 8rem,

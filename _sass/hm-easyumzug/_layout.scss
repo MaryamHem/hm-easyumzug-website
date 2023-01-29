@@ -142,3 +142,21 @@ margin-right: auto; */
 .bg-dark-dark-blue-2 {
   background-color: #0D1C39;
 }
+
+.services-overview img {
+  top: -32px;
+  left: 0;
+  right: 0;
+}
+.services-overview {
+  background-image: url(/assets/bg-services.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.services-overview a.btn {
+  transition: all 200ms linear;
+}
+.services-overview a.btn:hover,
+.services-overview a.btn:focus {
+  transform:  translateY(-.5rem);
+}
