@@ -3,7 +3,8 @@
     <h1 class="text-white text-center">Gallerie</h1>
     {% include separator.html %}
 
-    {% assign pictures = site.data.gallery.pictures %}
+    {% assign pictures = site.data.gallery.pictures | where_exp: "picture",
+"picture.index < 9"  %}
     {% for picture in pictures %}
 
     {% if forloop.first %}
