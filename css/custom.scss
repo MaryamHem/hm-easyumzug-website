@@ -28,6 +28,7 @@ $hme-light-blue: #D3DFE8;
 
 $beige: #CDC1A0;
 $dark-beige: #A08F67;
+$dark-green: #77999E;
 
 $danger: $imperial-red;
 
@@ -123,7 +124,8 @@ $custom-colors: (
   "light-grey": $light-grey,
   "white": $white,
   "beige": $beige,
-  "dark-beige": $dark-beige
+  "dark-beige": $dark-beige,
+  "dark-green": $dark-green
   );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
