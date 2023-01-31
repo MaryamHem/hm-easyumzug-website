@@ -30,7 +30,7 @@ categories:
     - title: Küchenmontagen
       url: /services/
     - title: Halteverbotszonen
-      url: /services/
+      url: /services#halteverbot
     - title: Packmaterial
       url: /services/
     - title: Packservice
@@ -48,7 +48,7 @@ categories:
     - title: Reinigung
       url: /services/
     - title: Versicherung
-      url: /services/
+      url: /services#versicherung
 
 - name: other
   location: header, footer

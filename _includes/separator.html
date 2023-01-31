@@ -1,1 +1,7 @@
-<div class="text-center mb-2"><img src="/assets/separator.svg"></div>
+<div class="text-center mb-2">
+	{% if include.colour %}
+	<img src="/assets/icons/separator-{{ include.colour }}.svg">
+	{% else %}
+	<img src="/assets/icons/separator.svg">
+	{% endif %}
+</div>
