@@ -1,11 +1,11 @@
 # Setup
 title: HM-Easyumzug
 tagline: Einfach umziehen in Frankfurt am Main
-url: https://hm-easuymzug.de
+url: hm-easuymzug.de
 paginate: 1
 baseurl: ""
 permalink: pretty
-description: "Einfach umziehen mit dem Frankfurter Familienunternehmen HM-Easyumzug. Persönliche Umzugsberatung, höchste Qualität und ein 5 Sterne Team!"
+description: "Einfach umziehen in Frankfurt am Main mit dem Familienunternehmen HM-Easyumzug. Google Bewertung: 5 Sterne. Persönliche*r Umzugsmanager*in, top Versicherung und freundliches und professionelles Team!"
 
 # Gems
 plugins:
@@ -38,13 +38,15 @@ author:
   name: Maryam Hemati
   url: hm-easyumzug.de
   email: info@hm-easyumzug.de
+  instagram: hmeasyumzug
 
 # Custom vars
 version: 
 
-
 social:
-  name: Maryam Hemati
+  name: HM-Easyumzug
   links:
     - https://www.facebook.com/pages/category/Moving---Storage-Service/HM-Easyumzug-106265624347586/
     - https://www.instagram.com/hmeasyumzug/
+
+logo: /assets/logo/logo-hm-easyumzug-blue-bg.png
