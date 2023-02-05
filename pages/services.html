@@ -16,54 +16,74 @@ permalink: services/
         Ein erfolgreicher Umzug ist mehr als nur Möbeltransport
       </div>
 
-      <div class="row pt-5 g-0 services-overview services-overview-bg">
-
-        <div class="col-3 mb-6 mt-4 px-2">
-          <a class="btn border-hme-blue rounded bg-white w-100 py-3 position-relative" href="/services#halteverbot">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-no-parking.svg" height="64">
-            <p class="mt-4 mb-0">Halteverbotszonen</p>
-            <p>Zusatzversicherung</p>
-            <div class="">
-              <img src="/assets/icons/arrow-blue.svg">
+      <div class="row pt-5 pt-md-6 g-0 services-overview services-overview-bg" >
+        <div class="col-12 col-md-6">
+          <div class="row g-0 services-overview-bg-1">
+            <div class="col-6 mb-6 mt-4 px-2">
+              <a class="btn border-hme-blue rounded bg-white w-100 py-3 position-relative" href="#halteverbot">
+                <img class="position-absolute mx-auto" src="/assets/icons/icon-no-parking.svg" height="64">
+                <p class="mt-4 mb-0">Halteverbotszonen</p>
+                <p>Zusatzversicherung</p>
+                <div class="">
+                  <img src="/assets/icons/arrow-blue.svg">
+                </div>
+              </a>
             </div>
-          </a>
+            <div class="col-6 mb-6 mt-5 px-2">
+              <a class="btn border-dark-beige rounded bg-white w-100 py-3 position-relative" href="#packmaterial">
+                <img class="position-absolute mx-auto" src="/assets/icons/icon-box.svg" height="64">
+                <p class="mt-4 mb-2">Packmaterial</p>
+                <div class="">
+                  <img src="/assets/icons/arrow-dark-beige.svg">
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row g-0 mt-2 d-md-none">
+            <div class="col-6">
+              <h5 class="text-center text-hme-blue">14 Tage zuvor</h5>
+            </div>
+            <div class="col-6">
+              <h5 class="text-center text-dark-beige">4 Tage zuvor</h5>
+            </div>
+          </div>
+
         </div>
 
-        <div class="col-3 mb-6 mt-5 px-2">
-          <a class="btn border-dark-beige rounded bg-white w-100 py-3 position-relative" href="/services">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-box.svg" height="64">
-            <p class="mt-4 mb-2">Packmaterial</p>
-            <div class="">
-              <img src="/assets/icons/arrow-dark-beige.svg">
+        <div class="col-12 col-md-6">
+          <div class="row g-0 services-overview-bg-2">
+            <div class="col-6 mb-5 px-2">
+              <a class="btn border-secondary rounded bg-white w-100 py-3 position-relative" href="#einpackservice">
+                <img class="position-absolute mx-auto" src="/assets/icons/icon-hammer.svg" height="64">
+                <p class="mt-4 mb-0">Packservice</p>
+                <p>Handwerkerservice</p>
+                <div class="">
+                  <img src="/assets/icons/arrow-red.svg">
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-
-        <div class="col-3 mb-5 px-2">
-          <a class="btn border-secondary rounded bg-white w-100 py-3 position-relative" href="/services">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-hammer.svg" height="64">
-            <p class="mt-4 mb-0">Packservice</p>
-            <p>Handwerkerservice</p>
-            <div class="">
-              <img src="/assets/icons/arrow-red.svg">
+            <div class="col-6 mb-5 mt-4 px-2">
+              <a class="btn border-secondary dark-beige rounded bg-white w-100 py-3 position-relative" href="#handwerkerservice">
+                <img class="position-absolute mx-auto" src="/assets/icons/icon-carry-box.svg" height="64">
+                <p class="mt-4 mb-0">Möbelmontage</p>
+                <p>Küchenmontage</p>
+                <div class="">
+                  <img src="/assets/icons/arrow-red.svg">
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-
-        <div class="col-3 mb-5 mt-4 px-2">
-          <a class="btn border-secondary dark-beige rounded bg-white w-100 py-3 position-relative" href="/services">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-carry-box.svg" height="64">
-            <p class="mt-4 mb-0">Möbelmontage</p>
-            <p>Küchenmontage</p>
-            <div class="">
-              <img src="/assets/icons/arrow-red.svg">
+          </div>
+          <div class="row g-0 mt-2 d-md-none">
+            <div class="col-12">
+              <h5 class="text-center text-secondary">am Umzugstag</h5>
             </div>
-          </a>
+          </div>
         </div>
 
       </div>
 
-      <div class="row g-0 mt-2">
+      <div class="row g-0 mt-2 d-none d-md-flex">
         <div class="col-3">
           <h5 class="text-center text-hme-blue">14 Tage zuvor</h5>
         </div>
@@ -75,12 +95,22 @@ permalink: services/
         </div>
       </div>
 
-      <h4 class="mt-5 mb-4">Sonderleistungen</h4>
+      <h4 class="mt-5 mt-md-6 mb-4" data-aos="fade-right">Premiumleistungen</h4>
 
-      <div class="row g-0 services-remaining services-overview">
+      <div class="row g-0 services-premium services-overview"  data-aos="fade-left">
 
-        <div class="col-3 offset-3 mb-6 mt-4 px-2">
-          <a class="btn border-dark-green rounded bg-white w-100 py-3 position-relative" href="/services">
+        <div class="col-6 col-md-3 mb-4 mb-md-3 mt-4 px-2">
+          <a class="btn border-dark-green rounded bg-white w-100 py-3 position-relative" href="#premiumleistungen">
+            <img class="position-absolute mx-auto" src="/assets/icons/icon-storage-green.svg" height="64">
+            <p class="mt-4 mb-2">Lagerung</p>
+            <div class="">
+              <img src="/assets/icons/arrow-green.svg">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4 mb-md-3 mt-4 px-2">
+          <a class="btn border-dark-green rounded bg-white w-100 py-3 position-relative" href="#premiumleistungen">
             <img class="position-absolute mx-auto" src="/assets/icons/icon-trash-green.svg" height="64">
             <p class="mt-4 mb-0">Entrümpelung</p>
             <p>Reinigung</p>
@@ -90,21 +120,20 @@ permalink: services/
           </a>
         </div>
 
-        <div class="col-3 mb-6 mt-4 px-2">
-          <a class="btn border-dark-green rounded bg-white w-100 py-3 position-relative" href="/services">
+        <div class="col-6 col-md-3 mb-4 mb-md-3 mt-4 px-2">
+          <a class="btn border-dark-green rounded bg-white w-100 py-3 position-relative" href="#premiumleistungen">
             <img class="position-absolute mx-auto" src="/assets/icons/icon-elevator-green.svg" height="64">
             <p class="mt-4 mb-0">Außenaufzug</p>
-            <p>Klaviertransport</p>
             <div class="">
               <img src="/assets/icons/arrow-green.svg">
             </div>
           </a>
         </div>
 
-        <div class="col-3 mb-6 mt-4 px-2">
-          <a class="btn border-dark-green rounded bg-white w-100 py-3 position-relative" href="/services">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-storage-green.svg" height="64">
-            <p class="mt-4 mb-2">Lagerung</p>
+        <div class="col-6 col-md-3 mb-4 mb-md-3 mt-4 px-2">
+          <a class="btn border-dark-green rounded bg-white w-100 py-3 position-relative" href="#premiumleistungen">
+            <img class="position-absolute mx-auto" src="/assets/icons/icon-piano-green.svg" height="64">
+            <p class="mt-4 mb-0">Klaviertransport</p>
             <div class="">
               <img src="/assets/icons/arrow-green.svg">
             </div>
@@ -129,10 +158,10 @@ permalink: services/
   <div class="bg-white pb-4">
     <div class="container-lg">
       <div class="row">
-        <div class="col-3 offset-2">
+        <div class="col-4 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
           <img class="w-100 d-block" src="https://images.unsplash.com/photo-1665341454756-2cac27ecd220?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80">
         </div>
-        <div class="col-6 ms-3 mt-3">
+        <div class="col-8 col-md-6 ps-2 ps-md-3 mt-md-3 " data-aos="fade-left">
           <h4>Halteverbotszonen</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -142,17 +171,178 @@ permalink: services/
 </section>
 
 <section id="versicherung">
-  <div class="bg-white pb-6">
+  <div class="bg-white">
     <div class="container-lg">
       <div class="row">
-        <div class="col-6 me-3 mt-3 text-end">
+        <div class="col-8 col-md-6 pe-2 pe-md-3 mt-md-3 text-md-end " data-aos="fade-right">
           <h4>Zusatzversicherung</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="col-4">
+        <div class="col-4" data-aos="fade-left">
           <img class="w-100 d-block" src="https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80">
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<div class="container-lg pb-5">
+  <div class="d-flex justify-content-end">
+   
+    <a class="text-decoration-none text-secondary text-end" href="#services-overview">
+      <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
+      <div class="mt-n3">BACK TO TOP</div>
+    </a>
+
+  </div>
+</div>
+
+<div class="bg-white pt-5 pb-5">
+  <div class="container-lg">
+    <h2 class="text-center fw-semibold text-dark-beige">Bis 4 Tage zuvor</h2>
+    {% include separator.html colour="beige" %}
+  </div>
+</div>
+
+<section id="packmaterial">
+  <div class="bg-white pb-4">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-4 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
+          <img class="w-100 d-block" src="https://images.unsplash.com/photo-1600725935160-f67ee4f6084a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+        </div>
+        <div class="col-8 col-md-6 ps-2 ps-md-3 mt-md-3 " data-aos="fade-left"> 
+          <h4>Packmaterial</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container-lg pb-5">
+  <div class="d-flex justify-content-end">
+
+    <a class="text-decoration-none text-secondary text-end" href="#services-overview">
+      <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
+      <div class="mt-n3">BACK TO TOP</div>
+    </a>
+
+  </div>
+</div>
+
+<div class="bg-white pt-5 pb-5">
+  <div class="container-lg">
+    <h2 class="text-center fw-semibold text-secondary">Am Umzugstag</h2>
+    {% include separator.html %}
+  </div>
+</div>
+
+<section id="einpackservice">
+  <div class="bg-white pb-4">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-4 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
+          <img class="w-100 d-block" src="https://images.unsplash.com/photo-1520038410233-7141be7e6f97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80">
+        </div>
+        <div class="col-8 col-md-6 ps-2 ps-md-3 mt-md-3 " data-aos="fade-left">
+          <h4>Einpackservice</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="handwerkerservice">
+  <div class="bg-white">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-8 col-md-6 pe-2 pe-md-3 mt-md-3 text-md-end " data-aos="fade-right">
+          <h4>Möbelmontage, Küchenmontage &amp; Handwerkerservice</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-4" data-aos="fade-left">
+          <img class="w-100 d-block" src="https://images.unsplash.com/photo-1595814433015-e6f5ce69614e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container-lg pb-5">
+  <div class="d-flex justify-content-between">
+    <div> 
+      <span class="invisible">BACK TO TOP</span>
+    </div>
+    
+    {% include cta.html cta="Jetzt buchen" %}
+   
+    <a class="text-decoration-none text-secondary text-end" href="#services-overview">
+      <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
+      <div class="mt-n3">BACK TO TOP</div>
+    </a>
+
+  </div>
+</div>
+
+<section id="premiumleistungen">
+  <div class="bg-white pt-5 pb-5">
+    <div class="container-lg">
+      <h2 class="text-center fw-semibold">Premiumleistungen</h2>
+      {% include separator.html %}
+    </div>
+  </div>
+  <div class="bg-white pb-4">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-2 col-md-1" data-aos="fade-right">
+          <img src="/assets/icons/icon-storage-green.svg" height="64">
+        </div>
+        <div class="col-10 col-md-5" data-aos="fade-right">
+          <h4>Lagerung</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-2 col-md-1" data-aos="fade-left">
+          <img src="/assets/icons/icon-trash-green.svg" height="64">
+        </div>
+        <div class="col-10 col-md-5" data-aos="fade-left">
+          <h4>Entrümpelung, Reiningung</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-2 col-md-1" data-aos="fade-right">
+          <img src="/assets/icons/icon-elevator-green.svg" height="64">
+        </div>
+        <div class="col-10 col-md-5" data-aos="fade-right">
+          <h4>Außenaufzug</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-2 col-md-1" data-aos="fade-left">
+          <img src="/assets/icons/icon-piano-green.svg" height="64">
+        </div>
+        <div class="col-10 col-md-5" data-aos="fade-left">
+          <h4>Klaviertransport</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container-lg pb-5">
+  <div class="d-flex justify-content-between">
+    <div> 
+      <span class="invisible">BACK TO TOP</span>
+    </div>
+    
+    {% include cta.html cta="Jetzt buchen" %}
+   
+    <a class="text-decoration-none text-secondary text-end" href="#services-overview">
+      <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
+      <div class="mt-n3">BACK TO TOP</div>
+    </a>
+
+  </div>
+</div>
