@@ -55,6 +55,8 @@ $card-border-radius: 0.5rem;
 $font-weight-medium: 500;
 $font-weight-bold: 600;
 
+$enable-negative-margins: true;
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "variables";
 
