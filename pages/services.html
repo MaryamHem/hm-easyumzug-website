@@ -85,60 +85,69 @@ permalink: services/
 
       <div class="row g-0 mt-2 d-none d-md-flex">
         <div class="col-3">
-          <h5 class="text-center text-hme-blue">14 Tage zuvor</h5>
+          <p class="text-center fw-medium text-hme-blue">14 Tage zuvor</p>
         </div>
         <div class="col-3">
-          <h5 class="text-center text-dark-beige">4 Tage zuvor</h5>
+          <p class="text-center fw-medium text-dark-beige">4 Tage zuvor</p>
         </div>
         <div class="col-6">
-          <h5 class="text-center text-secondary">am Umzugstag</h5>
+          <p class="text-center fw-medium text-secondary">am Umzugstag</p>
         </div>
       </div>
 
-      <h5 class="text-center mt-5 mt-md-5 mb-5">Premiumleistungen</h5>
+    </div>
+  </div>
+</section>
+
+<section id="services-overview">
+  <div class="bg-light-hme-blue py-6">
+    <div class="container">
+
+      <h2 class="text-center fw-semibold pb-5">After-Services &amp; Premiumleistungen</h2>
+      <!-- <h5 class="text-center mt-5 mt-md-5 mb-5">Premiumleistungen</h5> -->
 
       <div class="row g-0 services-premium services-overview">
 
         <div class="col-6 col-md-3 mb-4 mb-md-3 mt-4 px-2">
-          <a class="btn border-dark-green rounded bg-white w-100 h-100 py-3 position-relative" href="#premiumleistungen">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-storage-green.svg" height="64">
+          <a class="btn border-hme-blue rounded bg-white w-100 h-100 py-3 position-relative" href="#premiumleistungen">
+            <img class="position-absolute mx-auto" src="/assets/icons/icon-storage.svg" height="64">
             <p class="mt-4 mb-2">Lagerung</p>
             <p>Haushaltsauflösung</p>
             <div class="">
-              <img src="/assets/icons/arrow-green.svg">
+              <img src="/assets/icons/arrow-blue.svg">
             </div>
           </a>
         </div>
 
         <div class="col-6 col-md-3 mb-4 mb-md-3 mt-4 px-2">
-          <a class="btn border-dark-green rounded bg-white w-100 h-100 py-3 position-relative" href="#premiumleistungen">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-paint-green.svg" height="64">
+          <a class="btn border-hme-blue rounded bg-white w-100 h-100 py-3 position-relative" href="#premiumleistungen">
+            <img class="position-absolute mx-auto" src="/assets/icons/icon-paint.svg" height="64">
             <p class="mt-4 mb-2">Malerarbeiten</p>
             <p>Endreinigung</p>
             <div class="">
-              <img src="/assets/icons/arrow-green.svg">
+              <img src="/assets/icons/arrow.svg">
             </div>
           </a>
         </div>        
 
         <div class="col-6 col-md-3 mb-4 mb-md-3 mt-4 px-2">
-          <a class="btn border-dark-green rounded bg-white w-100 h-100 py-3 position-relative" href="#premiumleistungen">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-trash-green.svg" height="64">
+          <a class="btn border-hme-blue rounded bg-white w-100 h-100 py-3 position-relative" href="#premiumleistungen">
+            <img class="position-absolute mx-auto" src="/assets/icons/icon-trash.svg" height="64">
             <p class="mt-4 mb-2">Entrümpelung</p>
             <p>Entsorgung</p>
             <div class="">
-              <img src="/assets/icons/arrow-green.svg">
+              <img src="/assets/icons/arrow.svg">
             </div>
           </a>
         </div>
 
         <div class="col-6 col-md-3 mb-4 mb-md-3 mt-4 px-2">
-          <a class="btn border-dark-green rounded bg-white w-100 h-100 py-3 position-relative" href="#premiumleistungen">
-            <img class="position-absolute mx-auto" src="/assets/icons/icon-piano-green.svg" height="64">
+          <a class="btn border-hme-blue rounded bg-white w-100 h-100 py-3 position-relative" href="#premiumleistungen">
+            <img class="position-absolute mx-auto" src="/assets/icons/icon-piano.svg" height="64">
             <p class="mt-4 mb-2">Außenaufzug</p>
             <p>Klaviertransport</p>
             <div class="">
-              <img src="/assets/icons/arrow-green.svg">
+              <img src="/assets/icons/arrow.svg">
             </div>
           </a>
         </div>
@@ -150,169 +159,205 @@ permalink: services/
 </section>
 
 
-<div class="bg-white pt-6 pb-5">
-  <div class="container-lg">
-    <h2 class="text-center fw-semibold text-hme-blue">Bis 14 Tage zuvor</h2>
-    {% include separator.html colour="blue" %}
-  </div>
-</div>
-
 <section id="halteverbot">
-  <div class="bg-white pb-4">
+  <div class="bg-light-grey pt-6 pb-4">
+
+    <div class="container-lg pb-5">
+      <h2 class="text-center fw-semibold">Bis 14 Tage zuvor</h2>
+      {% include separator.html %}
+    </div>
+
     <div class="container-lg">
       <div class="row">
-        <div class="col-12 offset-0 col-md-5 offset-md-0" data-aos="fade-right">
+        <div class="col-12 col-md-5 offset-md-1 pe-md-5 pt-4 pt-md-5 text-md-end order-2 order-md-1" data-aos="fade-right">
+          <h2 class="lh-1 mb-4">Halteverbotszonen</h2>
+          <p class="fw-semibold lh-sm fs-6">Wir kümmern uns um die Beantragung und Einrichtung von Halteverbotszonen vor Ihrer alten und neuen Wohnung, um einen reibungslosen Umzug zu gewährleisten.</p>
+          <!-- Toggle modal -->
+          <button type="button" class="bg-transparent border-0 text-secondary p-0" data-bs-toggle="modal" data-bs-target="#modelNoParking">
+            Mehr erfahren
+          </button>
+        </div>
+        <div class="col-12 offset-0 col-md-6 offset-md-0 order-1 order-md-2" data-aos="fade-left">
           <img class="w-100 d-block" src="/assets/pics/services/no-parking-sign.jpg">
           <small>© PantheraLeo1359531, public domain, via Wikimedia Commons</small>
         </div>
-        <div class="col-12 col-md-6 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
-          <h4>Halteverbotszonen</h4>
-          <p>Sie möchten, dass Ihr Umzug am Umzugstag reibungslos über die Bühne geht? Dann empfehlen wir Ihnen gleich die Einrichtung einer Halteverbotszone zu buchen. Wir übernehmen die gesamte Abwicklung für Sie!</p>
-          <p>Die Bearbeitung des Antrages auf Einrichtung einer Halteverbotszone für einen Umzug gemäß § 45 Absätze 1, 3 und 6 Straßenverkehrs-Ordnung (StVO) beim Straßenverkehrsamt Frankfurt hat eine <strong>Bearbeitungszeit von bis zu zwei Wochen</strong>. Darüberhinaus müssen die Halteverbotsschilder <strong>drei volle Kalendertage</strong> vor dem Umzug aufgestellt werden, um rechtswirksam zu sein. Außerdem muss die Aufstellung dokumentiert/protokolliert werden.</p>
-          <p>Es empfiehlt sich daher, den Umzug inklusive der Einrichtung einer Halteverbotszone <strong>mehrere Wochen vor dem Umzugstag</strong> zu buchen.
-          Das Worst-Case-Szenario wäre eine zeitliche Verschiebung Ihres Umzuges oder ein Komplettausfall, weil kein Platz für eine Be- und Entladestelle gegeben ist. 
-          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modelNoParking" tabindex="-1" aria-labelledby="modelNoParkingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-body">
+          <button type="button" class="btn-close bg-transparent border-0 float-end text-secondary fw-medium" data-bs-dismiss="modal" aria-label="Close">CLOSE</button>
+          <div class="p-md-5">
+            <h2 class="lh-1 mb-4" id="modelNoParkingLabel">Halteverbotszonen</h2>
+            <p class="fw-semibold lh-sm fs-6">Sie möchten, dass Ihr Umzug am Umzugstag reibungslos über die Bühne geht? Dann empfehlen wir Ihnen gleich die Einrichtung einer Halteverbotszone zu buchen.</p>
+            <p>Wir übernehmen die gesamte Abwicklung für Sie!</p>
+            <p>Die Bearbeitung des Antrages auf Einrichtung einer Halteverbotszone für einen Umzug gemäß § 45 Absätze 1, 3 und 6 Straßenverkehrs-Ordnung (StVO) beim Straßenverkehrsamt Frankfurt hat eine <strong>Bearbeitungszeit von bis zu zwei Wochen</strong>. 
+            </p>
+            <p>Darüberhinaus müssen die Halteverbotsschilder <strong>drei volle Kalendertage</strong> vor dem Umzug aufgestellt werden, um rechtswirksam zu sein. Außerdem muss die Aufstellung dokumentiert/protokolliert werden.</p>
+            <p>Es empfiehlt sich daher, den Umzug inklusive der Einrichtung einer Halteverbotszone <strong>mehrere Wochen vor dem Umzugstag</strong> zu buchen.
+            Das Worst-Case-Szenario wäre eine zeitliche Verschiebung Ihres Umzuges oder ein Komplettausfall, weil kein Platz für eine Be- und Entladestelle gegeben ist. </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="versicherung">
-  <div class="bg-white">
-    <div class="container-lg">
-      <div class="row">
-        <div class="col-12 col-md-8 pe-2 pe-md-3 pt-4 pt-md-0 mt-md-3 text-md-start order-2 order-md-1" data-aos="fade-right">
-          <h4>Zusatzversicherung</h4>
-          <p>Es ist wichtig, beim Umzug zwischen der gesetzlichen Haftung und einer zusätzlichen Transportversicherung zu unterscheiden.</p>
-          <p>In Deutschland sind alle Spediteure gesetzlich verpflichtet, eine Versicherung abzuschließen, die sogenannte <strong>Grundhaftung</strong>. Diese kostenlose Pflichtversicherung beträgt  620 EUR pro &#13221 Umzugsgut ab, was bei 30 &#13221 einem Wert von 18.600 EUR entspricht.</p>
-          <p>Die Haftung gemäß der Grundhaftung beschränkt sich ausschließlich auf den Zeitwert des transportierten Guts und setzt voraus, dass eine Schuld nachgewiesen werden kann. Wenn es sich um ein "unabwendbares Ereignis" handelt, wie beispielsweise den Verlust des Transportfahrzeugs durch einen Brand, einen unverschuldeten Unfall des Umzugswagens, greift die Grundhaftung nicht, da kein Verschulden vorliegt.</p>
-          <p>HM-Easyumzug bietet Ihnen mit einer <strong>Transportversicherung</strong> die Möglichkeit, Ihr Umzugsgut zum Zeit- oder Neuwert zu versichern. In der Regel ist jeder Schaden bis zur Höhe des versicherten Wertes gedeckt, unabhängig davon, ob ein Verschulden nachgewiesen werden kann oder ob ein Schaden durch Fremdeinwirkung entstanden ist. Voraussetzung dafür ist jedoch, dass das Umzugsgut vom Spediteur verpackt wurde.</p>
-          <p>Im Gegensatz zur Grundhaftung gibt es bei der Transportversicherung in der Regel keine Haftungsbegrenzungen. Das bedeutet, dass im Falle des Falles Ihr entstandener Schaden schnell und umfassend ersetzt wird. HM-Easyumzug bietet Ihnen dabei günstige Prämien bei ausgewählten Versicherern an, und wir stehen Ihnen bei der Schadensbearbeitung beratend zur Seite.
-          </p>
-          <p><strong>Unser Easyumzug-Tip</strong>: Transportieren Sie Wertgegenstände und Dokumente am Besten privat.</p>
-        </div>
-        <div class="col-12 col-md-3 order-1 order-md-2" data-aos="fade-left">
-          <img class="w-100 d-block" src="/assets/pics/quality-allianz-insurance-1.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="container-lg pb-5">
-  <div class="d-flex justify-content-end">
-   
-    <a class="text-decoration-none text-secondary text-end" href="#services-overview">
-      <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
-      <div class="mt-n3">BACK TO TOP</div>
-    </a>
-
-  </div>
-</div>
-
-<div class="bg-white pt-5 pb-5">
+<section id="versicherung" class="bg-light-grey pt-4 pb-5">
   <div class="container-lg">
-    <h2 class="text-center fw-semibold text-dark-beige">Bis 4 Tage zuvor</h2>
-    {% include separator.html colour="beige" %}
+    <div class="row">
+      <div class="col-12 col-md-4 offset-md-2" data-aos="fade-right">
+        <img class="w-100 d-none d-md-block border" src="/assets/pics/quality-allianz-insurance-1.png">
+        <img class="w-100 portrait-cropped d-block d-md-none border" src="/assets/pics/quality-allianz-insurance-1-responsive.png">
+      </div>
+      <div class="col-12 col-md-5 ps-md-5 pt-4 pt-md-5" data-aos="fade-left">
+        <h3 class="lh-1 mb-4">Zusatzversicherung</h3>
+        <p class="fw-semibold lh-sm fs-6">Es ist wichtig, beim Umzug zwischen der gesetzlichen Haftung und einer zusätzlichen Transportversicherung zu unterscheiden.</p>
+        <!-- Toggle modal -->
+        <button type="button" class="bg-transparent border-0 text-secondary p-0" data-bs-toggle="modal" data-bs-target="#modelInsurance">
+          Mehr erfahren
+        </button>
+      </div>      
+    </div>
   </div>
-</div>
 
-<section id="packmaterial">
-  <div class="bg-white pb-4">
-    <div class="container-lg">
-      <div class="row">
-        <!-- <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
-          <img class="w-100 d-block" src="https://images.unsplash.com/photo-1600725935160-f67ee4f6084a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
-        </div> -->
-        <div class="col-12 col-md-8 offset-md-1 ps-md-3 pt-4 pt-md-3" data-aos="fade-left"> 
-          <h4>Packmaterial</h4>
-          <p>HM-Easyumzug bietet Ihnen alles, was Sie für einen erfolgreichen Umzug benötigen. Neben unseren Umzugsdienstleistungen bieten wir auch ein breites Sortiment an Packmaterial an. Hierzu gehören <strong>Umzugskartons</strong> in verschiedenen Größen, <strong>Kleiderkartons</strong>, sowie <strong>Luftpolsterfolie, Klebeband und Seidenpapier</strong> für eine sichere Verpackung Ihrer Gegenstände.</p>
-          <p>Unsere Umzugskartons zeichnen sich durch eine hohe Qualität aus und sind äußerst robust und stabil. Damit stellen wir sicher, dass Ihr Umzugsgut sicher und geschützt ankommt. Zusätzlich bieten wir Ihnen auch <strong>Computer- und TV-Kartons</strong> an, die für den Transport empfindlicher Elektronik unerlässlich sind.</p>
-          <p>Auch gebrauchte Umzugskartons finden Sie bei uns zu niedrigeren Preisen. Das ist nicht nur günstiger für Sie, sondern auch besser für die <strong>Umwelt</strong>, da Sie so Ressourcen schonen.</p>
-          <p>HM-Easyumzug bietet Ihnen das richtige Packmaterial für Ihre Bedürfnisse an. So können Sie sicher sein, dass Ihre Sachen während des Umzugs <strong>gut geschützt</strong> sind und <strong>unbeschädigt</strong> an Ihrem neuen Standort ankommen.</p>
-        </div>
-        <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
-          <img class="w-100 d-block" src="/assets/pics/services/box.avif">
-        </div>
-        <div class="col-12 col-md-6 offset-0 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
-          <h5>Umzugskarton</h5>
-          <p>Maße von 55 x 35 x 43,6 cm (Außenmaß)<br>
-          Umzugskarton mit verstärktem Griff aus besonders stabilem Karton (maximale Belastbarkeit von 30 kg), in der Farbe weiß oder braun. Kann mehrfach gestapelt werden.</p>
-        </div>
-        <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
-          <img class="w-100 d-block" src="/assets/pics/services/clothes-box.jpg">
-        </div>
-        <div class="col-12 col-md-6 offset-0 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
-          <h5>Kleiderkarton</h5>
-          <p>Maße von 64 x 53 x 137 cm (Außenmaß)<br>
-          Der Kleiderkarton bietet Platz für schrankfertig aufgehängte Kleidung. Eine Kleiderstange aus Metall mit Rutschsicherung bietet Raum für etwa 25 Kleiderbügel. Für den einfachen Transport verfügt der Karton über seitliche Beladeklappen sowie stabile Griffe.</p>
-        </div>
-        <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
-          <img class="w-100 d-block" src="/assets/pics/services/tv-box.jpg">
-        </div>
-        <div class="col-12 col-md-6 offset-0 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
-          <h5>Computer/TV-Karton</h5>
-          <p>Computer/TV/Elektronik-Karton speziell für den sicheren Transport von empfindlichen Geräten und Bildschirmen konzipiert. In robuster Ausführung und in der Farbe braun.</p>
-        </div>
-        <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
-          <img class="w-100 d-block" src="/assets/pics/services/bubble-wrap.avif">
-        </div>
-        <div class="col-12 col-md-6 offset-0 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
-          <h5>Luftpolsterfolie</h5>
-          <p>Luftpolsterfolie transparent, doppelt stark, ideal geeignet für den Schutz von Bildern, Antiquitäten und besonders empfindlichen Gegenständen. Auch als Monitorschutzhülle erhältlich.</p>
-        </div>
-        <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
-          <img class="w-100 d-block" src="/assets/pics/services/wrapping-paper.avif">
-        </div>
-        <div class="col-12 col-md-6 offset-0 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
-          <h5>Seidenpapier</h5>
-          <p>Seidenpapier (50 x 75 cm) aus besonders feinem und flexiblem Material, das eine schonende Verpackung von Porzellan und Glas ermöglicht.</p>
-        </div>
-        <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
-          <img class="w-100 d-block" src="/assets/pics/services/tape-tesa.avif">
-        </div>
-        <div class="col-12 col-md-6 offset-0 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
-          <h5>Klebeband</h5>
-          <p>Das transparente PVC-Band ist 5 cm breit und 66 m lang. Es ist aus reißfestem Material gefertigt und besitzt eine starke Klebekraft.</p>
+  <!-- Modal -->
+  <div class="modal fade" id="modelInsurance" tabindex="-1" aria-labelledby="modelInsuranceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-body">
+          <button type="button" class="btn-close bg-transparent border-0 float-end text-secondary fw-medium" data-bs-dismiss="modal" aria-label="Close">CLOSE</button>
+          <div class="p-md-5">
+            <h2 class="lh-1 mb-4" id="modelInsuranceLabel">Zusatzversicherung</h2>
+            <p class="fw-semibold lh-sm fs-6">Es ist wichtig, beim Umzug zwischen der gesetzlichen Haftung und einer zusätzlichen Transportversicherung zu unterscheiden.</p>
+            <p>In Deutschland sind alle Spediteure gesetzlich verpflichtet, eine Versicherung abzuschließen, die sogenannte <strong>Grundhaftung</strong>. Diese kostenlose Pflichtversicherung beträgt  620 EUR pro &#13221 Umzugsgut ab, was bei 30 &#13221 einem Wert von 18.600 EUR entspricht.</p>
+            <p>Die Haftung gemäß der Grundhaftung beschränkt sich ausschließlich auf den Zeitwert des transportierten Guts und setzt voraus, dass eine Schuld nachgewiesen werden kann. Wenn es sich um ein "unabwendbares Ereignis" handelt, wie beispielsweise den Verlust des Transportfahrzeugs durch einen Brand, einen unverschuldeten Unfall des Umzugswagens, greift die Grundhaftung nicht, da kein Verschulden vorliegt.</p>
+            <p>HM-Easyumzug bietet Ihnen mit einer <strong>Transportversicherung</strong> die Möglichkeit, Ihr Umzugsgut zum Zeit- oder Neuwert zu versichern. In der Regel ist jeder Schaden bis zur Höhe des versicherten Wertes gedeckt, unabhängig davon, ob ein Verschulden nachgewiesen werden kann oder ob ein Schaden durch Fremdeinwirkung entstanden ist. Voraussetzung dafür ist jedoch, dass das Umzugsgut vom Spediteur verpackt wurde.</p>
+            <p>Im Gegensatz zur Grundhaftung gibt es bei der Transportversicherung in der Regel keine Haftungsbegrenzungen. Das bedeutet, dass im Falle des Falles Ihr entstandener Schaden schnell und umfassend ersetzt wird. HM-Easyumzug bietet Ihnen dabei günstige Prämien bei ausgewählten Versicherern an, und wir stehen Ihnen bei der Schadensbearbeitung beratend zur Seite.
+            </p>
+            <p><strong>Unser Easyumzug-Tip</strong>: Transportieren Sie Wertgegenstände und Dokumente am Besten privat.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="container-lg pb-5">
+    <div class="d-flex justify-content-end">
+
+      <a class="text-decoration-none text-secondary text-end" href="#services-overview">
+        <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
+        <div class="mt-n3">BACK TO TOP</div>
+      </a>
+
+    </div>
+  </div>
+
 </section>
 
-<div class="container-lg pb-5">
-  <div class="d-flex justify-content-end">
 
-    <a class="text-decoration-none text-secondary text-end" href="#services-overview">
-      <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
-      <div class="mt-n3">BACK TO TOP</div>
-    </a>
-
-  </div>
-</div>
-
-<div class="bg-white pt-5 pb-5">
-  <div class="container-lg">
-    <h2 class="text-center fw-semibold text-secondary">Am Umzugstag</h2>
+<section id="packmaterial" class="bg-white pt-6 pb-4">
+  <div class="container-lg pb-5">
+    <h2 class="text-center fw-semibold">Bis 4 Tage zuvor</h2>
     {% include separator.html %}
   </div>
-</div>
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-12 col-md-5 offset-md-1 pe-md-5 text-md-end" data-aos="fade-left">
+        <h2 class="lh-1 mb-4">Packmaterial</h2>
+        <p class="fw-semibold lh-sm fs-6">HM-Easyumzug bietet Ihnen alles, was Sie für einen erfolgreichen Umzug benötigen. Neben unseren Umzugsdienstleistungen bieten wir auch ein breites Sortiment an Packmaterial an.</p>
+        <p>Hierzu gehören <strong>Umzugskartons</strong> in verschiedenen Größen, <strong>Kleiderkartons</strong>, sowie <strong>Luftpolsterfolie, Klebeband und Seidenpapier</strong> für eine sichere Verpackung Ihrer Gegenstände.</p>
+      </div>
+      <div class="col-12 col-md-5" data-aos="fade-left">
+        <p>Unsere Umzugskartons zeichnen sich durch eine hohe Qualität aus und sind äußerst robust und stabil. Damit stellen wir sicher, dass Ihr Umzugsgut sicher und geschützt ankommt. </p>
+        <p>Zusätzlich bieten wir Ihnen auch <strong>Computer- und TV-Kartons</strong> an, die für den Transport empfindlicher Elektronik unerlässlich sind.</p>
+        <p>Auch gebrauchte Umzugskartons finden Sie bei uns zu niedrigeren Preisen. Das ist nicht nur günstiger für Sie, sondern auch besser für die <strong>Umwelt</strong>, da Sie so Ressourcen schonen.</p>
+        <p>HM-Easyumzug bietet Ihnen das richtige Packmaterial für Ihre Bedürfnisse an. So können Sie sicher sein, dass Ihre Sachen während des Umzugs <strong>gut geschützt</strong> sind und <strong>unbeschädigt</strong> an Ihrem neuen Standort ankommen.</p>
+      </div>
+      <div class="col-12 offset-0 col-md-2 offset-md-4 pe-md-5" data-aos="fade-right">
+        <img class="w-100 d-block" src="/assets/pics/services/box.avif">
+      </div>
+      <div class="col-12 col-md-5 offset-0" data-aos="fade-left">
+        <h5>Umzugskarton</h5>
+        <p>Maße von 55 x 35 x 43,6 cm (Außenmaß)<br>
+        Umzugskarton mit verstärktem Griff aus besonders stabilem Karton (maximale Belastbarkeit von 30 kg), in der Farbe weiß oder braun. Kann mehrfach gestapelt werden.</p>
+      </div>
+      <div class="col-12 offset-0 col-md-3 offset-md-3 pe-md-5" data-aos="fade-right">
+        <img class="w-100 d-block" src="/assets/pics/services/clothes-box.jpg">
+      </div>
+      <div class="col-12 col-md-5 offset-0" data-aos="fade-left">
+        <h5>Kleiderkarton</h5>
+        <p>Maße von 64 x 53 x 137 cm (Außenmaß)<br>
+        Der Kleiderkarton bietet Platz für schrankfertig aufgehängte Kleidung. Eine Kleiderstange aus Metall mit Rutschsicherung bietet Raum für etwa 25 Kleiderbügel. Für den einfachen Transport verfügt der Karton über seitliche Beladeklappen sowie stabile Griffe.</p>
+      </div>
+      <div class="col-12 offset-0 col-md-3 offset-md-3 pe-md-5" data-aos="fade-right">
+        <img class="w-100 d-block" src="/assets/pics/services/tv-box.jpg">
+      </div>
+      <div class="col-12 col-md-5 offset-0" data-aos="fade-left">
+        <h5>Computer/TV-Karton</h5>
+        <p>Computer/TV/Elektronik-Karton speziell für den sicheren Transport von empfindlichen Geräten und Bildschirmen konzipiert. In robuster Ausführung und in der Farbe braun.</p>
+      </div>
+      <div class="col-12 offset-0 col-md-2 offset-md-4 pe-md-5" data-aos="fade-right">
+        <img class="w-100 d-block" src="/assets/pics/services/bubble-wrap.avif">
+      </div>
+      <div class="col-12 col-md-5 offset-0" data-aos="fade-left">
+        <h5>Luftpolsterfolie</h5>
+        <p>Luftpolsterfolie transparent, doppelt stark, ideal geeignet für den Schutz von Bildern, Antiquitäten und besonders empfindlichen Gegenständen. Auch als Monitorschutzhülle erhältlich.</p>
+      </div>
+      <div class="col-12 offset-0 col-md-3 offset-md-3 pe-md-5" data-aos="fade-right">
+        <img class="w-100 d-block" src="/assets/pics/services/wrapping-paper.avif">
+      </div>
+      <div class="col-12 col-md-5 offset-0" data-aos="fade-left">
+        <h5>Seidenpapier</h5>
+        <p>Seidenpapier (50 x 75 cm) aus besonders feinem und flexiblem Material, das eine schonende Verpackung von Porzellan und Glas ermöglicht.</p>
+      </div>
+      <div class="col-12 offset-0 col-md-2 offset-md-4 pe-md-5" data-aos="fade-right">
+        <img class="w-100 d-block" src="/assets/pics/services/tape-tesa.avif">
+      </div>
+      <div class="col-12 col-md-5" data-aos="fade-left">
+        <h5>Klebeband</h5>
+        <p>Das transparente PVC-Band ist 5 cm breit und 66 m lang. Es ist aus reißfestem Material gefertigt und besitzt eine starke Klebekraft.</p>
+      </div>
+    </div>
+  </div>
 
-<section id="einpackservice">
-  <div class="bg-white pb-4">
-    <div class="container-lg">
-      <div class="row">
-        <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
-          <img class="w-100 d-block" src="https://images.unsplash.com/photo-1520038410233-7141be7e6f97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80">
-        </div>
-        <div class="col-12 col-md-6 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
-          <h4>Einpackservice</h4>
-          <p>Damit Ihr Umzug reibungslos verläuft, bieten wir Ihnen unseren professionellen Einpackservice an. Wir packen Ihr Umzugsgut <strong>systematisch</strong> nach einer festgelegten Reihenfolge ein und versehen die Kartons mit einer <strong>klaren Beschriftung.</strong></p>
-          <p>Unsere geschulten Mitarbeiter packen Ihr Umzugsgut ordnungsgemäß unter Einhaltung des Maximalgewichts und verwenden dabei ausschließlich <strong>umweltfreundliches Packmaterial</strong> in Profiqualität, wie Seidenpapier, Rollenwellpappe, Schaumfolie und Luftpolsterfolien. Dadurch stellen wir sicher, dass Alles unbeschadet von A nach B transportiert wird.</p>
-          <p><strong>Unser HM-Easyumzug-Tipp:</strong> Verpacken Sie Wertgegenstände und wichtige Dokumente selbst und transportieren Sie diese privat. Das ist aus versicherungstechnischer Sicht von Vorteil und Sie gehen auf Nummer sicher.</p>
-          <p>Vertrauen Sie auf unsere langjährige Erfahrung und lassen Sie uns das Einpacken für Sie übernehmen.</p>
-        </div>
+  <div class="container-lg pb-5">
+    <div class="d-flex justify-content-end">
+      <a class="text-decoration-none text-secondary text-end" href="#services-overview">
+        <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
+        <div class="mt-n3">BACK TO TOP</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="einpackservice" class="bg-light-grey pb-4">
+
+  <div class="pt-6 pb-4">
+    <div class="container-lg pb-5">
+      <h2 class="text-center fw-semibold">Am Umzugstag</h2>
+      {% include separator.html %}
+    </div>
+  </div>
+
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-12 offset-0 col-md-3 offset-md-2" data-aos="fade-right">
+        <img class="w-100 d-block" src="https://images.unsplash.com/photo-1520038410233-7141be7e6f97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80">
+      </div>
+      <div class="col-12 col-md-6 ps-md-3 pt-4 pt-md-3" data-aos="fade-left">
+        <h4>Einpackservice</h4>
+        <p>Damit Ihr Umzug reibungslos verläuft, bieten wir Ihnen unseren professionellen Einpackservice an. Wir packen Ihr Umzugsgut <strong>systematisch</strong> nach einer festgelegten Reihenfolge ein und versehen die Kartons mit einer <strong>klaren Beschriftung.</strong></p>
+        <p>Unsere geschulten Mitarbeiter packen Ihr Umzugsgut ordnungsgemäß unter Einhaltung des Maximalgewichts und verwenden dabei ausschließlich <strong>umweltfreundliches Packmaterial</strong> in Profiqualität, wie Seidenpapier, Rollenwellpappe, Schaumfolie und Luftpolsterfolien. Dadurch stellen wir sicher, dass Alles unbeschadet von A nach B transportiert wird.</p>
+        <p><strong>Unser HM-Easyumzug-Tipp:</strong> Verpacken Sie Wertgegenstände und wichtige Dokumente selbst und transportieren Sie diese privat. Das ist aus versicherungstechnischer Sicht von Vorteil und Sie gehen auf Nummer sicher.</p>
+        <p>Vertrauen Sie auf unsere langjährige Erfahrung und lassen Sie uns das Einpacken für Sie übernehmen.</p>
       </div>
     </div>
   </div>
@@ -363,9 +408,9 @@ permalink: services/
     <div> 
       <span class="invisible">BACK TO TOP</span>
     </div>
-    
+
     {% include cta.html cta="Jetzt buchen" %}
-   
+
     <a class="text-decoration-none text-secondary text-end" href="#services-overview">
       <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
       <div class="mt-n3">BACK TO TOP</div>
@@ -375,63 +420,106 @@ permalink: services/
 </div>
 
 <section id="premiumleistungen">
-  <div class="bg-white pt-5 pb-5">
+  <div class="bg-light-hme-blue pt-5 pb-5">
     <div class="container-lg">
-      <h2 class="text-center fw-semibold">Premiumleistungen</h2>
+      <h2 class="text-center fw-semibold">After-Services &amp; Premiumleistungen</h2>
       {% include separator.html %}
     </div>
   </div>
-  <div class="bg-white pb-4">
+  <div class="bg-light-hme-blue pb-4">
     <div class="container-lg">
       <div class="row">
         <div class="col-2 col-md-1 offset-md-0" data-aos="fade-right">
-          <img src="/assets/icons/icon-storage-green.svg" height="64">
-        </div>
-        <div class="col-10 col-md-4" data-aos="fade-right">
-          <h4>Lagerung</h4>
-          <p>Wir bieten Ihnen eine sichere und trockene Lagerungslösung, falls Ihre Wohnung erst später frei wird oder Sie aufgrund von Verkleinerung oder einer Haushaltsauflösung zusätzlichen Lagerraum benötigen.</p>
-          <p>Wir bieten verschiedene Größen und Lagermöglichkeiten an, um auf Ihre individuellen Bedürfnisse einzugehen. Egal ob Sie kurzfristig oder dauerhaft einen Lagerplatz benötigen, wir haben die passende Lösung für Sie. Unsere Lagerfläche von 400 ㎡ bietet Lagerboxen (ca. 7,7 ㎥), Container (ca. 26 - 30,5 ㎥) und Premium Räume (ca. 30,5 ㎥).</p>
-          <p>Alle unsere Lagermöglichkeiten sind trocken und sicher und rund um die Uhr mit einer 24-Stunden-Alarmüberwachung geschützt. Sie können sich also sicher sein, dass Ihre Gegenstände in besten Händen sind.</p>
-        </div>
-        <div class="col-2 col-md-1" data-aos="fade-left">
-          <img src="/assets/icons/icon-paint-green.svg" height="64">
+          <img src="/assets/icons/icon-storage.svg" height="64">
         </div>
         <div class="col-10 col-md-4" data-aos="fade-left">
-          <h4>Malerarbeiten</h4>
-          <p>Wir übernehmen für Sie das arbeitsaufwendige Abkleben von Bodenleisten, Steckdosen, Fenstern, etc., Unsere Maler verwenden Malervlies und Schutzfolien als Abdeckung, um sicherzustellen, dass alle Oberflächen in Ihrem Raum vor Farbspritzern geschützt sind.</p><p>Wir verwenden hochwertige Farben von Brillux mit hoher Deckkraft, um sicherzustellen, dass die Farbe gleichmäßig und ohne Flecken aufgetragen wird.</p>
-          <p>Uns ist bewusst, dass Malerarbeiten viel Zeit und Aufwand erfordern. Deshalb bieten wir Ihnen unsere Dienstleistungen an, um Ihnen Zeit, Mühe und Aufwand zu sparen.</p>
+          <h2 class="mt-2">Lagerung</h2>
         </div>
       </div>
       <div class="row">
+        <div class="col-2 col-md-4 offset-md-1" data-aos="fade-left">  
+          <p>Wir bieten Ihnen eine <strong>sichere und trockene Lagerungslösung</strong>, falls Ihre Wohnung erst später frei wird oder Sie aufgrund von Verkleinerung oder einer Haushaltsauflösung zusätzlichen Lagerraum benötigen. Egal ob Sie kurzfristig oder dauerhaft einen Lagerplatz benötigen, wir haben die passende Lösung für Sie.</p>
+        </div>
+        <div class="col-10 col-md-4" data-aos="fade-left">
+          <p> Unsere Lagerfläche von 400 ㎡ bietet Lagerboxen (ca. 7,7 ㎥), Container (ca. 26 - 30,5 ㎥) und Premium Räume (ca. 30,5 ㎥). Alle unsere Lagermöglichkeiten sind trocken und sicher und rund um die Uhr mit einer <strong>24-Stunden-Alarmüberwachung</strong> geschützt. Sie können sich also sicher sein, dass Ihre Gegenstände in besten Händen sind.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5" style="background-color: #D9E3EA;">
+    <div class="container-lg">
+      <div class="row">
         <div class="col-2 col-md-1 offset-md-1" data-aos="fade-right">
-          <img src="/assets/icons/icon-trash-green.svg" height="64">
+          <img src="/assets/icons/icon-storage.svg" height="64">
+        </div>
+        <div class="col-10 col-md-4" data-aos="fade-left">
+          <h2 class="mt-2">Haushaltsauflösung</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 col-md-4 offset-md-2" data-aos="fade-left">
+          <p>Wir wissen, dass eine Haushaltsauflösung eine herausfordernde und emotionale Aufgabe sein kann, und deshalb sind wir hier, um Ihnen bei jedem Schritt des Prozesses zu helfen. Unser erfahrenes und geschultes Team kann Ihnen bei der <strong>Sortierung, Entsorgung und dem Transport</strong> von Gegenständen helfen.</p>
+        </div>
+        <div class="col-10 col-md-4" data-aos="fade-left">
+          <p>Wir übernehmen die gesamte Arbeit für Sie, einschließlich der Entsorgung von unerwünschten Gegenständen, des Abbaus von Möbeln und der Reinigung des Raumes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" pb-4 pt-5" style="background-color: #DFE6EB;">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-2 col-md-1 offset-md-1" data-aos="fade-left">
+          <img src="/assets/icons/icon-paint.svg" height="64">
+        </div>
+        <div class="col-10 col-md-4" data-aos="fade-left">
+          <h3>Malerarbeiten</h3>
+          <p>Wir übernehmen für Sie das arbeitsaufwendige Abkleben von Bodenleisten, Steckdosen, Fenstern, etc., Unsere Maler verwenden Malervlies und Schutzfolien als Abdeckung, um sicherzustellen, dass alle Oberflächen in Ihrem Raum vor Farbspritzern geschützt sind.</p>
+        </div>
+        <div class="col-10 col-md-4" data-aos="fade-left">
+          <p>Wir verwenden hochwertige Farben von Brillux mit hoher Deckkraft, um sicherzustellen, dass die Farbe gleichmäßig und ohne Flecken aufgetragen wird.</p>
+          <p>Uns ist bewusst, dass Malerarbeiten viel Zeit und Aufwand erfordern. Deshalb bieten wir Ihnen unsere Dienstleistungen an, um Ihnen Zeit, Mühe und Aufwand zu sparen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5" style="background-color: #E5E9ED;">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-2 col-md-1 offset-md-2" data-aos="fade-right">
+          <img src="/assets/icons/icon-trash.svg" height="64">
         </div>
         <div class="col-10 col-md-4" data-aos="fade-right">
           <h4>Endreinigung</h4>
           <p>Unser Reinigungsteam arbeitet professionell und gründlich, um sicherzustellen, dass Ihre Räumlichkeiten bei Ihrem Umzug in einwandfreiem Zustand übergeben werden können. Wir setzen modernste Reinigungsgeräte und -mittel ein, um selbst hartnäckige Verschmutzungen zu entfernen.</p>
         </div>
-        <div class="col-2 col-md-1 offset-md-0" data-aos="fade-left">
-          <img src="/assets/icons/icon-trash-green.svg" height="64">
+      </div>
+    </div>
+  </div>
+  <div class="py-5" style="background-color: #EBEDEF;"> <!-- #EBEDEF -->
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-2 col-md-1 offset-md-3" data-aos="fade-left">
+          <img src="/assets/icons/icon-trash.svg" height="64">
         </div>
         <div class="col-10 col-md-4" data-aos="fade-left">
           <h4>Entrümpelung, Entsorgung</h4>
           <p>Wenn Sie Dinge haben, von denen Sie sich schon immer trennen wollten, sei es alte Möbel, Sperrmüll, gebrauchte elektrische Geräte, Akten oder anderes Entsorgungsgut, sind Sie bei uns genau richtig.</p>
+        </div>
+        <div class="col-10 col-md-4" data-aos="fade-left">
           <p>Unser Ziel ist es, Ihnen bei der umweltgerechten Entsorgung zu helfen und Platz für Sie zu schaffen. Jede Entsorgung erfolgt ausschließlich bei zertifizierten Entsorgern, um sicherzustellen, dass alles ordnungsgemäß und umweltfreundlich entsorgt wird.</p>
         </div>
       </div>
+    </div>
+  </div>
+  
+  <div class="bg-light-grey py-5" style="">
+    <div class="container-lg">
       <div class="row">
-        <div class="col-2 col-md-1" data-aos="fade-right">
-          <img src="/assets/icons/icon-storage-green.svg" height="64">
+        <div class="col-2 col-md-1 offset-md-5" data-aos="fade-left">
+          <img src="/assets/icons/icon-piano.svg" height="64">
         </div>
-        <div class="col-10 col-md-5" data-aos="fade-right">
-          <h4>Haushaltsauflösung</h4>
-          <p>Wir wissen, dass eine Haushaltsauflösung eine herausfordernde und emotionale Aufgabe sein kann, und deshalb sind wir hier, um Ihnen bei jedem Schritt des Prozesses zu helfen. Unser erfahrenes und geschultes Team kann Ihnen bei der Sortierung, Entsorgung und dem Transport von Gegenständen helfen.</p>
-          <p>Wir übernehmen die gesamte Arbeit für Sie, einschließlich der Entsorgung von unerwünschten Gegenständen, des Abbaus von Möbeln und der Reinigung des Raumes.</p>
-        </div>
-        <div class="col-2 col-md-1" data-aos="fade-left">
-          <img src="/assets/icons/icon-piano-green.svg" height="64">
-        </div>
-        <div class="col-10 col-md-5" data-aos="fade-left">
+        <div class="col-10 col-md-4" data-aos="fade-left">
           <h4>Außenaufzug</h4>
           <p>Falls Ihr Treppenhaus sehr eng ausfällt, oder Sie in den oberen Etagen eines Hauses ohne Aufzug wohnen, empfiehlt es sich, einen Außenaufzug einzusetzen.</p>
           <h4>Klaviertransport</h4>
@@ -443,19 +531,29 @@ permalink: services/
 </section>
 
 
+<div class="bg-light-grey">
+  <div class="container-lg pb-5">
+    <div class="d-flex justify-content-between">
+      <div> 
+        <span class="invisible">BACK TO TOP</span>
+      </div>
 
-<div class="container-lg pb-5">
-  <div class="d-flex justify-content-between">
-    <div> 
-      <span class="invisible">BACK TO TOP</span>
+      {% include cta.html cta="Jetzt buchen" %}
+
+      <a class="text-decoration-none text-secondary text-end" href="#services-overview">
+        <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
+        <div class="mt-n3">BACK TO TOP</div>
+      </a>
+
     </div>
-    
-    {% include cta.html cta="Jetzt buchen" %}
-   
-    <a class="text-decoration-none text-secondary text-end" href="#services-overview">
-      <div><i class="fa-solid fa-angle-up fa-4x"></i></div>
-      <div class="mt-n3">BACK TO TOP</div>
-    </a>
-
   </div>
 </div>
+
+<!--   <button class="btn-expand bg-transparent border-0 p-0 text-secondary text-end collapsed left" data-bs-toggle="collapse" href="#collapseInsurance" role="button" aria-expanded="false" aria-controls="collapseInsurance">
+    <span>Mehr lesen</span>
+    <img class="float-start" src="/assets/icons/plus-32px.svg">
+  </button>
+
+  <div class="collapse" id="collapseInsurance">
+    <p>...</p>
+  </div> -->

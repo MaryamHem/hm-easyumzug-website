@@ -68,7 +68,7 @@ a .hme-card {
 .portrait-image {
   height: calc(100% - 1rem);
 }
-.btn-close {
+.btn-close-gallery {
   top: -64px;
   right: 0;
   background-image: url(/assets/icons/close.svg);
@@ -181,4 +181,66 @@ margin-right: auto; */
     background-size: 100%;
     margin-top: 4rem;
   }
+}
+
+/* .btn-expand {
+  background-image: url(/assets/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 32px;
+}
+.btn-expand.collapsed {
+  background-image: url(/assets/icons/plus-32px.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 32px;
+} */
+/* .btn-collapse {
+  background-image: url(/assets/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 64px;
+  width: 64px;
+} */
+
+.btn-expand.collapsed > img {
+  transition: transform 350ms ease;
+}
+.btn-expand:not(.collapsed) > img {
+  transform: rotate(45deg);
+  transition: transform 350ms ease;
+}
+.btn-expand:not(.collapsed) > span {
+  display: none;
+}
+.btn-expand.collapsed {
+  display: block;
+  width: 100%;
+}
+.btn-expand:not(.collapsed) {
+  display: inline;
+  width: 32px;
+  float: right;
+}
+.btn-expand:not(.collapsed).left {
+  float: left;
+}
+/* .btn-expand.collapsed:hover > img {
+  transform: rotate(135deg);
+} */
+
+.btn-close {
+  background-image: url(/assets/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 64px;
+  width: 64px;
+  padding-top: 64px;
+  margin-left: 32px;
+  margin-bottom: 32px;
+}
+
+.portrait-cropped {
+  object-fit: cover; 
+  object-position: 50% 0;
 }
