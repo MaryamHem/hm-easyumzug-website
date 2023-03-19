@@ -240,7 +240,21 @@ margin-right: auto; */
   margin-bottom: 32px;
 }
 
-.portrait-cropped {
-  object-fit: cover; 
-  object-position: 50% 0;
+.bg-hme-service-1 {
+  background-color: #D9E3EA;
 }
+.bg-hme-service-2 {
+  background-color: #DFE6EB;
+}
+.bg-hme-service-3 {
+  background-color: #E5E9ED;
+}
+.bg-hme-service-4 {
+  background-color: #EBEDEF;
+}
+
+/* #packmaterial img {
+  @include media-breakpoint-down(md) {
+    max-width: 50%;
+  }
+} */
