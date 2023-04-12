@@ -25,30 +25,34 @@ categories:
     subitems:
     - title: Übersicht 
       url: /services/
-    - title: Möbelmontagen
-      url: /services/
-    - title: Küchenmontagen
-      url: /services/
     - title: Halteverbotszonen
       url: /services#halteverbot
-    - title: Packmaterial
-      url: /services/
-    - title: Packservice
-      url: /services/
-    - title: Handwerkerservice
-      url: /services/
-    - title: Lagerung
-      url: /services/
-    - title: Entrümpelung
-      url: /services/
-    - title: Außenaufzug
-      url: /services/
-    - title: Klaviertransport
-      url: /services/
-    - title: Reinigung
-      url: /services/
     - title: Versicherung
       url: /services#versicherung
+    - title: Packmaterial
+      url: /services#packmaterial
+    - title: Packservice
+      url: /services#einpackservice
+    - title: Handwerkerservice
+      url: /services#handwerkerservice
+    - title: Möbelmontagen
+      url: /services#montageservice
+    - title: Küchenmontagen
+      url: /services#montageservice
+    - title: Lagerung
+      url: /services#lagerung
+    - title: Haushaltsauflösung
+      url: /services#haushaltsaufloesung
+    - title: Malerarbeiten
+      url: /services#malerarbeiten
+    - title: Endreinigung
+      url: /services#endreinigung
+    - title: Entsorgung
+      url: /services#entsorgung
+    - title: Außenaufzug
+      url: /services#aussenaufzug
+    - title: Klaviertransport
+      url: /services#aussenaufzug
 
 - name: other
   location: header, footer
