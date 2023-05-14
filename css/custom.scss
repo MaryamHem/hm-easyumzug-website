@@ -68,6 +68,7 @@ $font-weight-bold: 600;
 
 $enable-negative-margins: true;
 
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "variables";
 
@@ -209,6 +210,10 @@ $modal-backdrop-opacity: .9;
 $modal-fade-transform: scale(.9);
 
 
+$accordion-button-active-bg:  $hme-light-blue;
+$accordion-button-active-color: $black;
+
+
 // 5. Include remainder of required parts
 @import "maps";
 @import "mixins";
@@ -235,6 +240,7 @@ $modal-fade-transform: scale(.9);
 @import "vendor/rfs";
 @import "transitions";
 @import "modal";
+@import "accordion";
 //@import "close";
 
 @import "helpers";
@@ -250,3 +256,4 @@ $modal-fade-transform: scale(.9);
 @import "hm-easyumzug/type";
 @import "hm-easyumzug/landing-page-private";
 @import "hm-easyumzug/hero-video";
+@import "hm-easyumzug/landing-page-senior";
