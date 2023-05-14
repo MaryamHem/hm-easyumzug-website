@@ -1,0 +1,31 @@
+.senior-hero {
+  background-image: url(/assets/pics/senior-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 600px;
+  background-size: contain;
+
+}
+.container-lg.senior-hero {
+  max-width: 1600px !important;
+}
+.blue-box {
+  background-color: rgba(17, 54, 106, 0.8);
+  width: 500px;
+  height: 700px;
+  top: -50px;
+  margin-left: 150px;
+}
+.signature{
+  margin-left: -.75em;
+  margin-bottom: -4em;
+}
+
+.container-lg.senior-usp {
+  background-image: url(/assets/pics/senior-portrait.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 600px;
+  background-size: contain;
+  max-width: 1600px !important;
+}
