@@ -262,3 +262,14 @@ margin-right: auto; */
 .dropdown-item {
   font-weight: 500;
 }
+
+.nav-link {
+  @media(max-width: 1099.98px) { 
+   padding-right: 1rem!important;
+   padding-left: 1rem!important;
+ }
+  @media(max-width: 991.98px) { 
+   padding-right: .5rem!important;
+   padding-left: .5rem!important;
+ }
+}
