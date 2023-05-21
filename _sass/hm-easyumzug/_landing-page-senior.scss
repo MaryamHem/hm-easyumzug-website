@@ -19,8 +19,12 @@
 .overlap-top {
   background-color: rgba(17, 54, 106, 0.8);
   z-index: 5;
-  height: 2rem;
-  margin-top: -2rem;
+  height: 1.5rem;
+  margin-top: -1.5rem;
+}
+.overlap-bottom {
+  background-color: #355480;
+  height: 1.5rem;
 }
 .senior-hero-text {
   @media (min-width: 992px) {
@@ -40,15 +44,15 @@
 .senior-hero-text-mobile {
   background-color: #1A3A66;
 }
-.senior-hero-text-mobile > h1 {
-    font-size: 2.5rem;
-}
-.overlap-bottom {
-  background-color: #355480;
-  height: 2rem;
+.senior-hero-text-mobile h1 {
+    font-size: calc(1.875rem + 1.5vw); /* 2 rem */
 }
 
-.signature{
+.letter-preamble{
+  margin-bottom: -.5em;
+  height: 2.5rem; 
+}
+.letter-signature{
   margin-left: -.75em;
   margin-bottom: -4em;
 }
@@ -67,6 +71,16 @@
     /* height: 450px; */
   }
 }
+
+.senior-testimonial {
+  background-color: #E5ECF1;
+  background-position-y: 50%;
+  height: 100%;
+}
+img.senior-concept {
+  max-width: 400px;
+}
+
 
 /* $grid-breakpoints: (
   xs: 0,
