@@ -1,13 +1,57 @@
 
-- question: "Ist es möglich, bei HM-Easyumzug auch eine Einlagerung vorzunehmen?"
-  answer: "Selbstverständlich stellen wir Lagerungsmöglichkeiten zur Verfügung! Für eine detaillierte Preisübersicht und um die Verfügbarkeit unserer Lagerräume zu erfragen, wenden Sie sich bitte direkt an Ihre/r Umzugsberater/in."
-- question: "Bietet HM-Easyumzug auch den Transport von Klavieren an?"
-  answer: "Selbstverständlich. Unsere Umzugshelfer sind speziell geschult, um den Transport von Klavieren jeglicher Art durchzuführen."
-- question: "Wie lange im Voraus sollte ich mich um die Organisation meines Umzugs kümmern?"
-  answer: "Normalerweise empfehlen wir, mindestens 4-6 Wochen vor dem geplanten
-Umzugstermin Kontakt mit uns aufzunehmen, um einen passenden Termin zu finden.
-Mit diesem Vorlauf haben wir in der Regel genügend Zeit, um alles sorgfältig zu
-planen und zu organisieren. Du kannst jetzt gerne deinen Umzugstermin unter der
-Telefonnummer 069/509587931 oder per E-Mail an hello………..vereinbaren."
-- question: "Ist es möglich, bei HM-Easyumzug auch eine Einlagerung vorzunehmen?"
-  answer: "Selbstverständlich stellen wir Lagerungsmöglichkeiten zur Verfügung! Für eine detaillierte Preisübersicht und um die Verfügbarkeit unserer Lagerräume zu erfragen, wenden Sie sich bitte direkt an Ihre/r Umzugsberater/in."
+- question: Ist es möglich, bei HM-Easyumzug auch eine Einlagerung vorzunehmen?
+  answer: Selbstverständlich stellen wir Lagerungsmöglichkeiten zur Verfügung! Für eine detaillierte Preisübersicht und um die Verfügbarkeit unserer Lagerräume zu erfragen, wenden Sie sich bitte direkt an Ihre/r Umzugsberater/in.
+  
+- question: Bietet HM-Easyumzug auch den Transport von Klavieren an?
+  answer: Selbstverständlich. Unsere Umzugshelfer sind speziell geschult, um den Transport von Klavieren jeglicher Art durchzuführen.
+
+- question: Wie lange im Voraus sollte ich mich um die Organisation meines Umzugs kümmern?
+  answer: Normalerweise empfehlen wir, mindestens 4-6 Wochen vor dem geplanten Umzugstermin Kontakt mit uns aufzunehmen, um einen passenden Termin zu finden. Mit diesem Vorlauf haben wir in der Regel genügend Zeit, um alles sorgfältig zu planen und zu organisieren. Du kannst jetzt gerne deinen Umzugstermin unter der Telefonnummer 069/509587931 oder per E-Mail an hello@hm-easyumzug.devereinbaren.
+
+- question: An wen kann ich mich wenden, wenn ich Fragen zu meinem Umzug habe?
+  answer: Sollten nach deinem Umzug noch Fragen aufkommen, steht dir jederzeit unser Kundenservice zur Verfügung. Alternativ kannst du dich auch direkt an deinen persönlichen Umzugsberater wenden.
+
+- question: Ist es empfehlenswert, während meines Umzugs zu Hause zu bleiben?
+  answer: Laut Aussage des Umzugsberaters ist es nicht unbedingt erforderlich, dass du persönlich vor Ort bist.
+
+- question: Wie viele Umzugshelfer werden vor Ort sein?
+  answer: Die Anzahl der Umzugshelfer vor Ort hängt in der Regel von der Größe des Umzugs ab. Es wird üblicherweise mit 3-4 Helfern gerechnet, wobei ein Umzugshelfer pro 10m³ eingeplant wird.
+
+- question: Ist es möglich, während des Umzugs mit den Umzugshelfern mitzufahren?
+  answer: Leider ist es aus Versicherungsgründen nicht möglich, während des Umzugs mit den Umzugshelfern mitzufahren.
+
+- question: Bietet HMEasyumzug auch die Möglichkeit an, dass sie meine Sachen für mich einpacken?
+  answer: Ja, auf Wunsch packen wir alle Gegenstände ein, die in Ihr neues Zuhause transportiert werden sollen. Bitte beachten Sie jedoch, dass die Kartons, die wir für das Verpacken benötigen, von HMEasyumzug erworben werden müssen. Für detailliertere Preisinformationen wenden Sie sich bitte an Ihren Umzugsberater.
+
+- question: Auf welche Weise kann ich meine Zahlungen an Sie leisten?
+  answer: Wir bieten Ihnen die Möglichkeit, Ihre Zahlungen bequem per Banküberweisung, EC- Karte oder Bar zu tätigen. Wir bitten Sie jedoch, die bevorzugte Zahlungsmethode vor Ihrem Umzug mit unserem Dispositionsteam zu besprechen.
+
+- question: Wann ist der Zahlungszeitpunkt für meine Buchung?
+  answer: Für Ihre Buchung gilt eine Anzahlung in Höhe von 30% des Brutto-Umzugspreises. Wir bitten Sie, diese Anzahlung innerhalb von drei Tagen nach Erhalt der Auftragsbestätigung auf unser Firmenkonto zu überweisen. Die restlichen 70% des Betrags werden am Umzugstag direkt beglichen.
+
+- question: Was versteht man unter dem Begriff &quot;Beiladung&quot;?
+  answer: Eine Beiladung bezeichnet den Versand einer geringeren Menge an Umzugsgut. Durch die Wahl einer Beiladung können Sie erheblich an Transportkosten sparen im Vergleich zur Beauftragung einer Direktfahrt. Jedoch ist bei einer Beiladung eine flexible Zeitplanung erforderlich. Wir bieten Ihnen die Möglichkeit, Beiladungstransporte innerhalb Deutschlands und Europas durchzuführen.
+
+- question: Was bedeutet eine Umzugsgutbesichtigung?
+  answer: Ein Umzugsberater besucht Sie bei einer Umzugsgutbesichtigung in Ihrer Wohnung, Ihrem Haus oder Ihrem Büro, um das Umzugsgut zu begutachten und den Umfang der gewünschten Serviceleistungen zu ermitteln. Auch die Bedingungen an der Be- und Entladestelle werden festgestellt. Während des Besuchs haben Sie die Möglichkeit, Fragen zur Umzugsdurchführung zu klären. Auf Grundlage der während der Umzugsgutbesichtigung ermittelten Informationen erstellen wir Ihnen ein individuelles Umzugsangebot. Sie können hier einen Termin für Ihre Umzugsgutbesichtigung vereinbaren. 
+
+- question: Ist für eine Umzugsgutbesichtigung eine Gebühr fällig und wenn ja, wie hoch ist diese in der Regel?
+  answer: In der Regel ist eine professionelle Umzugsgutbesichtigung in der Umzugsbranche in Deutschland kostenfrei. Wenn ein Umzugsunternehmen Ihnen jedoch Gebühren für die Besichtigung berechnet, empfiehlt es sich, nach einem anderen Anbieter Ausschau zu halten.
+
+- question: Was ist ein Betriebshaftpflichtschaden bei einem Umzug?
+  answer: Ein Betriebshaftpflichtschaden bei einem Umzug entsteht, wenn die Mitarbeiter des Umzugsunternehmens schuldhaft Schäden an Dingen verursachen, die nicht zum Umzugsgut gehören, z.B. im Hausflur eines Mietshauses. Um solche Schäden zu dokumentieren, sollten Bilder gemacht und der Schaden unverzüglich schriftlich dem Umzugsunternehmen gemeldet werden, um ihn bearbeiten zu können.
+
+- question: Wofür benötige ich eine Halteverbotszone (HVZ)?
+  answer: Um während eines Umzugs eine reibungslose Be- und Entladung zu gewährleisten, ist eine Halteverbotszone (HVZ) in dicht besiedelten oder parkraumarmen Bereichen oft erforderlich. Eine eingerichtete HVZ ermöglicht das Parken des Umzug-LKW in unmittelbarer Nähe zur Be- oder Entladestelle, was die Abtragewege verkürzt und den Einsatz von weniger Umzugspersonal erfordert. Dadurch können Kosten gespart werden. In einigen Fällen ist es jedoch nicht möglich, eine HVZ direkt vor Ort einzurichten. Wir helfen Ihnen gerne dabei, zu prüfen, ob eine HVZ an Ihrem Wunschort eingerichtet werden kann.
+
+- question: Kann ich bei HMEasyumzug die Einrichtung einer Halteverbotszone (HVZ) bestellen?
+  answer: Sie haben die Möglichkeit, bei HMEasyumzug die Einrichtung einer Halteverbotszone (HVZ) zu bestellen. Bitte berücksichtigen Sie jedoch, dass Ihr Auftrag zur Einrichtung einer HVZ mindestens 12 Arbeitstage vor dem Nutzungstermin erfolgen muss, damit wir genügend Zeit haben, die behördliche Genehmigung zu beantragen. Bitte beachten Sie auch, dass es in manchen Fällen vorkommen kann, dass der Antrag auf Einrichtung einer HVZ von der zuständigen Behörde abgelehnt wird. Wir beraten Sie gerne zu allen Fragen rund um die Einrichtung einer HVZ für Ihren Umzug.
+
+- question: Kann ich auch Packmaterial wie zum Beispiel Umzug bestellen?
+  answer: Wir bieten unseren Kunden auch Packmaterialien zum Verkauf an. Dazu zählen unter anderem Umzugskartons, Bücherkartons, Luftpolsterfolien und Einschlagpapier. Wir haben stets ausreichend Material vorrätig und beraten Sie gerne bei der Auswahl des passenden Packmaterials für Ihren Umzug.
+
+- question: Was kostet ein Umzug?
+  answer: Eine pauschale Antwort auf die Frage nach den Kosten eines Umzugs ist schwierig, da es viele Faktoren gibt, die berücksichtigt werden müssen. Dazu gehören unter anderem das Volumen des Umzugsguts, die Entfernung zwischen Be- und Entladestelle, die Bedingungen an beiden Orten und die gewünschten Zusatzleistungen. Auch der Zeitpunkt des Umzugs kann eine Rolle spielen. Um Ihnen eine individuelle Preisindikation zu geben, benötigen wir einige Informationen von Ihnen. Unsere Berater stehen Ihnen zur Verfügung und können Ihnen nach einer genauen Umzugsgutbesichtigung ein konkretes Angebot unterbreiten.
+
+- question: Was mache ich, wenn ich einen Schaden beim Umzug festgestellt habe?
+  answer: Eine Schadensmeldung sollte in jedem Fall so schnell wie möglich erfolgen, um eine reibungslose Bearbeitung zu gewährleisten. Bitte informieren Sie uns unverzüglich schriftlich über den Schaden und fügen Sie gegebenenfalls auch aussagekräftige Fotos hinzu. Wir werden den Schaden dann umgehend prüfen und gemeinsam mit Ihnen eine Lösung finden.
