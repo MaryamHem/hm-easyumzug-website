@@ -1,3 +1,19 @@
+/* Breakpoints cheatsheet
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px */
+
+/* 
+senior-grey: #4C5151;
+hme-lighter-blue: #E4EAEE;
+testimonial-blue: #E5ECF1;
+testimonial-light-blue: #F7F9FB;
+
+ */
+
 .senior-hero-container.container-lg {
   max-width: 1600px !important;
 }
@@ -5,7 +21,6 @@
   width: 140vw;
   object-position: 25vw 0;
   object-fit: cover;
-  /* max-height: 50vh; */
   @media (min-width: 992px) {
     width: auto;
     object-position: calc(1800px/4 - 100vw/4) 0; /* 200px at vw 1000px */
@@ -45,18 +60,17 @@
   background-color: #1A3A66;
 }
 .senior-hero-text-mobile h1 {
-    font-size: calc(1.875rem + 1.5vw); /* 2 rem */
+  /* increase hero text on mobile */
+  font-size: calc(1.875rem + 1.5vw); /* 2 rem */
 }
-
-.letter-preamble{
+/* .letter-preamble{
   margin-bottom: -.5em;
   height: 2.5rem; 
-}
+} */
 .letter-signature{
   margin-left: -.75em;
   margin-bottom: -4em;
 }
-
 .container-lg.senior-usp {
   max-width: 1600px !important;
 }
@@ -71,22 +85,8 @@
     /* height: 450px; */
   }
 }
-
 .senior-testimonial {
   background-color: #E5ECF1;
   background-position-y: 50%;
   height: 100%;
 }
-img.senior-concept {
-  max-width: 400px;
-}
-
-
-/* $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-); */
