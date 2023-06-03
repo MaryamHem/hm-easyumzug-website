@@ -1,5 +1,11 @@
 <div class="text-center">
-	<a class="btn btn-hme-cta fw-semibold shadow p-3" href="/kontakt">
+	<a class="btn btn-hme-cta fw-semibold shadow p-3" href="
+		{% if include.link %}
+		{{ include.link }}
+		{% else %}
+		/kontakt
+		{% endif %}
+		">
 		<img class="me-2" src="/assets/icons/icon-chat-light-blue-bg.svg" height="24"> 
 		{% if include.cta %}
 		{{ include.cta }}

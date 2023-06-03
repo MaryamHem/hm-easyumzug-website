@@ -1,4 +1,10 @@
-<div class="text-center mb-2">
+
+
+<div class="
+	{% if include.align != 'left' %}
+		text-center
+	{% endif %}
+	mb-2">
 	{% if include.colour %}
 	<img src="/assets/icons/separator-{{ include.colour }}.svg">
 	{% else %}
