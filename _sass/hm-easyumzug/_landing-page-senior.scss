@@ -73,7 +73,7 @@ testimonial-light-blue: #F7F9FB;
 .container-lg.senior-usp {
   max-width: 1600px !important;
 }
-.senior-usp  img {
+.senior-usp-img {
   object-fit: cover;
   @include media-breakpoint-down(xl) {
     max-width: 450px;
@@ -88,4 +88,14 @@ testimonial-light-blue: #F7F9FB;
   background-color: #E5ECF1;
   background-position-y: 50%;
   height: 100%;
+}
+
+.senior-concept {
+  background-image: url(/assets/senior-arrow-bg.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  @include media-breakpoint-down(md) {
+    background-position: 16% top; /* adjust for line width of bg */
+  }
 }
