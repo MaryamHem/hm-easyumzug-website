@@ -2,14 +2,75 @@
 layout: default
 title: Firmenumzug
 permalink: firmen-umzug/
+description: "Firmenumzüge in Frankfurt am Main mit dem Familienunternehmen HM-Easyumzug - Rundum-Sorglos-Service, Alles aus einer Hand, Persönliches Beratungsgespräch vor Ort, Leistungen speziell für Senioren!"
 ---
 
-<section class="py-5">
-  <div class="container py-5">
 
-    <h2 class="mb-4">Firmenumzug</h2>
 
-    {% include work-in-progress.html %}
+<section class="hero-business">
+  <div class="video-container-business">
+    <video id="hero-video" loop autoplay playsinline muted preload></video> 
+
+<!--   <div class="callout d-flex justify-content-end pb-6 align-items-center h-100 flex-column" data-aos="fade-up">
+    <h1 class="display-1 text-white fw-bold text-center lh-1">Einfach <br class="d-md-none">umziehen</h1>
+    <h2 class="display-5 text-white text-center lh-1">Individuelle Umzugsberatung, Planung &amp; Umsetzung<br></h2>
+  </div> -->
+
+  
+
+  <!-- <div class="hme-scroll-hint">
+    <a class="link-white h6 position-relative d-inline-block text-decoration-none fw-semibold" href="/#badges">
+      scroll
+    </a>
+  </div> -->
 
   </div>
+
+  <div class="container-lg pb-5">
+    <div class="hero-text p-5 pb-4 col-7 mb-4">
+      <h1 class="text-white lh-1 mb-4">Effektive <br>Umzugslösungen</h1>
+      <h4 class="text-white lh-1">von Profis für Profis</h4>
+    </div>
+
+    <div class="col-7">
+      <p class="fs-5 lh-sm">Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn.</p>
+    </div>
+
+    <div class="col-4 offset-8">
+      <p class="fs-3 lh-sm mb-2">Jetzt kontaktieren!</p>
+      <!-- <div class="shadow"> --><a class="btn btn-hme-business fs-5 shadow">hello@hm-easyumzug.de<i class="fa-solid fa-angle-right ps-3"></i></a><!-- </div> -->
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  /* swap video source depending on window.innerWidth */
+  window.onload = addVideoSource();
+  function addVideoSource(element, src) {
+    var videoLocation = document.getElementById("hero-video");
+    var source = document.createElement("source");
+    if(window.innerWidth >= 768){
+      source.src = "/assets/video/hero-video-v4.mp4";
+    };
+    if(window.innerWidth < 768){
+      source.src = "/assets/video/hero-video-v4-mobile.mp4";
+    };
+    source.type = "video/mp4";
+    videoLocation.appendChild(source);
+  };
+</script>
+
+
+<section class="py-6">
+  <div class="container">
+    <div class="row">
+
+      <h1>Hallo. Ich bin ein kleiner Blindtext.</h1>
+
+      <p> Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb ein schlechterer Text als andere? Na gut, ich werde nie in den Bestsellerlisten stehen. Aber andere Texte schaffen das auch nicht. Und darum stört es mich nicht besonders blind zu sein. Und sollten Sie diese Zeilen noch immer lesen, so habe ich als kleiner Blindtext etwas geschafft, wovon all die richtigen und wichtigen Texte meist nur träumen.</p>
+    </div>
+  </div>
+
 </section>

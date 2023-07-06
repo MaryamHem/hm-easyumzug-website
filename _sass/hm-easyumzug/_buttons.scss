@@ -58,3 +58,20 @@
 form .btn {
   --bs-btn-border-radius: 2rem;
 }
+
+/* https://codepen.io/pirrera/pen/bqVeGx */
+.btn.btn-hme-business {
+  --bs-btn-color: #{$white};
+  --bs-btn-border-radius: 0;
+  --bs-btn-border-width: 0;
+  --bs-btn-hover-color: var(--bs-btn-color);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  background-image: linear-gradient(240deg, rgba(8, 122, 166, 1) 0%, 
+    rgba(17, 61, 112, 1) 100%);
+  // transition: background-image 0.5s;
+}
+.btn-hme-business:hover, .btn-hme-business:active {
+  background-image: linear-gradient(200deg, rgba(8, 122, 166, 1) 0%, 
+    rgba(17, 61, 112, 1) 100%);
+  // transition: 0.5s;
+}

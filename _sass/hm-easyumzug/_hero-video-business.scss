@@ -1,0 +1,103 @@
+/* Video container */
+/* https://codepen.io/DylanMacnab/pen/NjVXEe */
+.video-container-business {
+  height: calc(80vh - 88px);
+  position: relative;
+  overflow: hidden;
+  @media(max-width: 767.98px) {
+    height: calc(100vh - 76px);
+  }
+}
+
+.video-container-business:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(black, 0); /* .1  */
+  z-index: 1;
+}
+.video-container-business .callout {
+  position: static;
+  top: calc(70vh - 88px);
+  width: 450px;
+  z-index: 10;
+  background: transparent;
+  background-image: linear-gradient(45deg, rgba(8, 122, 166, 0.9) 0%, 
+    rgba(17, 61, 112, 0.9) 100%);
+}
+
+.hero-business .hero-text {
+  position: relative;
+  /* width: 750px; */
+  z-index: 10;
+  /* background: transparent; */
+  background-image: linear-gradient(45deg, rgba(8, 122, 166, 0.95) 0%, 
+    rgba(17, 61, 112, 0.95) 100%);
+  margin-top: -9rem;
+}
+
+.video-container-business .hme-scroll-hint:before{
+  z-index: 11;
+  content: '';
+  display: block;
+  margin: 0 auto 24px auto;
+  width: 2px;
+  height: calc(50vh - 120px);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,
+    rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
+}
+
+.hme-scroll-hint a {
+  transform: rotate(90deg);
+  left: 1px;
+}
+
+.video-container {
+    /*animation: load 5s linear 0s 1 normal forwards;
+    background-color: $hme-blue;*/
+    background-color: #DAE1F3;
+}
+.video-container:after {
+    animation: load 1s linear 0s 1 normal forwards;
+    background-color: $hme-blue;
+    opacity: 100%;
+}
+video {
+  animation: show 1s ease 0s 1 normal forwards;
+}
+@keyframes load {
+    0% {
+        background-color: $hme-blue;
+        opacity: 100%;
+    }
+    100% {
+        background-color: #DAE1F3;
+        opacity: 0%;
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+.video-container > img {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+/*.video-container:after {
+  @media(max-width: 768px) {
+    background: rgba(17, 54, 106, .2);
+  }
+}*/
+  
