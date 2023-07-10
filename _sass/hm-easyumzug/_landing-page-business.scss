@@ -1,0 +1,66 @@
+section#hero-business {
+    overflow-y: hidden;
+}
+.bg-squared {
+    background-image: url(/assets/bg-squared.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.logo-business {
+    opacity: 0.8;
+    filter: grayscale(100%);
+    transition: all 500ms;
+}
+.logo-business > img {
+    max-height: 100px;
+    @include media-breakpoint-down(lg) {
+        max-height: 75px;
+  }
+}
+.logo-business:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    text-decoration: none;
+}
+.logo-business:hover > img {
+  transform: scale(1.1);
+}
+
+
+.row.usp-business {
+    background-image: url(/assets/line-business.svg);
+    background-position: center center;
+    background-repeat: repeat-y;
+}
+.usp-business-card {
+    background-color: #36373A;
+    /* background-image: url(/assets/bg-business-card.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; */
+}
+.usp-business-image-left {
+    position: relative;
+    right: -50px;
+}
+.usp-business-card-header {
+    height: .75rem;
+    background-image: linear-gradient(80deg, rgba(8, 122, 166, 0.95) 0%, 
+    rgba(17, 61, 112, 0.95) 100%);
+}
+
+/* #usps-business .fa-li {
+    width: 3em;
+} */
+
+/* .areas_item_content::after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent linear-gradient(261deg, #6CCCCC 0%, #2AB482 100%) 0% 0% no-repeat padding-box;
+} */

@@ -7,26 +7,19 @@ description: "Firmenumzüge in Frankfurt am Main mit dem Familienunternehmen HM-
 
 
 
-<section class="hero-business">
+<section id="hero-business">
   <div class="video-container-business">
-    <video id="hero-video" loop autoplay playsinline muted preload></video> 
+    <video id="hero-video-business" loop autoplay playsinline muted preload></video> 
 
-<!--   <div class="callout d-flex justify-content-end pb-6 align-items-center h-100 flex-column" data-aos="fade-up">
-    <h1 class="display-1 text-white fw-bold text-center lh-1">Einfach <br class="d-md-none">umziehen</h1>
-    <h2 class="display-5 text-white text-center lh-1">Individuelle Umzugsberatung, Planung &amp; Umsetzung<br></h2>
-  </div> -->
-
-  
-
-  <!-- <div class="hme-scroll-hint">
-    <a class="link-white h6 position-relative d-inline-block text-decoration-none fw-semibold" href="/#badges">
-      scroll
-    </a>
-  </div> -->
+    <div class="hme-scroll-hint">
+      <a class="link-white h6 position-relative d-inline-block text-decoration-none fw-semibold" href="/#badges">
+        scroll
+      </a>
+    </div>
 
   </div>
 
-  <div class="container-lg pb-5">
+  <div class="container-lg pb-5" data-aos="fade-up" data-aos-offset="0">
     <div class="hero-text p-5 pb-4 col-7 mb-4">
       <h1 class="text-white lh-1 mb-4">Effektive <br>Umzugslösungen</h1>
       <h4 class="text-white lh-1">von Profis für Profis</h4>
@@ -49,18 +42,147 @@ description: "Firmenumzüge in Frankfurt am Main mit dem Familienunternehmen HM-
   /* swap video source depending on window.innerWidth */
   window.onload = addVideoSource();
   function addVideoSource(element, src) {
-    var videoLocation = document.getElementById("hero-video");
+    var videoLocation = document.getElementById("hero-video-business");
     var source = document.createElement("source");
     if(window.innerWidth >= 768){
-      source.src = "/assets/video/hero-video-v4.mp4";
+      source.src = "/assets/video/hero-video-business-v2.mp4";
     };
     if(window.innerWidth < 768){
-      source.src = "/assets/video/hero-video-v4-mobile.mp4";
+      source.src = "/assets/video/hero-video-business-v2-mobile.mp4";
     };
     source.type = "video/mp4";
     videoLocation.appendChild(source);
   };
 </script>
+
+<section id="data-facts" class="py-5">
+  <div class="container-lg bg-squared">
+    <div class="row text-center fs-5 lh-1 py-6">
+      <div class="col-3">
+        <p>Office</p>
+        <p class="fw-semibold">Tower ONE<br>Frankfurt am Main</p>
+      </div>
+      <div class="col-3">
+        <p>Storage</p>
+        <p class="fw-semibold">400+ m²<br>Lagerfläche</p>
+      </div>
+      <div class="col-3">
+        <p>Relocations</p>
+        <p class="fw-semibold">300+<br>Europaweit</p>
+      </div>
+      <div class="col-3">
+        <p>Services</p>
+        <p class="fw-semibold">Consulting &<br>Full-Service</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="customers" class="">
+  <div class="container-lg">
+
+    <h2 class="fs-4 mb-0">Unsere Kunden</h2>
+    <img class="w-100" src="/assets/icons/separator-business.svg">
+
+    <div class="row g-5 py-5">
+      <div class="col-1">
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100" src="/assets/logos/logo-qatar-airways.svg">
+        </span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100" src="/assets/logos/logo-planethome.svg">
+        </span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100" src="/assets/logos/logo-suedvers.svg">
+        </span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100" src="/assets/logos/logo-skillmix.svg">
+        </span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100" src="/assets/logos/logo-van-leeuwen.png">
+        </span>
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100" src="/assets/logos/logo-kia.svg">
+        </span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100 p-2 p-lg-4" src="/assets/logos/logo-nau.png">
+        </span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100 p-1 p-lg-3" src="/assets/logos/logo-bosse.svg" >
+        </span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100" src="/assets/logos/logo-k1bc.svg">
+        </span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="logo-business" href="">
+          <img class="w-100" src="/assets/logos/logo-orpea.svg">
+        </span>
+      </div>
+      <div class="col-1">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="usps-business" class="">
+  <div class="container-lg py-6">
+
+    <h2 class="fs-4 mb-0">Was uns einzigartig macht</h2>
+    <img class="w-100" src="/assets/icons/separator-business.svg">
+
+    <div class="row usp-business mt-5 py-5 g-0 d-flex align-items-center">
+      <div class="col-4 position-relative">
+        <img class="w-100 usp-business-image-left z-index-bg" src="/assets/pics/father-daughter-new-bw.jpg">
+      </div>
+      <div class="col-4 usp-business-card text-white p-0">
+        <!-- <img class="w-100" src="/assets/bg-business-card.svg"> -->
+        <div class="usp-business-card-header"></div>
+        <div class="px-4 py-4">
+          <div class="fs-5 text-center">#01</div>
+          <h3 class="text-center mb-4">Inhabergeführt</h3>
+          <!-- https://fontawesome.com/docs/web/style/lists -->
+          <ul class="fa-ul" role="list">
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Wir können flexibel agieren und uns vollständig auf Ihre individuellen Bedürfnisse und Anforderungen einstellen.</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Wir lassen unsere Leidenschaft und Expertise direkt in jeden Aspekt unserer Dienstleistungen einfließen.</li>
+          </ul>
+          <!-- <p>Wir können flexibel agieren und uns vollständig auf Ihre individuellen Bedürfnisse und Anforderungen einstellen.</p>
+          <p>Wir lassen unsere Leidenschaft und Expertise direkt in jeden Aspekt unserer Dienstleistungen einfließen.</p> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-3 g-0 d-flex align-items-center">
+      <div class="col-12 text-center">
+        <img src="/assets/icons/arrow-business.svg">
+      </div>
+    </div>
+  </div>
+
+
+</section>
 
 
 <section class="py-6">
