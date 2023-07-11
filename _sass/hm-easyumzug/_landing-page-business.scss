@@ -64,3 +64,29 @@ section#hero-business {
     height: 10px;
     background: transparent linear-gradient(261deg, #6CCCCC 0%, #2AB482 100%) 0% 0% no-repeat padding-box;
 } */
+
+.fa-ul {
+    --fa-li-margin: 2em;
+}
+
+ul {
+  --icon-space: 2.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding-left: var(--icon-space);
+  position: relative;
+}
+
+li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: calc( var(--icon-space) * -1 );
+  width: var(--icon-space);
+  position: absolute;
+  top: -.25em;
+}
