@@ -213,6 +213,8 @@ $modal-fade-transform: scale(.9);
 $accordion-button-active-bg:  $hme-light-blue;
 $accordion-button-active-color: $black;
 
+$enable-negative-margins: true;
+
 
 // 5. Include remainder of required parts
 @import "maps";

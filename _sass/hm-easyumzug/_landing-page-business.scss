@@ -16,7 +16,7 @@ section#hero-business {
     max-height: 100px;
     @include media-breakpoint-down(lg) {
         max-height: 75px;
-  }
+    }
 }
 .logo-business:hover {
     opacity: 1;
@@ -39,15 +39,44 @@ section#hero-business {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; */
+    ul {
+      --icon-space: 2.5rem;
+      list-style: none;
+      padding: 0;
+  }
+  li {
+      padding-left: var(--icon-space);
+      position: relative;
+  }
+  li:before {
+      content: "\f00c"; /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      font-size: 2rem;
+      display: inline-block;
+      margin-left: calc( var(--icon-space) * -1 );
+      width: var(--icon-space);
+      position: absolute;
+      top: -.25em;
+  }
 }
 .usp-business-image-left {
-    position: relative;
+   /*  position: relative;
+    right: -50px; */
+    position: absolute;
     right: -50px;
+    top: 0px;
+    transform: translateY(-50%);
+}
+.usp-business-image-right {
+    position: absolute;
+    left: -50px;
+    top: 0px;
+    transform: translateY(-50%);
 }
 .usp-business-card-header {
     height: .75rem;
     background-image: linear-gradient(80deg, rgba(8, 122, 166, 0.95) 0%, 
-    rgba(17, 61, 112, 0.95) 100%);
+        rgba(17, 61, 112, 0.95) 100%);
 }
 
 /* #usps-business .fa-li {
@@ -65,28 +94,10 @@ section#hero-business {
     background: transparent linear-gradient(261deg, #6CCCCC 0%, #2AB482 100%) 0% 0% no-repeat padding-box;
 } */
 
-.fa-ul {
+/* .fa-ul {
     --fa-li-margin: 2em;
 }
+ */
+ .usp-business-card {
 
-ul {
-  --icon-space: 2.5rem;
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding-left: var(--icon-space);
-  position: relative;
-}
-
-li:before {
-  content: "\f00c"; /* FontAwesome Unicode */
-  font-family: FontAwesome;
-  font-size: 2rem;
-  display: inline-block;
-  margin-left: calc( var(--icon-space) * -1 );
-  width: var(--icon-space);
-  position: absolute;
-  top: -.25em;
-}
+ }
