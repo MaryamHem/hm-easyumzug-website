@@ -11,6 +11,9 @@ section#hero-business {
     opacity: 0.8;
     filter: grayscale(100%);
     transition: all 500ms;
+    @include media-breakpoint-down(md) {
+        filter: grayscale(0%);
+    }
 }
 .logo-business > img {
     max-height: 100px;
@@ -24,7 +27,7 @@ section#hero-business {
     text-decoration: none;
 }
 .logo-business:hover > img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -32,6 +35,9 @@ section#hero-business {
     background-image: url(/assets/line-business.svg);
     background-position: center center;
     background-repeat: repeat-y;
+    @include media-breakpoint-down(xl) {
+        background-position-x: 70.83333%;
+    }
 }
 .usp-business-card {
     background-color: #36373A;
