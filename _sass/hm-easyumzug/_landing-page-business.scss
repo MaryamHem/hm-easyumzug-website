@@ -38,6 +38,9 @@ section#hero-business {
     @include media-breakpoint-down(xl) {
         background-position-x: 70.83333%;
     }
+    @include media-breakpoint-down(md) {
+        background-position-x: center;
+    }
 }
 .usp-business-card {
     background-color: #36373A;
@@ -45,7 +48,8 @@ section#hero-business {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; */
-    ul {
+    z-index: 10;
+  ul {
       --icon-space: 2.5rem;
       list-style: none;
       padding: 0;
@@ -64,6 +68,9 @@ section#hero-business {
       position: absolute;
       top: -.25em;
   }
+  @include media-breakpoint-down(md) {
+    margin-top: -100px;
+  }
 }
 .usp-business-image-left {
    /*  position: relative;
@@ -72,12 +79,28 @@ section#hero-business {
     right: -50px;
     top: 0px;
     transform: translateY(-50%);
+    @include media-breakpoint-down(md) {
+        position: relative;
+        transform: translateY(0%);
+        /* bottom: -50px; */
+        /* z-index: 0; */
+    }
 }
 .usp-business-image-right {
     position: absolute;
     left: -50px;
     top: 0px;
     transform: translateY(-50%);
+    @include media-breakpoint-down(xl) {
+        left: auto;
+        right: -50px;
+    }
+    @include media-breakpoint-down(md) {
+        position: relative;
+        transform: translateY(0%);
+        left: -50px;
+        right: auto;
+    }
 }
 .usp-business-card-header {
     height: .75rem;
