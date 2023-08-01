@@ -31,7 +31,7 @@ section#hero-business {
 }
 
 
-.row.usp-business {
+.row.usp-business, .row.contact-business {
     background-image: url(/assets/line-business.svg);
     background-position: center center;
     background-repeat: repeat-y;
@@ -49,7 +49,7 @@ section#hero-business {
     background-position: center center;
     background-repeat: no-repeat; */
     z-index: 10;
-  ul {
+    ul {
       --icon-space: 2.5rem;
       list-style: none;
       padding: 0;
@@ -70,7 +70,7 @@ section#hero-business {
   }
   @include media-breakpoint-down(md) {
     margin-top: -100px;
-  }
+}
 }
 .usp-business-image-left {
    /*  position: relative;
@@ -127,6 +127,45 @@ section#hero-business {
     --fa-li-margin: 2em;
 }
  */
- .usp-business-card {
 
- }
+.contact-business-image {
+    position: absolute;
+    left: 0px;
+    top: -30px;
+    //transform: translateY(-50%);
+    @include media-breakpoint-down(xl) {
+        left: auto;
+        right: -50px;
+    }
+    @include media-breakpoint-down(md) {
+        position: relative;
+        transform: translateY(0%);
+        left: -50px;
+        right: auto;
+    }
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+    @include media-breakpoint-down(md) {
+        transform: none;
+    }
+}
+
+.row.contact-business {
+    padding-bottom: 300px;
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 350px;
+    }
+    @include media-breakpoint-down(md) {
+        padding-bottom: 3rem;
+    }
+}
+
+/* .contact-business-text {
+    position: relative;
+    transform: translateY(-50%);
+    @include media-breakpoint-down(md) {
+        transform: translateY(0%);
+    }
+} */
