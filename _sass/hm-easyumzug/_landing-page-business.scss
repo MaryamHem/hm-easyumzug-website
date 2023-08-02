@@ -43,34 +43,57 @@ section#hero-business {
     }
 }
 .usp-business-card {
-    background-color: #36373A;
-    /* background-image: url(/assets/bg-business-card.svg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; */
     z-index: 10;
     ul {
       --icon-space: 2.5rem;
       list-style: none;
       padding: 0;
-  }
-  li {
-      padding-left: var(--icon-space);
-      position: relative;
-  }
-  li:before {
-      content: "\f00c"; /* FontAwesome Unicode */
-      font-family: FontAwesome;
-      font-size: 2rem;
-      display: inline-block;
-      margin-left: calc( var(--icon-space) * -1 );
-      width: var(--icon-space);
-      position: absolute;
-      top: -.25em;
-  }
-  @include media-breakpoint-down(md) {
-    margin-top: -100px;
+      }
+      li {
+          padding-left: var(--icon-space);
+          position: relative;
+      }
+      li:before {
+          content: "\f00c"; /* FontAwesome Unicode */
+          font-family: FontAwesome;
+          font-size: 2rem;
+          display: inline-block;
+          margin-left: calc( var(--icon-space) * -1 );
+          width: var(--icon-space);
+          position: absolute;
+          top: -.25em;
+      }
+      @include media-breakpoint-down(md) {
+        margin-top: -100px;
+        }
+    //transition-duration: 2s;
+    background-image: linear-gradient(80deg, rgba(8, 122, 166, 1) 0%, 
+    rgba(17, 61, 112, 1) 100%);
+    position:relative;
 }
+/* Hack to animate background-image
+https://stackoverflow.com/questions/23990749/animate-solid-background-color-to-image */
+.usp-business-card:before {
+    z-index: 10;
+    content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: #36373A;
+  opacity: 1;
+  transition: opacity .5s;
+}
+.usp-business-card:hover:before {
+    opacity: 0;
+}
+.usp-business-card-header, .usp-business-card-body {
+    position: relative;
+    z-index: 10;
+}
+.usp-business-card-header {
+    height: .75rem;
+    background-image: linear-gradient(80deg, rgba(8, 122, 166, 1) 0%, 
+        rgba(17, 61, 112, 1) 100%);
 }
 .usp-business-image-left {
    /*  position: relative;
@@ -102,11 +125,7 @@ section#hero-business {
         right: auto;
     }
 }
-.usp-business-card-header {
-    height: .75rem;
-    background-image: linear-gradient(80deg, rgba(8, 122, 166, 0.95) 0%, 
-        rgba(17, 61, 112, 0.95) 100%);
-}
+
 
 /* #usps-business .fa-li {
     width: 3em;
