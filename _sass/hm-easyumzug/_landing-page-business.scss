@@ -56,7 +56,7 @@ section#hero-business {
       li:before {
           content: "\f00c"; /* FontAwesome Unicode */
           font-family: FontAwesome;
-          font-size: 2rem;
+          font-size: 1.5rem;
           display: inline-block;
           margin-left: calc( var(--icon-space) * -1 );
           width: var(--icon-space);
