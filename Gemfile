@@ -8,3 +8,4 @@ gem "jekyll-seo-tag"
 gem "webrick"
 #gem "jekyll-autoprefixer", "1.0.1"
 gem 'jekyll-autoprefixer', git: 'https://github.com/chlorenz/jekyll-autoprefixer'
+gem "jekyll-sitemap"

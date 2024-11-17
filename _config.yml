@@ -12,7 +12,8 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
-  #- jekyll-autoprefixer
+  - jekyll-sitemap
+  - jekyll-autoprefixer
 
 # Optimize Jekyll
 exclude:
