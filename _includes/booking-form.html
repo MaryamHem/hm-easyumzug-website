@@ -1,5 +1,6 @@
+<script src="https://unpkg.com/@botpoison/browser" async></script>
 
-<form id="bookingForm" class="mt-5" action="https://submit-form.com/Q62bnjrt" target="_blank" novalidate>
+<form id="bookingForm" class="mt-5" action="https://submit-form.com/Q62bnjrt" target="_blank" data-botpoison-public-key="pk_8606e6b7-09d4-4e3a-b135-66769c6753ca" novalidate>
   <input
   type="hidden"
   name="_redirect"
@@ -379,10 +380,24 @@
           <a class="d-block btn btn-outline-grey btnPrevious" role="button">Zurück</a>
         </div>
         <div class="col-6 col-md-4">
-          <button class="d-block w-100 btn btn-outline-secondary btnNext" type="submit">Weiter zum Gespräch</button>
+          <button id="submitForm" class="d-block w-100 btn btn-outline-secondary btnNext" type="submit">Weiter zum Gespräch</button>
         </div>
       </div>
     </div>
   </div>
 
 </form>
+
+<script>
+  var formElement = document.getElementById("bookingForm");
+  var buttonElement = document.getElementById("submitForm");
+  formElement.addEventListener("botpoison-challenge-start", function () {
+    buttonElement.setAttribute("disabled", "disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-success", function () {
+    buttonElement.removeAttribute("disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-error", function () {
+    buttonElement.removeAttribute("disabled");
+  });
+</script>
