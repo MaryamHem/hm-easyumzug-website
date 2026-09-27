@@ -16,8 +16,7 @@ Brüsseler Straße 1-3
 
 ## Kontakt
 
-**Telefon:** +49 (0) 163 369 61 50   
-**E-Mail:** info@hm-easyumzug.de
+**E-Mail:** hello@nia-projects.com
 
 ## Umsatzsteuer-ID
 

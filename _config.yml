@@ -38,7 +38,7 @@ sass:
 author: 
   name: Maryam Hossaini
   url: hm-easyumzug.de
-  email: info@hm-easyumzug.de
+  email: hello@nia-projects.com
   instagram: hmeasyumzug
 
 # Custom vars
@@ -60,5 +60,5 @@ nia:
   # Startseite hat nur „Kontakt aufnehmen“: eine fertige Anfrage an
   # hello@nia-projects.com, zusammengesetzt in pages/index.html.
   projects_url: https://nia-projects.netlify.app
-  mail_projects: maryam.hossaini@nia-projects.com
+  mail_projects: hello@nia-projects.com
   mail_holding: maryam.hossaini@nia-holding.com
