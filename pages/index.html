@@ -84,17 +84,16 @@ description: "Einfach umziehen in Frankfurt am Main mit dem Familienunternehmen 
     var b = document.querySelector('.nia-uebergang');
     if (!b) return;
 
-    /* Wie auf der NIA-Seite: das Video nur auf breiten Schirmen und nur,
-       wenn niemand Daten sparen oder Bewegung vermeiden will. Sonst
-       bleibt das Standbild stehen — das spart auf dem Handy 12 MB. */
+    /* Zwei Fassungen desselben Clips: breit 1600 × 900 (rund 2,6 MB) und
+       fürs Handy ein Hochformat-Ausschnitt 540 × 960 (rund 1 MB). Wer Daten
+       sparen oder Bewegung vermeiden will, behält das Standbild. */
     var ruhig = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var sparen = window.innerWidth < 768
-              || (navigator.connection && navigator.connection.saveData === true)
-              || ruhig;
+    var sparen = (navigator.connection && navigator.connection.saveData === true) || ruhig;
     var v = document.getElementById('skyline');
     if (v && !sparen) {
       v.preload = 'auto';
-      v.src = '/assets/video/nia-skyline.mp4';
+      v.src = window.innerWidth < 768 ? '/assets/video/nia-skyline-handy.mp4'
+                                      : '/assets/video/nia-skyline-1600.mp4';
       var los = v.play();
       if (los && los.catch) los.catch(function () {});
     }
