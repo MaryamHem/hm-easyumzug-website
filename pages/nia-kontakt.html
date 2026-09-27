@@ -1,0 +1,77 @@
+---
+layout: default
+title: Kontakt NIA
+permalink: nia-kontakt/
+description: "Kontakt zu NIA Holding und NIA Projects. Das Umzugsgeschäft von HM-Easyumzug führt NIA Projects weiter."
+---
+
+<!-- Kontaktseite der Umfirmierung. Bewusst ohne Formular: zwei klare
+     Adressen, eine je Gesellschaft. Gestaltung in _nia-uebergang.scss
+     plus dem Abschnitt „Kontaktseite" darin. -->
+
+<section class="nia-kontakt">
+  <div class="container-lg">
+
+    <span class="nia-uebergang__klein" data-steigt>NIA &middot; Frankfurt am Main</span>
+
+    <h1 class="nia-kontakt__titel" data-steigt style="--verzug:.1s">Wen Sie erreichen</h1>
+
+    <p class="nia-uebergang__text" data-steigt style="--verzug:.2s">
+      HM-Easyumzug ist in die NIA-Gruppe übergegangen. Je nachdem, worum es
+      geht, schreiben Sie an eine der beiden Gesellschaften — wir antworten
+      in der Regel am selben Werktag.
+    </p>
+
+    <div class="nia-kontakt__raster">
+
+      <div class="nia-kontakt__feld" data-steigt style="--verzug:.35s">
+        <h2>NIA Projects</h2>
+        <p class="nia-kontakt__was">
+          Das Umzugsgeschäft von HM-Easyumzug, jetzt unter NIA Projects GmbH.
+          Hierher gehören Anfragen zu Umzügen, Angeboten, Terminen und
+          laufenden Aufträgen.
+        </p>
+        <a class="nia-kontakt__mail"
+           data-name="maryam.hossaini" data-haus="nia-projects.com"
+           href="#">maryam.hossaini [at] nia-projects.com</a>
+      </div>
+
+      <div class="nia-kontakt__feld" data-steigt style="--verzug:.5s">
+        <h2>NIA Holding</h2>
+        <p class="nia-kontakt__was">
+          Die Muttergesellschaft. Hierher gehören Anliegen zu Unternehmen,
+          Beteiligungen und Zusammenarbeit — Presse, Partner und alles
+          Kaufmännische.
+        </p>
+        <a class="nia-kontakt__mail"
+           data-name="maryam.hossaini" data-haus="nia-holding.com"
+           href="#">maryam.hossaini [at] nia-holding.com</a>
+      </div>
+
+    </div>
+
+    <div class="nia-uebergang__knoepfe" data-steigt style="--verzug:.65s">
+      <a class="nia-knopf no-icon" href="{{ site.nia.projects_url }}">Zu NIA Projects <span>&rarr;</span></a>
+      <a class="nia-knopf nia-knopf--leer" href="/">Zurück zur Startseite</a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  /* Die Adressen stehen zerlegt im Markup und werden erst hier
+     zusammengesetzt — dieselbe Vorsicht wie auf der alten Kontaktseite,
+     nur ohne document.write. Ohne JavaScript bleibt die lesbare
+     Schreibweise mit [at] stehen. */
+  (function () {
+    document.querySelectorAll('.nia-kontakt__mail').forEach(function (a) {
+      var adresse = a.dataset.name + '@' + a.dataset.haus;
+      a.href = 'mailto:' + adresse;
+      a.textContent = adresse;
+    });
+    var s = document.querySelector('.nia-kontakt');
+    if (s) requestAnimationFrame(function () {
+      requestAnimationFrame(function () { s.classList.add('ist-da'); });
+    });
+  })();
+</script>

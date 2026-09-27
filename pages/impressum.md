@@ -8,7 +8,7 @@ permalink: impressum/
 
 ## Angaben gemäß § 5 TMG
 
-Maryam Hemati  
+Maryam Hossaini  
 HM-Easyumzug (Einzelunternehmer)  
 Tower ONE  
 Brüsseler Straße 1-3  

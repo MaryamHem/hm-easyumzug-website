@@ -36,7 +36,7 @@ sass:
 
 # Specify the author for blog posts
 author: 
-  name: Maryam Hemati
+  name: Maryam Hossaini
   url: hm-easyumzug.de
   email: info@hm-easyumzug.de
   instagram: hmeasyumzug
@@ -51,3 +51,14 @@ social:
     - https://www.instagram.com/hmeasyumzug/
 
 logo: /assets/logo/logo-hm-easyumzug-blue-bg.png
+
+# NIA — Umfirmierung
+# Ein Ort für die Ziele, damit sie sich mit einer Zeile umstellen lassen,
+# sobald nia-projects.com online ist.
+nia:
+  # Warteseite von NIA Projects (Knopf auf /nia-kontakt). Die Bühne auf der
+  # Startseite hat nur „Kontakt aufnehmen“: eine fertige Anfrage an
+  # hello@nia-projects.com, zusammengesetzt in pages/index.html.
+  projects_url: https://nia-projects.netlify.app
+  mail_projects: maryam.hossaini@nia-projects.com
+  mail_holding: maryam.hossaini@nia-holding.com

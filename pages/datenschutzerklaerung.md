@@ -69,7 +69,7 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
-Maryam Hemati  
+Maryam Hossaini  
 HM-Easyumzug (Einzelunternehmer)  
 Tower ONE  
 Brüsseler Straße 1-3  
